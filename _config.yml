@@ -19,11 +19,11 @@ about:
   - paragraph: ?link?, a simple Jekyll theme. Built by ?link?
     text_align: center
     links:
-      - name: Book
-        url: https://github.com/kkninjae/book
+      - name: xscey.github.io
+        url: https://xscey.github.io
         external: true
-      - name: Lang Liu
-        url: http://kkninjae.com/about/
+      - name: 生命力をつくる
+        url: http:/xscey.github.io
         external: false
 
     
