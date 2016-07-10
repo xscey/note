@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>xscey.github.io</title>
+    <description>https://xscey.github.io</description>
+    <link>https://xscey.github.io/</link>
+    <atom:link href="https://xscey.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 10 Jul 2016 22:10:23 +0900</pubDate>
+    <lastBuildDate>Sun, 10 Jul 2016 22:10:23 +0900</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>校正割り振りスクリプト</title>
+        <description>&lt;p&gt;校正割り振りスクリプトをつくった。&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;背景&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;文藝サークルでは、文集や部誌を発行するさい、校正係を置いている。&lt;/li&gt;
+  &lt;li&gt;ここで校正係とは、部員の原稿を事前に読み、誤字脱字などをチェックする係である。&lt;/li&gt;
+  &lt;li&gt;各校正係は、すべての原稿に目を通す必要はなく、自分の担当原稿のみに目を通せばよい（各人がすべての原稿に目を通すのは非効率的であるため）。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;問題&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;校正係へ原稿を割り振るとき、各人が読まねばならぬ原稿の文字数をできるかぎり揃えたい。&lt;/li&gt;
+  &lt;li&gt;しかし、これを手作業で揃えようとすると、面倒である。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;解法&lt;/h2&gt;
+&lt;p&gt;以下に示すpythonスクリプトを書いた。すべての可能な組み合わせを考えて、標準偏差を出し、標準偏差の最も低い組み合わせを出力するようにしてある。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# -*- coding: utf-8 -*-
+import math
+import itertools
+
+
+list1 = [1011,8595,5064,4978,6751,108,30218,732,&#39;|&#39;,&#39;|&#39;,&#39;|&#39;]
+
+junretu = [i for i in itertools.permutations(list1)] # すべての順列をひたすら出力
+goodp = [] # good permitation
+listhozon = [] # list保存
+
+# 標準偏差 standard deviation
+sd = -1
+
+for p in junretu:
+	list2 = []
+	p = list(p)
+	i = [i for (i, x) in enumerate(p) if x == &#39;|&#39;] # 区切り位置の取得
+	
+	# 取得した区切り位置を元に数字の組み合わせのリストを作る
+	c = 0
+	for x in i:
+		list2.append(p[c:x])
+		c = x+1
+	else:
+		p.append(&#39;dummy&#39;)
+		list2.append(p[c:-1])
+	
+	# 空のリストを持っているかどうか判定
+	kara = 0
+	for x in list2:
+		if x == []:
+			kara = 1
+			break
+	if kara == 0:
+		#print list2
+		list3 = []
+		total = 0
+		for x in list2:
+			for y in x:
+				total += y
+			list3.append(total)
+			total= 0
+		
+		#print list3
+	
+		ave = sum(list3)/len(list3)
+		total = 0
+		for i in range(len(list3)):
+			total += (list3[i] - ave)**2
+		if sd == -1:
+			sd = math.sqrt(total/len(list3))
+			goodp = p
+			listhozon = list3
+		elif sd &amp;gt; math.sqrt(total/len(list3)):
+			sd = math.sqrt(total/len(list3))
+			goodp = p
+			listhozon = list3
+del goodp[-1]
+print sd
+print goodp
+print listhozon
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Sun, 10 Jul 2016 00:00:00 +0900</pubDate>
+        <link>https://xscey.github.io/blog/2016/07/10/kousei-script.html</link>
+        <guid isPermaLink="true">https://xscey.github.io/blog/2016/07/10/kousei-script.html</guid>
+        
+        <category>note</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>無料で広告なしのブログをつくる</title>
+        <description>&lt;p&gt;すでにブログを続ける意志がなくなりつつある。&lt;/p&gt;
+
+&lt;h2 id=&quot;github-pages&quot;&gt;github pagesでブログをつくる&lt;/h2&gt;
+
+&lt;p&gt;githubは基本的にソースコードを公開・共有する場所だと思うが、ここで簡単にホームページをつくることができる。ブログもできる。それがgithub pagesというサービスだ。このブログもgithub pagesでつくっている。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://plus.appgiga.jp/masatolan/2015/01/13/55047/&quot;&gt;この記事&lt;/a&gt;を参考にするとgitそのものを扱えなくても使えて便利である。&lt;/p&gt;
+</description>
+        <pubDate>Sun, 10 Jul 2016 00:00:00 +0900</pubDate>
+        <link>https://xscey.github.io/blog/2016/07/10/blogtukuru.html</link>
+        <guid isPermaLink="true">https://xscey.github.io/blog/2016/07/10/blogtukuru.html</guid>
+        
+        <category>note</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+  </channel>
+</rss>

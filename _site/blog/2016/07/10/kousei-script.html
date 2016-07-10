@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- head -->
+    <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>校正割り振りスクリプト</title>
+
+<!-- favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="" />
+<link rel="icon" type="image/x-icon" href="" />
+
+<!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="xscey.github.io" href="/feed.xml" />
+
+
+    <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/assets/css/solarized_dark.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <!-- script -->
+    <script src="/assets/js/jquery-1.11.3.min.js"></script>
+    <script src="/assets/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/assets/js/script.js"></script>
+
+    
+  </head>
+  <body>
+
+    <div class="footer-clear post-wrapper">
+
+  <!-- post archive trigger -->
+  <div class="post-archive-trigger">
+    <div class="post-archive-icon"></div>
+  </div>
+
+  <!-- post archive -->
+  <div class="post-archive">
+    <div class="post-archive-iterms">
+      
+      
+      <a class="post-archive-iterm" href="/blog/2016/07/10/kousei-script.html">
+        <span class="post-archive-date">2016-07-10</span>
+        <span class="post-archive-title checked">校正割り振りスクリプト</span>
+      </a>
+      
+      
+      <a class="post-archive-iterm" href="/blog/2016/07/10/blogtukuru.html">
+        <span class="post-archive-date">2016-07-10</span>
+        <span class="post-archive-title ">無料で広告なしのブログをつくる</span>
+      </a>
+      
+    </div>
+  </div>
+
+  <!-- post header -->
+  <div class="post-header">
+    <h1>校正割り振りスクリプト</h1>
+    <span>2016-07-10</span>
+  </div>
+
+  <!-- post content -->
+  
+
+  <div class="post-content english">
+    <p>校正割り振りスクリプトをつくった。</p>
+
+<h2 id="section">背景</h2>
+<ul>
+  <li>文藝サークルでは、文集や部誌を発行するさい、校正係を置いている。</li>
+  <li>ここで校正係とは、部員の原稿を事前に読み、誤字脱字などをチェックする係である。</li>
+  <li>各校正係は、すべての原稿に目を通す必要はなく、自分の担当原稿のみに目を通せばよい（各人がすべての原稿に目を通すのは非効率的であるため）。</li>
+</ul>
+
+<h2 id="section-1">問題</h2>
+<ul>
+  <li>校正係へ原稿を割り振るとき、各人が読まねばならぬ原稿の文字数をできるかぎり揃えたい。</li>
+  <li>しかし、これを手作業で揃えようとすると、面倒である。</li>
+</ul>
+
+<h2 id="section-2">解法</h2>
+<p>以下に示すpythonスクリプトを書いた。すべての可能な組み合わせを考えて、標準偏差を出し、標準偏差の最も低い組み合わせを出力するようにしてある。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code># -*- coding: utf-8 -*-
+import math
+import itertools
+
+
+list1 = [1011,8595,5064,4978,6751,108,30218,732,'|','|','|']
+
+junretu = [i for i in itertools.permutations(list1)] # すべての順列をひたすら出力
+goodp = [] # good permitation
+listhozon = [] # list保存
+
+# 標準偏差 standard deviation
+sd = -1
+
+for p in junretu:
+	list2 = []
+	p = list(p)
+	i = [i for (i, x) in enumerate(p) if x == '|'] # 区切り位置の取得
+	
+	# 取得した区切り位置を元に数字の組み合わせのリストを作る
+	c = 0
+	for x in i:
+		list2.append(p[c:x])
+		c = x+1
+	else:
+		p.append('dummy')
+		list2.append(p[c:-1])
+	
+	# 空のリストを持っているかどうか判定
+	kara = 0
+	for x in list2:
+		if x == []:
+			kara = 1
+			break
+	if kara == 0:
+		#print list2
+		list3 = []
+		total = 0
+		for x in list2:
+			for y in x:
+				total += y
+			list3.append(total)
+			total= 0
+		
+		#print list3
+	
+		ave = sum(list3)/len(list3)
+		total = 0
+		for i in range(len(list3)):
+			total += (list3[i] - ave)**2
+		if sd == -1:
+			sd = math.sqrt(total/len(list3))
+			goodp = p
+			listhozon = list3
+		elif sd &gt; math.sqrt(total/len(list3)):
+			sd = math.sqrt(total/len(list3))
+			goodp = p
+			listhozon = list3
+del goodp[-1]
+print sd
+print goodp
+print listhozon
+</code></pre>
+</div>
+
+
+  </div>
+
+  <!-- post navigator -->
+  <div class="post-nav">
+    
+    <a class="post-nav-previous"href="/blog/2016/07/10/blogtukuru.html">無料で広告なしのブログをつくる</a>
+    
+
+    
+
+    
+  </div>
+
+  <!-- disqus comment system -->
+  
+  <div class="post-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+var disqus_shortname = '';
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  </div>
+  
+
+  <!-- footer -->
+  <div class="footer">
+  <span>&copy;</span>
+  <span><script type="text/javascript">document.write(new Date().getFullYear());</script></span>
+  <a class="link-1" href="/">xscey.github.io</a>
+  <br />
+  <span>Powered by <a class="link-1" href="http://jekyllrb.com/">Jekyll</a> with <a class="link-1" href="https://github.com/kkninjae/book">Book</a> theme.</span>
+</div>
+
+
+</div>
+
+
+  </body>
+</html>
