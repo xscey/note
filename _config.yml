@@ -16,7 +16,7 @@ disqus_shortname: # disqus_shortname for disqus comment system
 # a new whidow will be open when link is clicked.
 #
 about:
-  - 生命力の低下が激しいかもしれないブログ。
+<p>生命力の低下が激しいかもしれないブログ。</p>
 #    text_align: center
 #    links:
 #      - name: xscey.github.io
