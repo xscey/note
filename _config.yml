@@ -17,7 +17,7 @@ disqus_shortname: # disqus_shortname for disqus comment system
 #
 about:
   - 生命力の低下が激しいかもしれないブログ。
-#    text_align: center
+    text_align: center
 #    links:
 #      - name: xscey.github.io
 #        url: https://xscey.github.io
