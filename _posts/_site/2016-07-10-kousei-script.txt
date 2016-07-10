@@ -1,0 +1,76 @@
+校正割り振りスクリプト
+-------------------
+
+文藝サークルにおいて、校正係
+
+
+
+
+
+# -*- coding: utf-8 -*-
+import math
+import itertools
+
+
+list1 = [1011,8595,5064,4978,6751,108,30218,732,'|','|','|']
+
+junretu = [i for i in itertools.permutations(list1)] # すべての順列をひたすら出力
+goodp = [] # good permitation
+listhozon = [] # list保存
+
+# 標準偏差 standard deviation
+sd = -1
+
+for p in junretu:
+	list2 = []
+	p = list(p)
+	i = [i for (i, x) in enumerate(p) if x == '|'] # 区切り位置の取得
+	
+	# 取得した区切り位置を元に数字の組み合わせのリストを作る
+	c = 0
+	for x in i:
+		list2.append(p[c:x])
+		c = x+1
+	else:
+		p.append('dummy')
+		list2.append(p[c:-1])
+	
+	# 空のリストを持っているかどうか判定
+	kara = 0
+	for x in list2:
+		if x == []:
+			kara = 1
+			break
+	if kara == 0:
+		#print list2
+		list3 = []
+		total = 0
+		for x in list2:
+			for y in x:
+				total += y
+			list3.append(total)
+			total= 0
+		
+		#print list3
+	
+		ave = sum(list3)/len(list3)
+		total = 0
+		for i in range(len(list3)):
+			total += (list3[i] - ave)**2
+		if sd == -1:
+			sd = math.sqrt(total/len(list3))
+			goodp = p
+			listhozon = list3
+		elif sd > math.sqrt(total/len(list3)):
+			sd = math.sqrt(total/len(list3))
+			goodp = p
+			listhozon = list3
+del goodp[-1]
+print sd
+print goodp
+print listhozon
+
+
+
+
+
