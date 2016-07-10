@@ -15,8 +15,8 @@ disqus_shortname: # disqus_shortname for disqus comment system
 # text. url is the link. when external is set as true, then
 # a new whidow will be open when link is clicked.
 #
-about:
-  - 生命力の低下が激しいかもしれないブログ。
+#about:
+#  - 生命力の低下が激しいかもしれないブログ。?link?
 #    text_align: center
 #    links:
 #      - name: xscey.github.io
