@@ -5,8 +5,8 @@
     <description>https://xscey.github.io</description>
     <link>https://xscey.github.io/</link>
     <atom:link href="https://xscey.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 10 Jul 2016 22:17:41 +0900</pubDate>
-    <lastBuildDate>Sun, 10 Jul 2016 22:17:41 +0900</lastBuildDate>
+    <pubDate>Mon, 11 Jul 2016 00:57:39 +0900</pubDate>
+    <lastBuildDate>Mon, 11 Jul 2016 00:57:39 +0900</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -94,6 +94,11 @@ print listhozon
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
+&lt;p&gt;　&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;追記&lt;/h2&gt;
+&lt;p&gt;流石に適当すぎて、リストが多すぎるとすぐフリーズしてしまうことが判明した。やっぱりそうか。悲しい。メモリを食い過ぎてしまうのだ。改善したいがなかなか資料が見つからない。&lt;a href=&quot;http://pythonlife.seesaa.net/article/243207369.html&quot;&gt;ここ&lt;/a&gt;などが参考になるかもしれない。&lt;/p&gt;
+
 </description>
         <pubDate>Sun, 10 Jul 2016 00:00:00 +0900</pubDate>
         <link>https://xscey.github.io/blog/2016/07/10/kousei-script.html</link>
@@ -110,11 +115,13 @@ print listhozon
         <title>無料で広告なしのブログをつくる</title>
         <description>&lt;p&gt;すでにブログを続ける意志がなくなりつつある。&lt;/p&gt;
 
-&lt;h2 id=&quot;github-pages&quot;&gt;github pagesでブログをつくる&lt;/h2&gt;
+&lt;h2 id=&quot;github-pages&quot;&gt;無料で広告なしのブログをgithub pagesでつくる&lt;/h2&gt;
 
 &lt;p&gt;githubは基本的にソースコードを公開・共有する場所だと思うが、ここで簡単にホームページをつくることができる。ブログもできる。それがgithub pagesというサービスだ。このブログもgithub pagesでつくっている。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://plus.appgiga.jp/masatolan/2015/01/13/55047/&quot;&gt;この記事&lt;/a&gt;を参考にするとgitそのものを扱えなくても、それどころかプログラミングが一切できなくても、github pagesでブログやホームページをつくることができて便利である。&lt;/p&gt;
+
+&lt;p&gt;もちろん無料かつ広告なしである。容量も十分である。&lt;/p&gt;
 </description>
         <pubDate>Sun, 10 Jul 2016 00:00:00 +0900</pubDate>
         <link>https://xscey.github.io/blog/2016/07/10/blogtukuru.html</link>
