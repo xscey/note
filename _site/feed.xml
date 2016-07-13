@@ -5,13 +5,13 @@
     <description>https://xscey.github.io</description>
     <link>https://xscey.github.io/</link>
     <atom:link href="https://xscey.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 11 Jul 2016 00:57:39 +0900</pubDate>
-    <lastBuildDate>Mon, 11 Jul 2016 00:57:39 +0900</lastBuildDate>
+    <pubDate>Mon, 11 Jul 2016 20:06:31 +0900</pubDate>
+    <lastBuildDate>Mon, 11 Jul 2016 20:06:31 +0900</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
         <title>校正割り振りスクリプト</title>
-        <description>&lt;p&gt;校正割り振りスクリプトをつくった。&lt;/p&gt;
+        <description>&lt;p&gt;校正割り振りスクリプトをつくった。校正割り振りっていうより、「山分け問題」の解決をするスクリプトって言ったほうがいいか。というかこういう問題ってふつうどう呼ばれているのだろう。検索してもいまいちこれといったものが見つからなかった。「山分け問題」もしくは「分配問題」と呼んでいる本がgoogle booksで見つかったからこれが一般的呼称なのかもしれない。&lt;/p&gt;
 
 &lt;h2 id=&quot;section&quot;&gt;背景&lt;/h2&gt;
 &lt;ul&gt;
@@ -98,6 +98,9 @@ print listhozon
 
 &lt;h2 id=&quot;section-3&quot;&gt;追記&lt;/h2&gt;
 &lt;p&gt;流石に適当すぎて、リストが多すぎるとすぐフリーズしてしまうことが判明した。やっぱりそうか。悲しい。メモリを食い過ぎてしまうのだ。改善したいがなかなか資料が見つからない。&lt;a href=&quot;http://pythonlife.seesaa.net/article/243207369.html&quot;&gt;ここ&lt;/a&gt;などが参考になるかもしれない。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-4&quot;&gt;さらに追記&lt;/h2&gt;
+&lt;p&gt;pythonスクリプトに渡すリストの要素数が10以下ならば、フリーズしないことが経験的にわかった。用法を守って使えばまずまず使えるソフトだ。&lt;/p&gt;
 
 </description>
         <pubDate>Sun, 10 Jul 2016 00:00:00 +0900</pubDate>
