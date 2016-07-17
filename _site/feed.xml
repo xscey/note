@@ -5,9 +5,49 @@
     <description>https://xscey.github.io</description>
     <link>https://xscey.github.io/</link>
     <atom:link href="https://xscey.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 17 Jul 2016 19:07:09 +0900</pubDate>
-    <lastBuildDate>Sun, 17 Jul 2016 19:07:09 +0900</lastBuildDate>
+    <pubDate>Sun, 17 Jul 2016 19:20:16 +0900</pubDate>
+    <lastBuildDate>Sun, 17 Jul 2016 19:20:16 +0900</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>LOG</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://www.mediafire.com/?4oepdtmrah3do&quot;&gt;ここ&lt;/a&gt;からmactypeの設定をダウンロード。これでかなり綺麗に描画されるようになった。嬉しい。
+上のURLは&lt;a href=&quot;http://d.hatena.ne.jp/consbiol/20120413/1334247449&quot;&gt;このサイト&lt;/a&gt;から見つけた。&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 17 Jul 2016 00:00:00 +0900</pubDate>
+        <link>https://xscey.github.io/blog/2016/07/17/log.html</link>
+        <guid isPermaLink="true">https://xscey.github.io/blog/2016/07/17/log.html</guid>
+        
+        <category>note</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>LOG</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://blog.goo.ne.jp/cramel_2008/e/8363b3de2d7315068bfe025c84e71f11&quot;&gt;これ&lt;/a&gt;を参考に、設定。HDDアクセス過多を減らそうといういつもの試み。&lt;/p&gt;
+
+&lt;p&gt;以下引用。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;　その方法を紹介すると、Windows10のスタートボタンを右クリックして「システム」を呼び出す。次に「コンピューター名、ドメインおよびワークグループの設定」から「設定の変更」を開く。「システムのプロパティ」が表示されるので「詳細設定」を開くと「パフォーマンス」の「視覚効果、プロセッサのスケジュール、メモリ使用、および仮想メモリ」を選択して「設定」を開くと「パフォーマンスオプションのサブ画面が表示されるので「詳細設定」を選択する。そして「仮想メモリ」の「変更」ボタンを押すと「全てのドライブのページングファイルファイルサイズを自動的に管理する」にチェックが入っているが、これを手動に設定して「カスタムサイズ、Ｃ：」に初期サイズ「4096」最大サイズ「16384」と入力して「ＯＫ」ボタンを押し、パネルを全て閉じてパソコンを再起動させる。これでこれでハードディスクの動きが止まった。&lt;/p&gt;
+
+  &lt;p&gt;　さてこの設定画面だが、昔使っていたWindowsXPの仮想メモリの設定とほとんど同じ物であり、ある程度メモリを多く積んいる場合にこの設定はかなり有効だたが、Windows10の仮想メモリーが問題だと聞いて真っ先にこの設定を思い出した。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Wed, 13 Jul 2016 00:00:00 +0900</pubDate>
+        <link>https://xscey.github.io/blog/2016/07/13/log.html</link>
+        <guid isPermaLink="true">https://xscey.github.io/blog/2016/07/13/log.html</guid>
+        
+        <category>note</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>校正割り振りスクリプト</title>
@@ -115,20 +155,46 @@ print listhozon
       </item>
     
       <item>
-        <title>無料で広告なしのブログをつくる</title>
-        <description>&lt;p&gt;すでにブログを続ける意志がなくなりつつある。&lt;/p&gt;
-
-&lt;h2 id=&quot;github-pages&quot;&gt;無料で広告なしのブログをgithub pagesでつくる&lt;/h2&gt;
-
-&lt;p&gt;githubは基本的にソースコードを公開・共有する場所だと思うが、ここで簡単にホームページをつくることができる。ブログもできる。それがgithub pagesというサービスだ。このブログもgithub pagesでつくっている。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://plus.appgiga.jp/masatolan/2015/01/13/55047/&quot;&gt;この記事&lt;/a&gt;を参考にするとgitそのものを扱えなくても、それどころかプログラミングが一切できなくても、github pagesでブログやホームページをつくることができて便利である。&lt;/p&gt;
-
-&lt;p&gt;もちろん無料かつ広告なしである。容量も十分である。&lt;/p&gt;
+        <title>LOG</title>
+        <description>&lt;p&gt;おおお。ようやくGitとGitHubの操作手順がわかりかけてきた（仕組みを理解したとは到底言えないが）。&lt;a href=&quot;http://ncode.syosetu.com/n3259db/&quot;&gt;この記事&lt;/a&gt;に感謝。
+追記：githubはもはやひとつのプログラミング言語みたいなものだから、なかなかムズい。&lt;/p&gt;
 </description>
-        <pubDate>Sun, 10 Jul 2016 00:00:00 +0900</pubDate>
-        <link>https://xscey.github.io/blog/2016/07/10/blogtukuru.html</link>
-        <guid isPermaLink="true">https://xscey.github.io/blog/2016/07/10/blogtukuru.html</guid>
+        <pubDate>Sun, 17 Jan 2016 00:00:00 +0900</pubDate>
+        <link>https://xscey.github.io/blog/2016/01/17/log.html</link>
+        <guid isPermaLink="true">https://xscey.github.io/blog/2016/01/17/log.html</guid>
+        
+        <category>note</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>LOG</title>
+        <description>&lt;p&gt;atom editor を入れてみる。このままではmactypeが効かないので、以下を参考に設定をいじる。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;2015年6月26日に1.0.0が公開されたAtom Editorですが、WindowsではDirectWriteがデフォルトで有効になっており、MacTypeなどのgdi++系ソフトとの相性が良くありません。&lt;/p&gt;
+
+  &lt;p&gt;一応DirectWriteを無効にする方法があるのでここに書いておきます。&lt;/p&gt;
+
+  &lt;p&gt;Atom Editorは終了しておきます。
+「app.asar」をバイナリエディタ（Stirlingがオススメ）で開きます。
+場所はC:\Users\（ユーザー名）\AppData\Local\atom\app-1.0.0\resources\app.asar
+「’direct-write’: true,」で検索し、「’direct-write’:false,」に書き換えます。
+trueの前の半角スペースは無くてもいいので、半角スペース+trueをfalseに書き換えます。
+残念なことに、app.asarファイルはバージョンアップで更新されるので、バージョンアップの度に毎回やらなければいけません。&lt;/p&gt;
+
+  &lt;p&gt;一応Atom Editorのソースコードを（Electronも含めて）読みましたが、現時点ではこれ以外に方法は無さそうです。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;まさかのバイナリエディタが必要とは。&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 30 Dec 2015 00:00:00 +0900</pubDate>
+        <link>https://xscey.github.io/blog/2015/12/30/log.html</link>
+        <guid isPermaLink="true">https://xscey.github.io/blog/2015/12/30/log.html</guid>
         
         <category>note</category>
         
