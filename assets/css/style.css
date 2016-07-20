@@ -480,6 +480,11 @@ img {
   margin: 21px 0;
 }
 
+p {
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
 
 /* =======================
  * specific page
