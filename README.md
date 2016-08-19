@@ -1,4 +1,3 @@
-# 生命力をつくる
 
 Theme by [Anatol Broder](http://penibelst.de/). Released under
 the [MIT License](http://opensource.org/licenses/MIT).
