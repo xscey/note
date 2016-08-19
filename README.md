@@ -1,5 +1,9 @@
-[Noita][demo]
-==================
+# 生命力をつくる
+
+Theme by [Anatol Broder](http://penibelst.de/). Released under
+the [MIT License](http://opensource.org/licenses/MIT).
+
+## [Noita][demo]
 
 [![Build Status][ci-badge]][ci]
 
