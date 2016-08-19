@@ -1,0 +1,67 @@
+---
+---
+
+@import "normalize";
+@import "foundation";
+@import "syntax";
+p {
+  line-height: 1.65;
+  margin-bottom: 1.65rem;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+p.linespacezero{
+    margin-top: 1rem;
+    line-height: 0;
+    margin-bottom: 0;
+}
+li {
+    line-height: 1.65;
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+h2 {
+    font-size: 1.5rem;
+	position: relative;
+	padding-bottom: .1em;
+	border-bottom: 4px solid #ccc;
+}
+h2::after {
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	z-index: 2;
+	content: '';
+	width: 20%;
+	height: 4px;
+	background-color: #3498db;
+}
+h3 {
+  font-size: 1.2rem;
+  padding-left: 13px;
+  border-left: 3px solid #3498db;
+  line-height: 1.3rem;
+}
+h4 {
+    margin-top: 12px;
+    font-size: 1.2rem;
+	line-height: 0.5;
+}
+.highlight{
+	background-color: #eee;
+	padding: 5px;
+	margin: 0;
+}
+code {
+    font-family: Consolas,"Liberation Mono",Courier,monospace;
+    font-weight: inherit;
+    color: inherit;
+    background-color: transparent;
+    border-width: none;
+    border-style: none;
+    border-color: transparent;
+    padding: .125rem .3125rem .0625rem;
+}
+.top-bar {
+    margin-bottom: 15px;
+}

@@ -1,29 +1,46 @@
-title: xscey.github.io
-description: https://xscey.github.io
-url: https://xscey.github.io
-avatar: # https://pbs.twimg.com/profile_images/737276781326016512/Z9kxZUsZ_bigger.jpg
-favicon: # path/to/favicon for site. e.g. /assets/img/favicon.ico
-google_analytics: # google analytics id
-disqus_shortname: # disqus_shortname for disqus comment system
-
-# Content for about page.
-# Each paragraph will be a <p> tag which is inserted to about
-# page. text_align is used to align the text. Default is left.
-# Other two values are center and right. If there are some links
-# in your paragraph, use '?link?' to take the place of a link.
-# And then write the real link under links. name is the link
-# text. url is the link. when external is set as true, then
-# a new whidow will be open when link is clicked.
-#
-#about:
-#  - 生命力の低下が激しいかもしれないブログ。?link?
-#    text_align: center
-#    links:
-#      - name: xscey.github.io
-#        url: https://xscey.github.io
-#        external: true
-#      - name: 生命力をつくる
-#        url: http:/xscey.github.io
-#        external: false
-
-
+# build
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:year/:title/
+exclude:
+  - CNAME
+  - Gemfile
+  - LICENSE
+  - Rakefile
+  - README.md
+  - vendor/
+  - vnu/
+  - vnu.zip
+layouts_dir: ./_noita
+sass:
+  sass_dir: noita/_scss
+  style: compressed
+# compress layout in _noita/compress.html
+compress_html:
+  clippings: all
+  endings: all
+  comments: ["<!--", "-->"]
+  ignore:
+    envs: [travis]
+# theme
+noita:
+  name: 生命力をつくる
+  description: Jekyll theme built with Foundation
+  author:
+    name: Anatol Broder
+    url: http://penibelst.de/
+  lang: ja
+  favicons:
+    - /assets/2014/04/21/favicon-152.png
+  topbar:
+    toggle: Menu
+    right:
+    #   - name: About
+    #     url: /about/
+      - name: Study
+        url: /study/
+      - name: Blog
+        url: /blog/
+    #   - name: Repository
+    #     url: https://github.com/penibelst/jekyll-noita
+    #     class: small button
