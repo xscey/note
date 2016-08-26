@@ -25,10 +25,10 @@ compress_html:
 # theme
 noita:
   name: 生命力をつくる
-  description: Jekyll theme built with Foundation
+  description: 生命力をつくる。
   author:
-    name: Anatol Broder
-    url: http://penibelst.de/
+    name: 生命力をつくる
+    url: http://xscey.github.io
   lang: ja
   favicons:
     - /assets/2014/04/21/favicon-152.png
@@ -37,10 +37,12 @@ noita:
     right:
     #   - name: About
     #     url: /about/
-      - name: Study
+      - name: <i class="fa fa-line-chart" aria-hidden="true"></i> Study
         url: /study/
-      - name: Blog
+      - name: <i class="fa fa-cog" aria-hidden="true"></i> Blog
         url: /blog/
+      - name: <i class="fa fa-external-link" aria-hidden="true"></i> Links
+        url: /links/
     #   - name: Repository
     #     url: https://github.com/penibelst/jekyll-noita
     #     class: small button

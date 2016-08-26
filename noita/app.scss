@@ -4,6 +4,7 @@
 @import "normalize";
 @import "foundation";
 @import "syntax";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css";
 p {
   line-height: 1.65;
   margin-bottom: 1.65rem;
@@ -22,9 +23,10 @@ li {
 }
 h2 {
     font-size: 1.5rem;
-	position: relative;
-	padding-bottom: .1em;
-	border-bottom: 4px solid #ccc;
+    position: relative;
+    padding-bottom: .1em;
+    border-bottom: 4px solid #ccc;
+    margin-top: 1.8rem;
 }
 h2::after {
 	position: absolute;
