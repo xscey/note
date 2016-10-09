@@ -6,19 +6,32 @@ tags: note
 category: blog
 ---
 
-
-## インデントがないとき全角空白を挿入
-`^([^　「『（〈【〔《［｛〝])`
-→
-`　\1`
+## 背景
+* 小説集の編集をやっている。
+* インデントは全角空白で表現、ただし文頭が括弧の場合は空白不要、などの表記ルールを（明示はしていないが暗黙のうちに）定めている。
 
 
-## 括弧前に空白があれば削除
-`^　([「『（〈【〔《［｛〝])`
-→
-`\1`
+## 問題
+* 著者たちはパソコンに熟達している人ばかりでなく、そのためインデント規則など表記ルールが守られていない原稿がよく送られてくる。
 
 
-## 文末の不要な空白を削除
-`[ 　]+$`
-→
+## 解法
+以下のような正規表現を使って置換する。置換すべき項目がリストアップしてあると便利なので、以下に記しておく。上が検索文字列、下が置換後文字列。
+
+### インデントがないとき全角空白を挿入
+<textarea onclick="this.select();">^([^　「『（〈【〔《［｛〝])</textarea>
+<textarea onclick="this.select();">　\1</textarea>
+
+
+### 括弧前に空白があれば削除
+<textarea onclick="this.select();">^　([「『（〈【〔《［｛〝])</textarea>
+<textarea onclick="this.select();">\1</textarea>
+
+
+### 文末の不要な空白を削除
+<textarea onclick="this.select();">[ 　]+$</textarea>
+<textarea onclick="this.select();" placeholder="（なし）"></textarea>
+
+
+### その他
+[青空文庫作業マニュアル【校正編】](http://www.aozora.gr.jp/aozora-manual/index-proofreading.html#proofreading04)は参考になる。
