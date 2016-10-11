@@ -32,6 +32,15 @@ category: blog
 <textarea onclick="this.select();">[ 　]+$</textarea>
 <textarea onclick="this.select();" placeholder="（なし）"></textarea>
 
+### 半角括弧→全角括弧
+<textarea onclick="this.select();">\((.+?)\)</textarea>
+<textarea onclick="this.select();">（\1）</textarea>
+
+### 2連続で使用されている疑問符・感嘆符は半角に
+<textarea onclick="this.select();">[！？]{2,}</textarea>
+<textarea onclick="this.select();" placeholder="（置換ではなく検索して手動で訂正）"></textarea>
+
+
 
 ### その他
 [青空文庫作業マニュアル【校正編】](http://www.aozora.gr.jp/aozora-manual/index-proofreading.html#proofreading04)は参考になる。
