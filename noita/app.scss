@@ -10,6 +10,7 @@ p {
   margin-bottom: 1.65rem;
   text-align: justify;
   text-justify: inter-ideograph;
+  color: #333;
 }
 p.linespacezero{
     margin-top: 1rem;
@@ -21,27 +22,36 @@ li {
     text-align: justify;
     text-justify: inter-ideograph;
 }
+.column > h1{
+	color: #aaa;
+	position: relative;
+	left: -5px;
+
+}
 h2 {
     font-size: 1.5rem;
     position: relative;
-    padding-bottom: .1em;
-    border-bottom: 4px solid #ccc;
-    margin-top: 1.8rem;
+    color: #aaa;
+    left: -4px;
+//    padding-bottom: .1em;
+//    border-bottom: 4px solid #ccc;
+//    margin-top: 1.8rem;
 }
-h2::after {
-	position: absolute;
-	bottom: -4px;
-	left: 0;
-	z-index: 2;
-	content: '';
-	width: 20%;
-	height: 4px;
-	background-color: #3498db;
-}
+//h2::after {
+//	position: absolute;
+//	bottom: -4px;
+//	left: 0;
+//	z-index: 2;
+//	content: '';
+//	width: 20%;
+//	height: 4px;
+//	background-color: #3498db;
+//}
 h3 {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  color: #888;
   padding-left: 13px;
-  border-left: 3px solid #3498db;
+  border-left: 3px solid #888/*#3498db*/;
   line-height: 1.3rem;
 }
 h4 {
@@ -66,4 +76,10 @@ code {
 }
 .top-bar {
     margin-bottom: 15px;
+}
+a {
+	color: #aaa;
+}
+a:hover {
+	color: #333;
 }
