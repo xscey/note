@@ -25,10 +25,10 @@ h2 {
     font-size: 1.5rem;
     position: relative;
     padding-bottom: .1em;
-    border-bottom: 4px solid #ccc;
-    margin-top: 1.8rem;
+    /* border-bottom: 4px solid #ccc;
+    margin-top: 1.8rem; */
 }
-h2::after {
+/* h2::after {
 	position: absolute;
 	bottom: -4px;
 	left: 0;
@@ -37,7 +37,7 @@ h2::after {
 	width: 20%;
 	height: 4px;
 	background-color: #3498db;
-}
+} */
 h3 {
   font-size: 1.2rem;
   padding-left: 13px;
