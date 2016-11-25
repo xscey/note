@@ -41,7 +41,7 @@ noita:
         url: /study/
       - name: <i class="fa fa-cog" aria-hidden="true"></i> Blog
         url: /blog/
-      - name: <i class="fa fa-external-link" aria-hidden="true"></i> Links
+      - name: <i class="fa fa-link" aria-hidden="true"></i> Links
         url: /links/
     #   - name: Repository
     #     url: https://github.com/penibelst/jekyll-noita
