@@ -84,3 +84,13 @@ a {
 a:hover {
 	color: #333;
 }
+.footnotes {
+	margin-top: 5em;
+}
+.footnotes > ol {
+	font-size: 1.2em;
+	color: #aaa;
+}
+.footnotes p {
+	font-size: 0.75em;
+}
