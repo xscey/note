@@ -29,6 +29,8 @@ pythonを少し嗜むていどである。javascriptもほんの僅かに知っ�
 綺麗なデザインや美しいフォントを眺めるのは好きである。デザインやフォントに関する知識は少なく、また自分でデザインしたりレタリングしたりする技術もまだない。多少はできるようになったら愉しい気がする。以下参考資料。
 
 * <http://www.slideshare.net/yutamorishige50/ss-41321443>
+* [縦書きWeb普及委員会](http://tategaki.github.io/)
+* [伝わるデザイン](http://tsutawarudesign.web.fc2.com/)
 
 
 ## 小説
