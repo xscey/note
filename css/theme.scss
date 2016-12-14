@@ -61,10 +61,12 @@ h6 { font-size: .75em; }
   padding-left: 8px;
   border-left: 2px solid $accent-color;
 }
-
 .col-md-8 h3 {
   padding-bottom: 3px;
   border-bottom: 2px solid $accent-color;
+}
+h1,h2,h3 {
+  text-transform: none;
 }
 
 img {

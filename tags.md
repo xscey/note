@@ -31,7 +31,7 @@ permalink: /tags
   {% for tag_name in tag_names %}
     <div>
       <h2 id="{{ tag_name }}">
-        {{ tag_name | capitalize | replace: "_", " " }}
+        {{ tag_name | replace: "_", " " }}
       </h2>
 
       {% for post in site.tags[tag_name] %}
