@@ -1,48 +1,53 @@
-# build
+# Jekyll configuration
+
+name: 生命力をつくる
+description: 変項の値であるべく生命力をつくる
+
+# Url is currently only used only for the RSS feed in feed.xml
+url:
+#url: http://localhost:4000
+
+# For a project page here should be a project name. Otherwise (for user's/organizaion's page leave it empty)
+# baseurl: '/jekyll-clean-dark'
+
+share:
+  facebook: true
+  twitter: true
+  gplus: true
+  linkedin: true
+  pinterest: true
+  email: true
+
+social:
+  github: streetturtle
+  stackoverflow: ''
+  linkedin:
+  instagram: ''
+  lastfm: ''
+  rss: feed.xml
+
+# Google Analytics key, leave blank to ignore
+google_analytics_key:
+# Yandex metrika (https://metrica.yandex.com/) leave blank to ignore or put true to use
+yandex_metrica:
+
+
+# Set this to your disqus shortname to enable comments. Note that the 'comments'
+# setting below must also be true. Individual posts can override 'comments' to
+# disable on a post-by-post basis
+disqus: streetturtle
+comments: false
+
+permalink: /:year/:month/:title
+
+# Enable for using pages, more details are here: http://jekyllrb.com/docs/pagination/
+#paginate: 3
+
+#highlighter: rouge
+
 markdown: kramdown
-highlighter: rouge
-permalink: /blog/:year/:title/
-exclude:
-  - CNAME
-  - Gemfile
-  - LICENSE
-  - Rakefile
-  - README.md
-  - vendor/
-  - vnu/
-  - vnu.zip
-layouts_dir: ./_noita
-sass:
-  sass_dir: noita/_scss
-  style: compressed
-# compress layout in _noita/compress.html
-compress_html:
-  clippings: all
-  endings: all
-  comments: ["<!--", "-->"]
-  ignore:
-    envs: [travis]
-# theme
-noita:
-  name: 生命力をつくる
-  description: 生命力をつくる。
-  author:
-    name: 生命力をつくる
-    url: http://xscey.github.io
-  lang: ja
-  favicons:
-    - /assets/2014/04/21/favicon-152.png
-  topbar:
-    toggle: Menu
-    right:
-    #   - name: About
-    #     url: /about/
-      - name: <i class="fa fa-line-chart" aria-hidden="true"></i> Study
-        url: /study/
-      - name: <i class="fa fa-cog" aria-hidden="true"></i> Blog
-        url: /blog/
-      - name: <i class="fa fa-link" aria-hidden="true"></i> Links
-        url: /links/
-    #   - name: Repository
-    #     url: https://github.com/penibelst/jekyll-noita
-    #     class: small button
+kramdown:
+  input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+  hard_wrap: true
+
+exclude: ['README.md', 'LICENSE']

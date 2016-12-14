@@ -1,9 +1,0 @@
-{% for post in site.posts %}
-<div class="post-short">
-  <p class="linespacezero">
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    <small>{{ post.date | date: '%F' }}</small>
-  </p>
-  <p>{{ post.description }}</p>
-</div>
-{% endfor %}
