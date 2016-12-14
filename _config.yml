@@ -19,12 +19,13 @@ share:
   email: true
 
 social:
-  github: streetturtle
+  github: xscey
   stackoverflow: ''
   linkedin:
   instagram: ''
   lastfm: ''
   rss: feed.xml
+  twitter: kaisukeyasui
 
 # Google Analytics key, leave blank to ignore
 google_analytics_key:
