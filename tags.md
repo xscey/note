@@ -13,7 +13,6 @@ permalink: /tags
 -->
 {% endcomment %}
 
-# Tags
 
 {% assign tag_names = "" | split: "|"  %}
 
