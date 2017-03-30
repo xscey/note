@@ -28,5 +28,3 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-gems:
-  - jekyll-sitemap
