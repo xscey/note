@@ -16,7 +16,7 @@ p,li,blockquote {
 	text-align: justify;
 	text-justify: inter-ideograph;
 }
-p {
+p,li:last-child {
 	margin: 0 0 1em;
 }
 blockquote {
