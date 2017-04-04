@@ -7,7 +7,7 @@ tags: blog LaTeX
 
 ツイッターのアイコンを変えた。アイコンは某TeX藝人な方を真似てLaTeXで生成。pdflatexでPDFにして、画面をキャプチャして画像化（適当）した。正直LaTeXじゃなくても作れる。
 
-{% highlight TeX %}
+```TeX
 \documentclass{article}
 \usepackage{graphicx,color}
 \usepackage{fbb}
@@ -16,4 +16,19 @@ tags: blog LaTeX
 \pagecolor{black}
 \textcolor{kaihaku}{x}
 \end{document}
-{% endhighlight %}
+```
+
+## 2017-04-04
+ちょっと変更。
+
+```TeX
+\documentclass{article}
+\usepackage{graphicx,xcolor}
+\usepackage{anttor}
+\begin{document}
+\definecolor{xblack}{HTML}{272822}
+\definecolor{kaihaku}{HTML}{e9e4d4}
+\pagecolor{xblack}
+\textcolor{kaihaku}{x}
+\end{document}
+```
