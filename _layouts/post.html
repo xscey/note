@@ -12,7 +12,7 @@ layout: default
       </time>
 
       {% for tag in page.tags %}
-        <code><a href="{{ site.url | append:site.baseurl }}/documents/#{{ tag }}">{{ tag }}</a></code>
+        <code><a href="{{ site.url | append:site.baseurl }}/tags#{{ tag }}">{{ tag }}</a></code>
       {% endfor %}
 
       {% if page.author %}
