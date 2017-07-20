@@ -1,0 +1,65 @@
+@charset "utf-8";
+h2,h3,h4,h5,h6 {
+	margin-top: 1.5em;
+}
+h1+h2,h2+h3,h3+h4,h4+h5,h5+h6,li>h2,
+h1:first-child,h2:first-child,h3:first-child,h4:first-child,h5:first-child,h6:first-child {
+	margin-top: 0px;
+}
+h2 {
+	border-bottom: 1px solid #e8e8e8;
+}
+li>h2 {
+	border-bottom: none;
+}
+p,li,blockquote {
+	line-height: 1.65;
+	text-align: justify;
+	text-justify: inter-ideograph;
+}
+p,li:last-child {
+	margin: 0 0 1em;
+}
+blockquote {
+	letter-spacing: 0px;
+	font-style: normal;
+	font-size: 1em;
+}
+a {
+	word-break: break-all;
+}
+.footnotes {
+	margin-top: 80px;
+}
+.footnotes p {
+	display: inline;
+	font-size: 0.85em;
+	line-height: 1.5;
+}
+.footnotes ol li {
+	list-style-type: none;
+	list-style-position: inside;
+	counter-increment: cnt;
+	margin-bottom: 0.85em;
+}
+.footnotes ol li:before {
+	display: marker;
+	content: "[" counter(cnt) "]";
+	font-size: 0.85em;
+}
+.footnote {
+	font-size: 0.8em;
+	text-decoration: none;
+}
+.footnote::before {
+  content: "["
+}
+.footnote::after {
+  content: "]"
+}
+strong {
+	background: linear-gradient(transparent 60%, #73efff 60%);
+}
+.footer-heading {
+	display: none;
+}
