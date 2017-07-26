@@ -21,12 +21,8 @@
   {% assign tag_names = tag_names | sort %}
 {% endif %}
 
-<ul class="sideBarTags">
+<ul class="tags">
   {% for tag_name in tag_names %}
-    <li>
-      <a href="{{ baseurl }}/tags#{{ tag_name | slugize }}">
-        {{ tag_name }}
-      </a>
-    </li>
+  <code><a href="{{ baseurl }}/tags#{{ tag_name | slugize }}">{{ tag_name }}</a></code>
   {% endfor %}
 </ul>

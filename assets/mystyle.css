@@ -63,3 +63,6 @@ strong {
 .footer-heading {
 	display: none;
 }
+.tags code {
+    margin-right: 4px;
+}
