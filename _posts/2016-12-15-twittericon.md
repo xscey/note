@@ -32,3 +32,16 @@ tags: blog LaTeX
 \textcolor{kaihaku}{x}
 \end{document}
 ```
+
+## 2017-11-05
+```TeX
+\documentclass{article}
+\usepackage{graphicx,xcolor}
+\usepackage{EileenBl}
+\begin{document}
+\definecolor{xblack}{HTML}{272822}
+\definecolor{kaihaku}{HTML}{e9e4d4}
+\pagecolor{xblack}
+\textcolor{kaihaku}{\EileenBlfamily x}
+\end{document}
+```
