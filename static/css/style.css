@@ -31,7 +31,7 @@ body {
     width: 30px;
     content: "";
     border-top: 2px solid #ccc;
-    margin: 15px 0 25px;
+    margin: 15px 0 auto;
 }
 .showarticleinfo {
     font-size: 1.2rem;

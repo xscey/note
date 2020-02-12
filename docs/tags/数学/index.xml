@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>数学 on 哲学覚書</title>
@@ -18,9 +18,7 @@
       
       <guid>https://xscey.github.io/note/documents/2018-11-17/</guid>
       <description>順序関係と順序集合 $\newcommand{\set}[1]{\{#1\}}$ 集合$U$上の二項関係$Rxy$が次の性質を満たすとき，$Rxy$を$U$上の順序関係（半順序関係）と言う．
-$\forall x Rxx$（反射律）
-$\forall x \forall y ((Rxy \land Ryx) \to x=y)$（反対称律）
-$\forall x \forall y \forall z ((Rxy \land Ryz) \to Rxz)$（推移律）
+$\forall x Rxx$（反射律）$\forall x \forall y ((Rxy \land Ryx) \to x=y)$（反対称律）$\forall x \forall y \forall z ((Rxy \land Ryz) \to Rxz)$（推移律）
 加えて次を満たすとき，$Rxy$を$U$上の線形順序関係（全順序関係）と言う．
 $\forall x \forall y (Rxy \lor Ryx)$
 集合$U$上に順序関係$Rxy$が定まっているとする．このときとくに$Rxy$に注目して集合$U$を扱う場合に，$U$を$Rxy$についての順序集合と言う．
