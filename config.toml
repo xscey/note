@@ -1,4 +1,4 @@
-baseURL = "https://xscey.github.io"
+baseURL = "https://xscey.github.io/note"
 languageCode = "ja"
 title = "哲学覚書"
 FootnoteReturnLinkContents = "↩"

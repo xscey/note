@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>数学 on 哲学覚書</title>
-    <link>https://xscey.github.io/tags/%E6%95%B0%E5%AD%A6/</link>
+    <link>https://xscey.github.io/note/tags/%E6%95%B0%E5%AD%A6/</link>
     <description>Recent content in 数学 on 哲学覚書</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 17 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://xscey.github.io/tags/%E6%95%B0%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://xscey.github.io/note/tags/%E6%95%B0%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>順序に関する覚書</title>
-      <link>https://xscey.github.io/documents/2018-11-17/</link>
+      <link>https://xscey.github.io/note/documents/2018-11-17/</link>
       <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://xscey.github.io/documents/2018-11-17/</guid>
+      <guid>https://xscey.github.io/note/documents/2018-11-17/</guid>
       <description>順序関係と順序集合 $\newcommand{\set}[1]{\{#1\}}$ 集合$U$上の二項関係$Rxy$が次の性質を満たすとき，$Rxy$を$U$上の順序関係（半順序関係）と言う．
 $\forall x Rxx$（反射律）
 $\forall x \forall y ((Rxy \land Ryx) \to x=y)$（反対称律）

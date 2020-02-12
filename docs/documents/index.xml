@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Documents on 哲学覚書</title>
-    <link>https://xscey.github.io/documents/</link>
+    <link>https://xscey.github.io/note/documents/</link>
     <description>Recent content in Documents on 哲学覚書</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 22 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://xscey.github.io/documents/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://xscey.github.io/note/documents/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>言語行為論用語の覚書</title>
-      <link>https://xscey.github.io/documents/2019-08-22/</link>
+      <link>https://xscey.github.io/note/documents/2019-08-22/</link>
       <pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://xscey.github.io/documents/2019-08-22/</guid>
+      <guid>https://xscey.github.io/note/documents/2019-08-22/</guid>
       <description> 言語行為の分類 発語行為（locutionary act） 文法的な文を構成する行為。発話行為とも。
 発語内行為（illocutionary act） 挨拶する、命名する、約束する、など、「何かを言うことによって何かを行なうこと」を発語内行為と言う。
 発語媒介行為（perlocutionary act） 発語内行為の結果として達成される行為。「論ずることによって他人を説得する」「警告を与えることによって怖がらせる」「言葉をかけて励ます」など。
@@ -27,10 +27,10 @@
     
     <item>
       <title>順序に関する覚書</title>
-      <link>https://xscey.github.io/documents/2018-11-17/</link>
+      <link>https://xscey.github.io/note/documents/2018-11-17/</link>
       <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://xscey.github.io/documents/2018-11-17/</guid>
+      <guid>https://xscey.github.io/note/documents/2018-11-17/</guid>
       <description>順序関係と順序集合 $\newcommand{\set}[1]{\{#1\}}$ 集合$U$上の二項関係$Rxy$が次の性質を満たすとき，$Rxy$を$U$上の順序関係（半順序関係）と言う．
 $\forall x Rxx$（反射律）
 $\forall x \forall y ((Rxy \land Ryx) \to x=y)$（反対称律）
@@ -47,10 +47,10 @@ $\set{\emptyset,\set{1},\set{2},\set{3},\set{1,2},\set{2,3},\set{3,1},\set{1,2,3
     
     <item>
       <title>飯田隆『言語哲学大全III』「7.3 新たな標準理論に向かって」覚書</title>
-      <link>https://xscey.github.io/documents/2017-10-31/</link>
+      <link>https://xscey.github.io/note/documents/2017-10-31/</link>
       <pubDate>Tue, 31 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://xscey.github.io/documents/2017-10-31/</guid>
+      <guid>https://xscey.github.io/note/documents/2017-10-31/</guid>
       <description>クリプキ以後の指示を巡る議論を眺めるとき，「パラダイム転換」という用語を使いたくなる誘惑はじつに大きい．科学革命における理論の交代についてのクーンの記述の多くがここに当てはまるように思われるからである．クリプキにより新しく提起された理論は，問題解決能力に関して必ずしも旧理論（「フレーゲ‐ラッセル見解」）よりも優れているわけではない．それにもかかわらず新しい理論が支持者に事欠かないのは，何が中心的な問題であり何が周辺的な問題であるかの判断自体が変わりえたという理由によると考えられる．
 クリプキ本人は『名指しと必然性』において提案した新たな見解を「よりよい見取り図 a better picture」と呼び，理論であるとは言わなかった．しかしクリプキ以後の哲学者らは，ただの見取り図に甘んじようとはせず，クリプキの提出した見取り図のもとに新たな「理論」を構想する．それが，「直接指示の理論 theory of direct reference」と呼ばれるものである．
 「直接指示の理論」というのは，ある基本前提を共有するさまざまな理論を包括する名称である．その基本前提とは，「ある種の指示表現（典型的には固有名）は，対象のもつなんらかの性質によって対象指示をおこなうのではない」という主張である．
