@@ -1,0 +1,8 @@
+baseURL = "https://xscey.github.io"
+languageCode = "ja"
+title = "哲学覚書"
+FootnoteReturnLinkContents = "↩"
+pygmentsUseClasses = true
+pygmentsCodefences = true
+publishDir = "docs"
+preserveTaxonomyNames = true

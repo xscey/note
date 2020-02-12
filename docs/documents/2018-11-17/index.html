@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <title>順序に関する覚書 - 哲学覚書</title>
+        <link rel="stylesheet" href="https://xscey.github.io/css/reset.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="https://xscey.github.io/css/style.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="https://xscey.github.io/css/syntax.css" media="screen" title="no title" charset="utf-8">
+        <link rel="shortcut icon" href="favicon.ico">
+        <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] } });</script>
+        <script src="https://kit.fontawesome.com/593b5b099a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-wrapper">
+                <h1 class="logo">
+                    <a href="https://xscey.github.io">哲学覚書</a>
+                </h1>
+
+<nav class="global-nav">
+    <ul>
+        <li class="nav-item"><a href="https://xscey.github.io"><i class="fas fa-home"></i> HOME</a></li>
+        <li class="nav-item active"><a href="https://xscey.github.io/documents"><i class="fas fa-book"></i> Docs</a></li>
+    </ul>
+</nav>
+</div>
+</header>
+<div class="wrapper clearfix">
+<main class="main">
+    <div class="content">
+
+<p class="title">
+    順序に関する覚書<br>
+</p>
+
+
+<h1 id="順序関係と順序集合">順序関係と順序集合</h1>
+
+<p>$\newcommand{\set}[1]{\{#1\}}$
+集合$U$上の二項関係$Rxy$が次の性質を満たすとき，$Rxy$を$U$上の<strong>順序関係</strong>（半順序関係）と言う．</p>
+
+<p>$\forall x Rxx$（反射律）<br>
+$\forall x \forall y ((Rxy \land Ryx) \to x=y)$（反対称律）<br>
+$\forall x \forall y \forall z ((Rxy \land Ryz) \to Rxz)$（推移律）</p>
+
+<p>加えて次を満たすとき，$Rxy$を$U$上の<strong>線形順序関係</strong>（全順序関係）と言う．</p>
+
+<p>$\forall x \forall y (Rxy \lor Ryx)$</p>
+
+<p>集合$U$上に順序関係$Rxy$が定まっているとする．このときとくに$Rxy$に注目して集合$U$を扱う場合に，$U$を$Rxy$についての<strong>順序集合</strong>と言う．</p>
+
+<p>たとえば，部分集合であるという関係$\subseteq$は順序関係である．したがって$\set{1,2,3}$の冪集合は$\subseteq$に関する順序集合である．つまり，</p>
+
+<p>$\set{\emptyset,\set{1},\set{2},\set{3},\set{1,2},\set{2,3},\set{3,1},\set{1,2,3}}$</p>
+
+<p>は順序集合であり，要素間で$\set{1}\subseteq\set{1,2}$といった順序づけが成り立っている．</p>
+
+<h1 id="順序に関する諸概念">順序に関する諸概念</h1>
+
+<p>$U$上に順序関係$\leq$が定まっているとする．また，$a \in U$，$X \subseteq U$とする．</p>
+
+<ul>
+<li>$a$は$X$の<strong>上界</strong> $\iff$ $\forall x (x \in X \to x\leq a)$</li>
+<li>$a$は$X$の<strong>下界</strong> $\iff$ $\forall x (x \in X \to a\leq x)$</li>
+<li>$a$は$X$の<strong>最大元</strong> $\iff$ $a \in X \land \forall x (x \in X \to x\leq a)$</li>
+<li>$a$は$X$の<strong>最小元</strong> $\iff$ $a \in X \land \forall x (x \in X \to a\leq x)$</li>
+<li>$a$は$X$の<strong>上限</strong> $\iff$ $a$が$X$の最小上界（$X$の上界全体からなる集合の最小元）</li>
+<li>$a$は$X$の<strong>下限</strong> $\iff$ $a$が$X$の最大下界（$X$の下界全体からなる集合の最大元）</li>
+<li>$a$は$X$の<strong>極大元</strong> $\iff$ $\forall x ((x\in X \land a\leq x) \to x=a)$．すなわち$\lnot\exists x (x \in X \land a&lt;x)$</li>
+<li>$a$は$X$の<strong>極小元</strong> $\iff$ $\forall x ((x\in X \land x\leq a) \to x=a)$．すなわち$\lnot\exists x (x \in X \land x&lt;a)$</li>
+</ul>
+
+<p>$X$の上界が存在するとき，$X$は<strong>上に有界</strong>であると言い，$X$の下界が存在するとき，$X$は<strong>下に有界</strong>であると言う．$X$が上にも下にも有界であるとき，たんに「$X$は<strong>有界</strong>である」と言う．</p>
+
+<p>なお，最大ならば極大だが，極大だからといって最大であるとは限らない．</p>
+
+<p>上限も極大元も、いわば最大元の一般化と考えられる。上限は存在するとすれば一意であるから最大元と非常に似ているが、$X$内に入っていない。極大元は複数存在する場合があるからこの点は最大元と似ていないが、$X$内に入っているのでその点は最大元と似ている。</p>
+
+<p>参考までに，それぞれの直観的な意味を考えてみると次のようになろう．</p>
+
+<ul>
+<li>$a$は$X$の<strong>上界</strong>……$a$は$X$を上から押さえつけている</li>
+<li>$a$は$X$の<strong>下界</strong>……$a$は$X$を下から支えている</li>
+<li>$a$は$X$の<strong>最大元</strong>……$a$は$X$のなかで一番大きい</li>
+<li>$a$は$X$の<strong>最小元</strong>……$a$は$X$のなかで一番小さい</li>
+<li>$a$は$X$の<strong>上限</strong>……$a$は$X$を上から押さえつけているもののなかで一番小さい</li>
+<li>$a$は$X$の<strong>下限</strong>……$a$は$X$を下から支えているもののなかで一番大きい</li>
+<li>$a$は$X$の<strong>極大元</strong>……$X$の要素のなかには$a$より大きいものはない</li>
+<li>$a$は$X$の<strong>極小元</strong>……$X$の要素のなかには$a$より小さいものはない</li>
+</ul>
+
+<div class="showarticleinfo">
+    <i class="fas fa-clock"></i> 2018年11月17日<br>
+    <i class="fas fa-redo"></i> 2018年11月17日<br>
+    <i class="fas fa-tags"></i>   <code><a href="/tags/%e6%95%b0%e5%ad%a6">#数学</a></code> <br>
+</div>
+                    </div>
+                </main>
+            </div>
+        <footer class="footer">
+            <p class="copyright">
+                ©2016–2020 xscey.github.io
+            </p>
+        </footer>
+    </body>
+</html>
+
