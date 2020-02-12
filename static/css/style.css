@@ -40,7 +40,7 @@ body {
     color: #767676;
 }
 .showarticleinfo .fas {
-    font-size: 5px;
+    font-size: 1.05rem;
 }
 .showarticleinfo::before {
     display: block;
@@ -479,16 +479,6 @@ img {
     word-break: keep-all;
 }
 .footnote-ref a {
-    color: #fff;
-    font-weight: bold;
-}
-a.footnote-ref::before {
-    content: "注";
-    color: #fff;
-    font-weight: bold;
-    word-break: keep-all;
-}
-a.footnote-ref {
     color: #fff;
     font-weight: bold;
 }
