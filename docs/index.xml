@@ -17,8 +17,7 @@
       <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://xscey.github.io/note/documents/2020-02-12/</guid>
-      <description>$\def\lo{\mathbf{O}}\def\phi{\varphi}\def\braket#1{\langle #1\rangle}\def\set#1{\{#1\}}$義務論理のいくつかの体系について。
-標準義務論理 公理系 （TAUT）命題論理のトートロジー
+      <description>標準義務論理 公理系 （TAUT）命題論理のトートロジー
 （K）$\lo(\phi\to\psi)\to(\lo\phi\to\lo\psi)$
 （D）$\lo\phi\to\lnot\lo\lnot\phi$
 （推論規則）$\vdash\phi\to\psi$ ならば、 $\vdash\lo\phi\to\lo\psi$
@@ -32,7 +31,8 @@ $\mathcal{M},w\vDash\lo\phi \iff h(w)\subseteq |\phi|_\mathcal{M}$
  すべての世界が利用可能である。 選好順序は、諸世界を二つのカテゴリー（すなわち、よい世界と悪い世界）に分けるだけである。  　$\mathcal{M} = \braket{W,R,v}$ として、到達可能関係 $R$ によって定義する方法もある。$R$ は $W$ 上の継続的な二項関係。
 $\mathcal{M},w\vDash\lo\phi \iff wRw&amp;rsquo;$ なるすべての $w&amp;rsquo;$ に対して $\mathcal{M},w&amp;rsquo;\vDash\phi$
 $h(w) := \set{w&amp;rsquo; \mid wRw&amp;rsquo;}$ とすれば上のモデルに変換可能であると思われる（ $h(w)$ が空集合とならないことと $R$ が継続的であることとが同値だと言えればよい）。ところで、どの様相論理もこの仕方で変換可能なのであろうか。
-クラッツァーの義務論理 クラッツァーの義務様相の意味論は、現在「標準的」と見做されている（主に自然言語意味論の分野において、ということだと思う。義務論理学者がクラッツァーの理論をどう思っているのかはいまいちよく分からない）。クラッツァーは言語学者であるが、この意味論はデイヴィッド・ルイスの可能世界論に基づいているとか。</description>
+クラッツァーの義務論理 クラッツァーの義務様相の意味論は、現在「標準的」と見做されている（主に自然言語意味論の分野において、ということだと思う。義務論理学者がクラッツァーの理論をどう思っているのかはいまいちよく分からない）。クラッツァーは言語学者であるが、この意味論はデイヴィッド・ルイスの可能世界論に基づいているとか。
+公理系 不明。</description>
     </item>
     
     <item>
