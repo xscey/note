@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 哲学覚書</title>
@@ -6,7 +6,6 @@
     <description>Recent content in Tags on 哲学覚書</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 22 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xscey.github.io/note/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -26,6 +25,15 @@
       <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://xscey.github.io/note/tags/%E6%95%B0%E5%AD%A6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>論理学</title>
+      <link>https://xscey.github.io/note/tags/%E8%AB%96%E7%90%86%E5%AD%A6/</link>
+      <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xscey.github.io/note/tags/%E8%AB%96%E7%90%86%E5%AD%A6/</guid>
       <description></description>
     </item>
     

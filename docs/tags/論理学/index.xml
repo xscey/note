@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>論理学 on 哲学覚書</title>
+    <link>https://xscey.github.io/note/tags/%E8%AB%96%E7%90%86%E5%AD%A6/</link>
+    <description>Recent content in 論理学 on 哲学覚書</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 12 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://xscey.github.io/note/tags/%E8%AB%96%E7%90%86%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>義務論理の覚書</title>
+      <link>https://xscey.github.io/note/documents/2020-02-12/</link>
+      <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xscey.github.io/note/documents/2020-02-12/</guid>
+      <description>$\def\lo{\mathbf{O}}\def\phi{\varphi}\def\braket#1{\langle #1\rangle}\def\set#1{\{#1\}}$義務論理のいくつかの体系について。
+標準義務論理 公理系 （TAUT）命題論理のトートロジー
+（K）$\lo(\phi\to\psi)\to(\lo\phi\to\lo\psi)$
+（D）$\lo\phi\to\lnot\lo\lnot\phi$
+（推論規則）$\vdash\phi\to\psi$ ならば、 $\vdash\lo\phi\to\lo\psi$
+公理KとDを抜いて次の公理を入れても証明力は変わらない。
+（OC）$(\lo\phi\land\lo\psi)\to\lo(\phi\land\psi)$
+（OD）$\lnot\lo\bot$
+（ON）$\lo\top$
+意味論 意味論は、$\mathcal{M} = \braket{W,h,v}$ というモデルに基づき定義される。$W$ は可能世界の集合、$h$ は $h: W\longrightarrow \mathscr{P}(W)$ なる写像（値として空集合は取らないものとする）、$v$ は付値関数。$|\phi|_\mathcal{M} := \set{w \mid \mathcal{M},w\vDash\phi}$とする。このとき義務文の真理条件は次の如く定義される。
+$\mathcal{M},w\vDash\lo\phi \iff h(w)\subseteq |\phi|_\mathcal{M}$
+　次の特徴がある。
+ すべての世界が利用可能である。 選好順序は、諸世界を二つのカテゴリー（すなわち、よい世界と悪い世界）に分けるだけである。  　$\mathcal{M} = \braket{W,R,v}$ として、到達可能関係 $R$ によって定義する方法もある。$R$ は $W$ 上の継続的な二項関係。
+$\mathcal{M},w\vDash\lo\phi \iff wRw&amp;rsquo;$ なるすべての $w&amp;rsquo;$ に対して $\mathcal{M},w&amp;rsquo;\vDash\phi$
+$h(w) := \set{w&amp;rsquo; \mid wRw&amp;rsquo;}$ とすれば上のモデルに変換可能であると思われる（ $h(w)$ が空集合とならないことと $R$ が継続的であることとが同値だと言えればよい）。ところで、どの様相論理もこの仕方で変換可能なのであろうか。
+クラッツァーの義務論理 クラッツァーの義務様相の意味論は、現在「標準的」と見做されている（主に自然言語意味論の分野において、ということだと思う。義務論理学者がクラッツァーの理論をどう思っているのかはいまいちよく分からない）。クラッツァーは言語学者であるが、この意味論はデイヴィッド・ルイスの可能世界論に基づいているとか。</description>
+    </item>
+    
+  </channel>
+</rss>

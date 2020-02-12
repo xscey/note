@@ -482,6 +482,16 @@ img {
     color: #fff;
     font-weight: bold;
 }
+a.footnote-ref::before {
+    content: "注";
+    color: #fff;
+    font-weight: bold;
+    word-break: keep-all;
+}
+a.footnote-ref {
+    color: #fff;
+    font-weight: bold;
+}
 #disqus_thread {
     margin-top: 80px;
 }

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <title>義務論理の覚書 - 哲学覚書</title>
+        <link rel="stylesheet" href="https://xscey.github.io/note/css/reset.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="https://xscey.github.io/note/css/style.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="https://xscey.github.io/note/css/syntax.css" media="screen" title="no title" charset="utf-8">
+        <link rel="shortcut icon" href="favicon.ico">
+        <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] } });</script>
+        <script src="https://kit.fontawesome.com/593b5b099a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-wrapper">
+                <h1 class="logo">
+                    <a href="https://xscey.github.io/note">哲学覚書</a>
+                </h1>
+
+<nav class="global-nav">
+    <ul>
+        <li class="nav-item"><a href="https://xscey.github.io/note"><i class="fas fa-home"></i> HOME</a></li>
+        <li class="nav-item active"><a href="https://xscey.github.io/note/documents"><i class="fas fa-book"></i> Docs</a></li>
+    </ul>
+</nav>
+</div>
+</header>
+<div class="wrapper clearfix">
+<main class="main">
+    <div class="content">
+
+<p class="title">
+    義務論理の覚書<br>
+</p>
+
+
+<p>$\def\lo{\mathbf{O}}\def\phi{\varphi}\def\braket#1{\langle #1\rangle}\def\set#1{\{#1\}}$義務論理のいくつかの体系について。</p>
+
+<h1 id="標準義務論理">標準義務論理</h1>
+
+<h2 id="公理系">公理系</h2>
+
+<p>（TAUT）命題論理のトートロジー<br />
+（K）$\lo(\phi\to\psi)\to(\lo\phi\to\lo\psi)$<br />
+（D）$\lo\phi\to\lnot\lo\lnot\phi$<br />
+（推論規則）$\vdash\phi\to\psi$ ならば、 $\vdash\lo\phi\to\lo\psi$</p>
+
+<p>公理KとDを抜いて次の公理を入れても証明力は変わらない。<br />
+（OC）$(\lo\phi\land\lo\psi)\to\lo(\phi\land\psi)$<br />
+（OD）$\lnot\lo\bot$<br />
+（ON）$\lo\top$</p>
+
+<h2 id="意味論">意味論</h2>
+
+<p>意味論は、$\mathcal{M} = \braket{W,h,v}$ というモデルに基づき定義される。$W$ は可能世界の集合、$h$ は $h: W\longrightarrow \mathscr{P}(W)$ なる写像（値として空集合は取らないものとする）、$v$ は付値関数。$|\phi|_\mathcal{M} := \set{w \mid \mathcal{M},w\vDash\phi}$とする。このとき義務文の真理条件は次の如く定義される。</p>
+
+<p>$\mathcal{M},w\vDash\lo\phi \iff h(w)\subseteq |\phi|_\mathcal{M}$</p>
+
+<p>　</p>
+
+<p>次の特徴がある。</p>
+
+<ul>
+<li>すべての世界が利用可能である。</li>
+<li>選好順序は、諸世界を二つのカテゴリー（すなわち、よい世界と悪い世界）に分けるだけである。</li>
+</ul>
+
+<p>　</p>
+
+<p>$\mathcal{M} = \braket{W,R,v}$ として、到達可能関係 $R$ によって定義する方法もある。$R$ は $W$ 上の継続的な二項関係。</p>
+
+<p>$\mathcal{M},w\vDash\lo\phi \iff wRw&rsquo;$ なるすべての $w&rsquo;$ に対して $\mathcal{M},w&rsquo;\vDash\phi$</p>
+
+<p>$h(w) := \set{w&rsquo; \mid wRw&rsquo;}$ とすれば上のモデルに変換可能であると思われる（ $h(w)$ が空集合とならないことと $R$ が継続的であることとが同値だと言えればよい）。ところで、どの様相論理もこの仕方で変換可能なのであろうか。</p>
+
+<h1 id="クラッツァーの義務論理">クラッツァーの義務論理</h1>
+
+<p>クラッツァーの義務様相の意味論は、現在「標準的」と見做されている（主に自然言語意味論の分野において、ということだと思う。義務論理学者がクラッツァーの理論をどう思っているのかはいまいちよく分からない）。クラッツァーは言語学者であるが、この意味論はデイヴィッド・ルイスの可能世界論に基づいているとか。</p>
+
+<h2 id="公理系-1">公理系</h2>
+
+<p>不明。</p>
+
+<h2 id="意味論-1">意味論</h2>
+
+<p>モデルは $\mathcal{M} = \braket{W,f,g,v}$。$W$は可能世界の集合、$f$は様相基盤（modal base）、$g$は順序源（ordering source）、$v$は付値関数。$f$と$g$は「会話背景」と呼ばれる。</p>
+
+<p>この意味論は、標準義務論理の意味論を二つの仕方で一般化したものである。</p>
+
+<p>第一に、利用可能な可能世界は制限されている。$f$は$f:W\longrightarrow \mathscr{P}(\mathscr{P}(W))$なる写像（可能世界を取って命題の集合を返す写像）であり、$\bigcap f(w)$が様相基盤として用いられる。ただし$\bigcap f(w)$は空集合ではないものとする（つまり$f(w)$は矛盾した集合とならないよう定義する）<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>。様相基盤は到達可能性$h(w)$を特定する、と言える（その逆は成り立たない。つまり到達可能性が様相基盤を特定することはない）。</p>
+
+<p>第二に、選好順序がより複雑に定義される。選好順序は順序源によって定められる。$g$も、$f$と同じく可能世界を取って命題の集合を返す写像。ただし$g(w)$は矛盾集合であってもよい（義務同士が矛盾することはありうる、ということを表現するため）。</p>
+
+<p>$a,b,c\in W$に対し、順序関係$\leq_{g(a)}$を次のように定義する。</p>
+
+<p>$b\leq_{g(a)}c \iff$任意の$|\phi|\in g(a)$に対し、$c\in|\phi|$ならば$b\in|\phi|$</p>
+
+<p>義務文の真理条件は次の通り<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup>。</p>
+
+<p>$\mathcal{M},a \vDash \lo\phi  \iff$ 任意の$b\in\bigcup f(a)$ に対して $b\leq_{g(a)}c$ となる $c\in\bigcup f(a)$ が存在し、
+任意の $d\in\bigcup f(a)$ に対して $d\leq_{g(a)}c$ ならば $d\in |\phi|_\mathcal{M}$</p>
+
+<p>上の定義は複雑だが、これの簡略版がある。</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">文献によっては空集合もありだということになっている。
+ <a class="footnote-return" href="#fnref:1">↩</a></li>
+<li id="fn:2">MathJaxでこれを入力するとき、アンダーバーが強調と見做されてうまくいかなった。一行にアンダーバーが二個以上あるときは、「<code>\_</code>」のようにしてバックスラッシュでエスケープする必要がある。
+ <a class="footnote-return" href="#fnref:2">↩</a></li>
+</ol>
+</div>
+
+<div class="showarticleinfo">
+    <i class="fas fa-clock"></i> 2020年2月12日<br>
+    <i class="fas fa-redo"></i> 2020年2月12日<br>
+    <i class="fas fa-tags"></i>   <code><a href="/note/tags/%e8%ab%96%e7%90%86%e5%ad%a6">#論理学</a></code> <br>
+</div>
+                    </div>
+                </main>
+            </div>
+        <footer class="footer">
+            <p class="copyright">
+                ©2016–2020 xscey.github.io
+            </p>
+        </footer>
+    </body>
+</html>
+
