@@ -35,12 +35,16 @@ body {
 }
 .showarticleinfo {
     font-size: 1.2rem;
+    color: #767676;
+    line-height: 1.8;
     margin-top: 50px;
     padding: 10px 0px;
-    color: #767676;
 }
 .showarticleinfo .fas {
     font-size: 1.05rem;
+}
+.showarticleinfo code {
+    font-size: 1.2rem;
 }
 .showarticleinfo::before {
     display: block;
