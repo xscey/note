@@ -6,34 +6,35 @@
     <description>Recent content in Tags on 哲学覚書</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
+    <lastBuildDate>Wed, 12 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xscey.github.io/note/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>哲学</title>
-      <link>https://xscey.github.io/note/tags/%E5%93%B2%E5%AD%A6/</link>
-      <pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xscey.github.io/note/tags/%E5%93%B2%E5%AD%A6/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>数学</title>
-      <link>https://xscey.github.io/note/tags/%E6%95%B0%E5%AD%A6/</link>
-      <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://xscey.github.io/note/tags/%E6%95%B0%E5%AD%A6/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>論理学</title>
-      <link>https://xscey.github.io/note/tags/%E8%AB%96%E7%90%86%E5%AD%A6/</link>
+      <title>Logic</title>
+      <link>https://xscey.github.io/note/tags/logic/</link>
       <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xscey.github.io/note/tags/%E8%AB%96%E7%90%86%E5%AD%A6/</guid>
+      <guid>https://xscey.github.io/note/tags/logic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Math</title>
+      <link>https://xscey.github.io/note/tags/math/</link>
+      <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://xscey.github.io/note/tags/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Philosophy</title>
+      <link>https://xscey.github.io/note/tags/philosophy/</link>
+      <pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xscey.github.io/note/tags/philosophy/</guid>
       <description></description>
     </item>
     

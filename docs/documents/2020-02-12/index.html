@@ -98,7 +98,7 @@
 
 <h2 id="公理系-1">公理系</h2>
 
-<p>不明。</p>
+<p>クラッツァー自身が公理系を示しているかどうかは不明だが、以下の（制限を加えた）モデルによって定義されるトートロジーの集合は標準義務論理のそれと等しくなるようである。正確な理解のためにはクラッツァー本人の論文を読む必要がありそうである。</p>
 
 <h2 id="意味論-1">意味論</h2>
 
@@ -121,11 +121,26 @@
 <p>$\mathcal{M},a \vDash \lo\phi  \iff$ 任意の$b\in\bigcap f(a)$ に対して $b\leq_{g(a)}c$ となる $c\in\bigcap f(a)$ が存在し、
 任意の $d\in\bigcap f(a)$ に対して $d\leq_{g(a)}c$ ならば $d\in |\phi|_\mathcal{M}$</p>
 
-<p>上の定義は複雑だが、これの簡略版がある。まずいくつか定義しておく。</p>
+<p>上の定義は複雑である。しかし、$g(a)$が有限集合である場合には簡略化できる。まずいくつか定義しておく。</p>
 
 <p>$b&lt;_{g(a)}c \iff b\leq_{g(a)}c$ かつ $c\not\leq_{g(a)}b$</p>
 
 <p>$\mathit{Best}_{g(a)}(|\phi|) := \set{b\in |\phi|  \mid  \lnot\exists c\in |\phi|(c&lt;_{g(a)}b)}$</p>
+
+<p>$g(a)$が有限集合である場合、クラッツァーモデルはストッパーつき（stoppered）である。つまり、任意の$b\in\bigcap f(a)$に対し、$b\in\mathit{Best}_{g(a)}(\bigcap f(a))$であるかまたはある$c\in\mathit{Best}_{g(a)}(\bigcap f(a))$が存在して$c\leq_{g(a)}b$。</p>
+
+<p>$\mathcal{M} = \braket{W,f,g,v}$はストッパーつきクラッツァーモデルであるとする。このとき義務文の真理条件は以下のようになることが証明できる。</p>
+
+<p>$\mathcal{M},a\vDash\lo\phi \iff \mathit{Best}_{g(a)}(\bigcap f(a))\subseteq |A|_\mathcal{M}$</p>
+
+<p>ある標準義務論理のモデルが与えられたとき、$f(a) = \set{W}$、$g(a) = \set{h(a)}$とすれば、クラッツァーの論理と標準義務論理とは一致する。逆にあるクラッツァーモデルが与えられたとき、$h(a) = \mathit{Best}_{g(a)}(\bigcap f(a))$としても、クラッツァーの論理と標準義務論理とは一致する。</p>
+
+<h1 id="参考文献">参考文献</h1>
+
+<ul>
+<li>Horty, John F., &ldquo;<a href="http://users.umiacs.umd.edu/~horty/articles/2014-modals-pub.pdf">Deontic modals: Why abandon the classical semantics?</a>&rdquo;, <em>Pacific Philosophical Quarterly</em> (Special Issue on Deontic Modality, Stephen Finlay and Mark Schroeder, eds.), vol. 95 (2014), pp. 424&ndash;460.</li>
+<li>蝶名林亮編著『メタ倫理学の最前線』勁草書房、2019年。</li>
+</ul>
 <div class="footnotes">
 
 <hr />
@@ -145,7 +160,7 @@
 <div class="showarticleinfo">
     <i class="fas fa-clock"></i> 2020年2月12日<br>
     <i class="fas fa-redo"></i> 2020年2月12日<br>
-    <i class="fas fa-tags"></i>   <code><a href="/note/tags/%e8%ab%96%e7%90%86%e5%ad%a6">#論理学</a></code> <br>
+    <i class="fas fa-tags"></i>   <code><a href="/note/tags/logic">#logic</a></code> <br>
 </div>
                     </div>
                 </main>
