@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://xscey.github.io/note/documents/2020-02-15/</loc>
+    <lastmod>2020-02-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xscey.github.io/note/documents/2020-02-12/</loc>
     <lastmod>2020-02-12T00:00:00+00:00</lastmod>
   </url>
@@ -29,7 +34,13 @@
   
   <url>
     <loc>https://xscey.github.io/note/documents/</loc>
-    <lastmod>2020-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://xscey.github.io/note/tags/ethics/</loc>
+    <lastmod>2020-02-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -47,19 +58,19 @@
   
   <url>
     <loc>https://xscey.github.io/note/tags/philosophy/</loc>
-    <lastmod>2019-08-22T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://xscey.github.io/note/tags/</loc>
-    <lastmod>2020-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://xscey.github.io/note/</loc>
-    <lastmod>2020-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
