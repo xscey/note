@@ -45,6 +45,7 @@ body {
 }
 .showarticleinfo code {
     font-size: 1.2rem;
+    margin-right: 0.3rem;
 }
 .showarticleinfo::before {
     display: block;
