@@ -193,7 +193,7 @@ a:hover {
 }
 .content p {
     font-size: 1.4rem;
-    margin-bottom: 2.1rem;
+    margin-bottom: 1.75em;
     text-align: justify;
     text-justify: inter-ideograph;
 }
@@ -241,7 +241,7 @@ a:hover {
 .content ul {
     font-size: 1.4rem;
     position: relative;
-    margin-bottom: 2.1rem;
+    margin-bottom: 1.75em;
     padding: 0;
 }
 .content ul li {
@@ -464,17 +464,12 @@ img {
     border-radius: 5px;
     padding: 25px 20px 15px 0px;
 }
-.footnotes p {
-    display: inline;
-    font-size: 0.85em;
-    line-height: 1.5;
-}
 .footnotes ol li {
     position: relative;
     list-style-type: none;
     list-style-position: inside;
     counter-increment: cnt;
-    margin-bottom: 0.85em;
+    margin-bottom: 1em;
     padding-left: 2em;
 }
 .footnotes ol li::before {
@@ -500,7 +495,7 @@ img {
     margin-left: 1px;
     border-radius: 20%;
     background: #777;
-    padding: 1px 2px;
+    padding: 2px;
 }
 .footnote-ref a::before {
     content: "注";
@@ -515,9 +510,6 @@ img {
 #disqus_thread {
     margin-top: 80px;
 }
-/* strong {
-    background: linear-gradient(transparent 60%, #73efff 60%);
-} */
 pre, code, .highlight {
     font-size: 1.35rem;
     font-family: 'Courier Prime', monospace;
