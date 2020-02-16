@@ -242,18 +242,34 @@ a:hover {
     font-size: 1.4rem;
     position: relative;
     margin-bottom: 2.1rem;
-    padding:0
+    padding: 0;
 }
 .content ul li {
     list-style: none;
-    padding-left: 1rem;
-    text-indent: -1rem;
+    position: relative;
+    padding-left: 1em;
     text-align: justify;
     text-justify: inter-ideograph;
 }
 .content ul li::before{
-    content:' • ';
+    position: absolute;
+    left: 0;
+    top: -0.06em;
+    content: '•';
+    padding: 0 0 0 0.25em;
 }
+.content li ul {
+    margin: 0 0 0 1em;
+    padding: 0;
+}
+.content li ul li::before{
+    content: '⁃';
+    position: absolute;
+    left: 0;
+    top: 0.01em;
+    padding: 0 0 0 0.25em;
+}
+
 .content ol{
     font-size: 1.4rem;
     position: relative;
@@ -446,7 +462,7 @@ img {
     margin-bottom: 80px;
     background: #f8f8f8;
     border-radius: 5px;
-    padding: 25px 20px 15px 5px;
+    padding: 25px 20px 15px 0px;
 }
 .footnotes p {
     display: inline;
@@ -454,24 +470,27 @@ img {
     line-height: 1.5;
 }
 .footnotes ol li {
+    position: relative;
     list-style-type: none;
     list-style-position: inside;
     counter-increment: cnt;
     margin-bottom: 0.85em;
+    padding-left: 2em;
 }
 .footnotes ol li::before {
-    display: marker;
+    position: absolute;
+    left: 0;
+    top: 0.35em;
+    line-height: 1;
     content: "注" counter(cnt);
     font-size: 1rem;
-    vertical-align: top;
-    text-decoration: none;
-    letter-spacing: 1px;
-    margin: 0 5px 0 1px;
-    border-radius: 20%;
-    background: #777;
-    padding: 1px 2px;
     color: #fff;
     font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 20%;
+    background: #777;
+    padding: 2px;
+    margin: 0;
 }
 .footnote-ref {
     font-size: 1rem;
