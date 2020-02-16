@@ -106,9 +106,9 @@ a:hover {
 }
 .logo {
     font-size: 30px;
-    margin: 15px 0 0 -5px;
-    height: 71px;
-    width: 150px;
+    margin: 16px 0 0 -5px;
+    height: 70px;
+    width: 140px;
     background: url('../img/logo.png') no-repeat;
     background-size: 100%;
     overflow: hidden;
@@ -544,12 +544,6 @@ blockquote {
 .tag-count::after {
     content: "）";
 }
-hr {
-    display: block;
-    width: 120px;
-    margin: 4rem 0;
-    border-top: 1px dotted #767676;
-}
 
 @media (max-width: 768px) {
     .sidemenu {
@@ -573,7 +567,7 @@ hr {
         width: 100%;
     }
     .logo {
-        margin-left: 10px;
+        margin-left: 5px;
     }
     .global-nav {
         margin: -36px 10px 0 10px;

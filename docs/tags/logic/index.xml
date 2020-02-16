@@ -30,11 +30,10 @@
 （ROM）$\vdash\phi\to\psi$ ならば、$\vdash\lo\phi\to\lo\psi$
 意味論 意味論は、$\mathcal{M} = \braket{W,h,v}$ というモデルに基づき定義される。$W$ は可能世界の集合、$h$ は $h: W\longrightarrow \mathscr{P}(W)$ なる写像（値として空集合は取らないものとする）、$v$ は付値関数。$|\phi|_\mathcal{M} := \set{w \mid \mathcal{M},w\vDash\phi}$とする。このとき義務文の真理条件は次の如く定義される。
 $\mathcal{M},w\vDash\lo\phi \iff h(w)\subseteq |\phi|_\mathcal{M}$
-次の特徴がある。
- すべての世界が利用可能である。 選好順序は、諸世界を二つのカテゴリー（すなわち、よい世界と悪い世界）に分けるだけである。  $\mathcal{M} = \braket{W,R,v}$ として、到達可能関係 $R$ によって定義する方法もある。$R$ は $W$ 上の継続的な二項関係。
+　次の特徴がある。
+ すべての世界が利用可能である。 選好順序は、諸世界を二つのカテゴリー（すなわち、よい世界と悪い世界）に分けるだけである。  　$\mathcal{M} = \braket{W,R,v}$ として、到達可能関係 $R$ によって定義する方法もある。$R$ は $W$ 上の継続的な二項関係。
 $\mathcal{M},w\vDash\lo\phi \iff wRw&amp;rsquo;$ なるすべての $w&amp;rsquo;$ に対して $\mathcal{M},w&amp;rsquo;\vDash\phi$
-$h(w) := \set{w&amp;rsquo; \mid wRw&amp;rsquo;}$ とすれば上のモデルに変換可能であると思われる（ $h(w)$ が空集合とならないことと $R$ が継続的であることとが同値だと言えればよい）。ところで、どの様相論理もこの仕方で変換可能なのであろうか。
-クラッツァーの義務論理 クラッツァーの義務様相の意味論は、現在「標準的」と見做されている1。クラッツァーは言語学者であるが、この意味論はデイヴィッド・ルイスの可能世界論に基づいているとか。</description>
+$h(w) := \set{w&amp;rsquo; \mid wRw&amp;rsquo;}$ とすれば上のモデルに変換可能であると思われる（ $h(w)$ が空集合とならないことと $R$ が継続的であることとが同値だと言えればよい）。ところで、どの様相論理もこの仕方で変換可能なのであろうか。</description>
     </item>
     
   </channel>
