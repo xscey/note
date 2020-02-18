@@ -410,14 +410,13 @@ img {
 .footnotes ol li::before {
     position: absolute;
     left: 0;
-    top: 0.1em;
+    top: 0.25em;
     content: "†" counter(cnt);
     font-size: 1rem;
     color: #ef3e36;
     font-weight: bold;
     padding: 0;
     margin: 0;
-    letter-spacing: 1px;
 }
 .footnote-ref {
     font-size: 1rem;
@@ -431,7 +430,6 @@ img {
     font-weight: bold;
     word-break: keep-all;
     color: #ef3e36;
-    letter-spacing: 1px;
 }
 .footnote-ref a {
     font-weight: bold;
