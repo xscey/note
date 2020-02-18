@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Courier+Prime:400,400i,700,700i&display=swap');
 
 html {
@@ -411,7 +411,7 @@ img {
     position: absolute;
     left: 0;
     top: 0.25em;
-    content: "†" counter(cnt);
+    content: "★" counter(cnt);
     font-size: 1rem;
     color: #ef3e36;
     font-weight: bold;
@@ -422,11 +422,11 @@ img {
     font-size: 1rem;
     text-decoration: none;
     vertical-align: super;
-    margin-left: 1px;
+    margin-right: 1px;
     padding: 0;
 }
 .footnote-ref a::before {
-    content: "†";
+    content: "★";
     font-weight: bold;
     word-break: keep-all;
     color: #ef3e36;
