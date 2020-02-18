@@ -186,10 +186,15 @@ a:hover {
     margin: 0 0 10px;
 }
 .content h3 {
-    font-size: 1.4rem;
+    display: inline-block;
+    font-size: 1.2rem;
     font-weight: 700;
-    margin-bottom: 5px;
-    color: #1BA0E1;
+    border-bottom: 2px dotted #1BA0E1;
+    margin: 15px 0 10px;
+    padding: 0;
+}
+.content h1+h3, .content h2+h3 {
+    margin: 0 0 10px;
 }
 .content p {
     font-size: 1.4rem;
