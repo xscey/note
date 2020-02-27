@@ -6,10 +6,20 @@
     <description>Recent content in Documents on 哲学覚書</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 15 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xscey.github.io/note/documents/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>von Wright (1999) の覚書</title>
+      <link>https://xscey.github.io/note/documents/2020-02-27/</link>
+      <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xscey.github.io/note/documents/2020-02-27/</guid>
+      <description> 梗概 本論文は、著者の長年に渡る義務論理への関わりの要約を含む。その関わりは、技術的な観点から、およびより広い哲学的な観点からのものである。義務論理の形式的な側面に関係している限り、著者は自身の知的展開として、一方では（義務概念と）様相概念との、他方では（義務概念と）量化子とのアナロジーの最初の発見から、二項義務概念の体系的理論の形式化を経て、義務論理の基礎としての行為の形式論理の提案までを描く。より哲学的な文脈では、規範が真理値をもたないとすれば義務論理はそもそも成立可能なのかという問題、古典義務論理の記述的解釈と規範命題の論理との関係、条件付き規範・仮定付き規範の正しい定式化、道徳的義務と実践的必然性との区別、許可と義務の相互定義可能性、といった問題に関して著者は議論する。
+文献  von Wright, Georg Henrik. &amp;ldquo;Deontic logic: A personal view.&amp;rdquo; Ratio juris 12.1 (1999): 26&amp;ndash;38.  </description>
+    </item>
     
     <item>
       <title>Chrisman (2016) の覚書</title>
