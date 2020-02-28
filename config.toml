@@ -6,3 +6,4 @@ pygmentsUseClasses = true
 pygmentsCodefences = true
 publishDir = "docs"
 preserveTaxonomyNames = true
+enableGitInfo = true
