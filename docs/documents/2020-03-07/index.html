@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <title>撤回可能推論の覚書 - 哲学覚書</title>
+        <link rel="stylesheet" href="https://xscey.github.io/note/css/reset.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="https://xscey.github.io/note/css/style.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="https://xscey.github.io/note/css/syntax.css" media="screen" title="no title" charset="utf-8">
+        <link rel="shortcut icon" href="favicon.ico">
+        <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] }
+            });
+            MathJax.Hub.Config({
+                TeX: {
+                    Macros: {
+                        lo: '\\mathbf{O}',
+                        phi: '\\varphi',
+                        braket: ['{\\langle #1\\rangle}', 1],
+                        set: ['{\\{#1\\}}', 1]
+                    }
+                }
+            });
+        </script>
+        <script src="https://kit.fontawesome.com/593b5b099a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-wrapper">
+                <h1 class="logo">
+                    <a href="https://xscey.github.io/note">哲学覚書</a>
+                </h1>
+
+<nav class="global-nav">
+    <ul>
+        <li class="nav-item"><a href="https://xscey.github.io/note"><i class="fas fa-home"></i> HOME</a></li>
+        <li class="nav-item active"><a href="https://xscey.github.io/note/documents"><i class="fas fa-book"></i> Docs</a></li>
+    </ul>
+</nav>
+</div>
+</header>
+<div class="wrapper clearfix">
+<main class="main">
+    <div class="content">
+
+<p class="title">
+    撤回可能推論の覚書<br>
+</p>
+
+
+<h1 id="梗概">梗概</h1>
+
+<p>推論が<strong>撤回可能</strong>であるとは、対応する論証が合理的に強制力があるがしかし演繹的に妥当であるわけではないような場合を言う。よい撤回可能論証の前提が真であることは結論を支持する――たとえ、前提が真でありかつ結論が偽である、ということが可能であったとしても。別の言い方をすれば、前提と結論のあいだの支持関係は暫定的なものであり、情報が追加されることで撤回されうるようなものである。アリストテレスが『トピカ』と『分析論後書』において<strong>弁証術</strong>を分析して以来、哲学者らは撤回可能推論の性質を研究してきた。しかしこの主題はここ40年に渡って、とりわけ計算機科学における人工知能研究からの関心によって、独特の熱意で研究されてきた。推論の研究には二つのアプローチが為されている。一つのアプローチは認識論の一分野として研究するというもの、もう一つは論理学の一分野として研究するというものである。最近の研究では、<strong>撤回可能推論</strong>という語は典型的には、間に合わせで例外許容的な一般化を含むような推論（＝<strong>普通</strong>何が起こるかということを基礎として、何が起こるはずであるかを推論する）に限定されて用いられる。この狭い意味での<strong>撤回可能推論</strong>（これが本稿の主題となる）は、他の形式の非演繹的推論（最良の説明への推論、アブダクション、類推、科学的帰納法など）を排除する。この排除は、幾分かは人為的なものであるが、これら他の形式の非演繹的推論は依然としてきわめて未発達なままであるという事実の反映でもある。</p>
+
+<h1 id="2-applications-and-motivation">2. Applications and Motivation</h1>
+
+<h2 id="2-1-defeasibility-as-a-convention-of-communication">2.1 Defeasibility as a Convention of Communication</h2>
+
+<h2 id="2-2-autoepistemic-reasoning">2.2 Autoepistemic Reasoning</h2>
+
+<p>ロバート・C・ムーアは、われわれはある事実を知らないということに基づいて世界についての事実を推論することがある、ということを指摘した。それゆえ例えば、私には妹がいないということを私は推論しうる。というのも、もし私に妹がいるのであれば、私はそのことを知っているはずだが、実際には私は妹がいると知ってなどいないからだ。このような推論はむろん、撤回可能である。というのも、もし私がその後、実は私には妹がいるのだと知ったならば、元の推論の基盤は無効となるからだ<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>。</p>
+
+<h1 id="文献">文献</h1>
+
+<ul>
+<li>Koons, Robert, &ldquo;<a href="https://plato.stanford.edu/archives/win2017/entries/reasoning-defeasible/">Defeasible Reasoning</a>&rdquo;, <em>The Stanford Encyclopedia of Philosophy</em> (Winter 2017 Edition), Edward N. Zalta (ed.).</li>
+</ul>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">pを「妹がいる」とする。このとき、「妹がいると知っていない」という事実から「妹がいない」を推論することを形式的に表すとこうなる。「¬Lp→¬p。¬Lp。∴¬p」。もしくは「M¬p→¬p。M¬p。∴¬p」。「M¬p→¬p」は、「¬pと仮定しても自身の信念体系と矛盾しないならば、¬pと結論してよい」ということ。「妹がいるならそのことを知っているはずだ。しかし私はそのことを知らない。ゆえに妹はいない」なら「p→Lp。¬Lp。∴¬p」。
+ <a class="footnote-return" href="#fnref:1">↩</a></li>
+</ol>
+</div>
+
+<div class="showarticleinfo">
+    <i class="far fa-calendar-alt"></i> 2020年3月7日<br>
+    
+    <i class="fas fa-tags"></i>   <code><a href="/note/tags/logic">#logic</a></code> <br>
+</div>
+                    </div>
+                </main>
+            </div>
+        <footer class="footer">
+            <p class="copyright">
+                ©2016–2020 xscey.github.io
+            </p>
+        </footer>
+    </body>
+</html>
+
