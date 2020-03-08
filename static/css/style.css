@@ -189,15 +189,15 @@ a:hover {
     font-size: 1.2rem;
     font-weight: 700;
     border-bottom: 2px dotted #1BA0E1;
-    margin: 15px 0 10px;
+    margin: 15px 0 15px;
     padding: 0;
 }
 .content h1+h3, .content h2+h3 {
-    margin: 0 0 10px;
+    margin: 5px 0 15px;
 }
 .content p {
     font-size: 1.4rem;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     text-align: justify;
     text-justify: inter-ideograph;
 }
@@ -242,7 +242,7 @@ a:hover {
 .content ul {
     font-size: 1.4rem;
     position: relative;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     padding: 0;
 }
 .content ul li {
@@ -273,7 +273,7 @@ a:hover {
 
 .content ol{
     font-size: 1.4rem;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     padding: 0;
 }
 .content ol li{
