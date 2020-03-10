@@ -1,8 +1,8 @@
 {{ partial "site_header.html" . }}
 {{ partial "menu_documents.html" . }}
-<p class="title">
+<div class="title">
     {{ .Title }}<br>
-</p>
+</div>
 {{ .Content }}
 <div class="showarticleinfo">
     <i class="far fa-calendar-alt"></i> {{ .Date.Format "2006年1月2日" }}<br>
