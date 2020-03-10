@@ -515,10 +515,14 @@ blockquote {
 }
 @media (max-width: 500px) {
     .content {
-        line-height: 1.5;
+        line-height: 1.55;
     }
     .content p, .content ul li, .content ol li {
         text-align: start;
+        font-size: 1.5rem;
+    }
+    .logo {
+        width: 140px;
     }
     .global-nav {
         margin: -30px 10px 0 10px;
