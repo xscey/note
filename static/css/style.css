@@ -517,6 +517,9 @@ blockquote {
     .content {
         line-height: 1.5;
     }
+    .content p, .content ul li, .content ol li {
+        text-align: start;
+    }
     .global-nav {
         margin: -30px 10px 0 10px;
     }
