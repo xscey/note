@@ -76,12 +76,12 @@ a:hover {
 }
 
 .global-nav {
-    margin: -35px 0 0 150px;
+    margin: -36px 0 0 150px;
     text-align: right;
 }
 .global-nav .nav-item {
     display: inline-block;
-    margin: 0 0 0 40px;
+    margin: 0 0 0 50px;
 }
 .global-nav .nav-item a {
     display: inline-block;
@@ -289,11 +289,14 @@ a:hover {
     padding: 28px 0 0 ;
     background-color: #333;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 .copyright {
     text-align: center;
     letter-spacing: 1px;
+}
+.copyright a {
+    color: #fff;
 }
 .horizontal-list{
     margin: 0 auto;
@@ -505,7 +508,7 @@ blockquote {
         margin-left: 5px;
     }
     .global-nav {
-        margin: -35px 10px 0 10px;
+        margin: -36px 10px 0 10px;
     }
     .global-nav .nav-item {
         margin: 0 6px 0 4px;
@@ -521,5 +524,8 @@ blockquote {
     .content p, .content ul li, .content ol li {
         text-align: start;
         font-size: 1.5rem;
+    }
+    .global-nav .nav-item a {
+        margin: 0 0 0 10px;
     }
 }
