@@ -417,6 +417,7 @@ img {
     counter-increment: cnt;
     margin-bottom: 1em;
     padding-left: 2em;
+    font-size: 1.5rem;
 }
 .footnotes ol li::before {
     position: absolute;
@@ -527,6 +528,12 @@ blockquote {
     .content p, .content ul li, .content ol li {
         text-align: start;
         font-size: 1.5rem;
+    }
+    .footnotes ol li {
+        font-size: 1.4rem;
+    }
+    .footnotes ol li::before {
+        top: 0.15rem;
     }
     .global-nav .nav-item a {
         margin: 0 0 0 10px;
