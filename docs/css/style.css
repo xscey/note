@@ -201,6 +201,9 @@ a:hover {
     text-align: justify;
     text-justify: inter-ideograph;
 }
+.content .title+p {
+    margin-top: 3em;
+}
 .content h1:first-child {
     margin-top: 10px;
 }
@@ -418,7 +421,7 @@ img {
 .footnotes ol li::before {
     position: absolute;
     left: 0;
-    top: 0.25em;
+    top: 0.4rem;
     content: "★" counter(cnt);
     font-size: 1rem;
     color: #b06c37;
