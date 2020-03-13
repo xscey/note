@@ -374,14 +374,18 @@ img {
     max-width: 99%;
     border: 1px solid #eee;
 }
+strong {
+    font-weight: 700;
+    color: #986801;
+}
 
 ::selection {
     background: #ccc; /*背景色*/
-    color: #333333; /*文字色*/
+    color: #333; /*文字色*/
 }
 ::-moz-selection {
     background: #ccc; /*背景色*/
-    color: #333333; /*文字色*/
+    color: #333; /*文字色*/
 }
 
 .e {
@@ -425,7 +429,7 @@ img {
     top: 0.4rem;
     content: "★" counter(cnt);
     font-size: 1rem;
-    color: #b06c37;
+    color: #986801;
     font-weight: bold;
     padding: 0;
     margin: 0;
@@ -441,14 +445,14 @@ img {
     content: "★";
     font-weight: bold;
     word-break: keep-all;
-    color: #b06c37;
+    color: #986801;
 }
 .footnote-ref a {
     font-weight: bold;
-    color: #b06c37;
+    color: #986801;
 }
 a.footnote-return {
-    color: #b06c37;
+    color: #986801;
 }
 #disqus_thread {
     margin-top: 80px;
