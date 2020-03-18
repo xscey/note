@@ -173,6 +173,42 @@
 
 <p>マクダーモットとドイルの非単調論理とムーアの自己認識論理（McDermott and Doyle, 1982; Moore, 1985; Konolige 1994）は、様相演算子Mを用いている（Mは一種の認識論的可能性を表す）。デフォルト規則は(p∧Mq)→qと表される。どちらの体系においても、理論の拡張の定義は、デフォルト論理の場合と同様、不動点によって定義される。Mpは、¬pが拡張に属していないことを表す。例えば自己認識論理では、集合⊿が理論Γの<strong>安定した拡大</strong>（stable expansion）であるのは、⊿ = Cn(Γ∪{¬Mp | p∈⊿}∪{Mp | p∉⊿})となっている場合である<sup class="footnote-ref" id="fnref:stable"><a href="#fn:stable">3</a></sup>。デフォルト論理と同様、安定した拡大をもたない理論が存在する。さらに、これらの論理もまた、<strong>特別法優先原理</strong>を捉えられない。</p>
 
+<h2 id="5-9-objections-to-nonmonotonic-logic">5.9 Objections to Nonmonotonic Logic</h2>
+
+<h3 id="5-9-1-confusing-logic-and-epistemology">5.9.1 Confusing Logic and Epistemology?</h3>
+
+<p>初期の論文（Israel 1980）において、デイヴィッド・イスラエルは<strong>非単調論理</strong>という概念自体に反論した。</p>
+
+<p>第一に、有限な理論の非単調な帰結の集合は、普通、半決定可能でない（帰納的可算集合でない）。このことは現在の体系の多くでも真である。しかし、同じことは二階論理や無限論理（これらは事実上、論理と認められている）など他の多くの体系でも成り立つ。</p>
+
+<p>第二に、非単調論理という概念は、論理の規則と推理（inference）の規則とを混同していることの証拠である。非単調論理を擁護する者は、撤回可能な推理（こちらは認識論の領域）と本当の帰結関係の理論（論理学の領域）とを混同しているのだ。推理はなるほど非単調だが、論理は本質的に単調なのである。こうイスラエルは主張する。</p>
+
+<p>イスラエルへの最良の応答は、次のように指摘することだろう――演繹的論理と同様に、非単調な・撤回可能な帰結の理論には実際の推論を指導する以外の多くの応用がある、と。撤回可能論理は、科学的説明の理論の一部として用いられうるし、仮説的推論（計画立案など）において用いられうる。撤回可能論理はまた、実際のデフォルト規則が明らかである限り、物語の暗黙の特徴（ファンタジーの特徴でさえ）を解釈するのに用いられうる。したがって、撤回可能論理は認識論的正当化の理論の領域には収まっていないのである。さらに、非単調帰結関係（特に選好論理のもの）は、古典的帰結関係がもつ多くの重要な特徴を共有している。この見地からすると、古典的な演繹的論理は単に、撤回可能論理の特殊な場合であったことになる（演繹的論理＝撤回不可能な論理）。</p>
+
+<h3 id="5-9-2-problems-with-the-deduction-theorem">5.9.2 Problems with the Deduction Theorem</h3>
+
+<p>近年の論文で、チャールズ・モーガン（Morgan 2000）が非単調論理は不可能だと論じている。モーガンは一連の不可能性の証明を与えている。モーガンのどの証明も、非単調論理には一般演繹定理（a generalized deduction theorem）が成り立たないことを明らかにするものである。一般演繹定理とは例えば次のもの。</p>
+
+<ul>
+<li>$\Gamma\cup\set{p}\dproves q  \iff \Gamma\dproves(p\Rightarrow q)$</li>
+</ul>
+
+<p>モーガンは確かにこれに関しては正しい。</p>
+
+<p>しかし、非単調論理には一般演繹定理が成り立つべきでないと考えられるよい理由が存在する。撤回可能帰結関係の性質がまさに、そのことを保証する。</p>
+
+<p>まず⇒の方向。$\Gamma\cup\set{p}\dproves q$であるとする。このとき、$\Gamma\dproves(p\Rightarrow\lnot q)$でありうる。$\Gamma\cup\set{p}\dproves q$なのは$(p\land r)\Rightarrow q$というデフォルト規則によるからかもしれないからだ。</p>
+
+<p>次に⇐の方向。$\Gamma\dproves(p\Rightarrow q)$と仮定する。このとき$\Gamma\cup\set{p}\dproves\lnot q$でありうる。$\Gamma$が、$r$という事実と、$(p\land r)\Rightarrow\lnot q$というデフォルト規則をもっている場合がそうだ。</p>
+
+<p>しかし、次の<strong>特殊演繹定理</strong>（special deduction theorem）が成り立つべきだと考えるのは合理的だ。</p>
+
+<ul>
+<li>$\set{p}\dproves q  \iff  \emptyset\dproves(p\Rightarrow q)$</li>
+</ul>
+
+<p>これは明らかに可能だ。特殊演繹定理は自明に成り立つ（古典的な条件法論理では、$\set{p}\dproves q$を$\emptyset\dproves(p\Rightarrow q)$として定義するため）。</p>
+
 <h1 id="文献">文献</h1>
 
 <ul>
