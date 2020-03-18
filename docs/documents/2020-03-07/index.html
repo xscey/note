@@ -66,7 +66,7 @@
 
 <h2 id="2-3-semantics-for-generics-and-the-progressive">2.3 Semantics for Generics and the Progressive</h2>
 
-<p>総称（例えば <em>Birds fly</em> における <em>birds</em> など）は、（限定詞なしの）裸の名詞句によって表現される。normally や typically などの副詞もまた総称述語の指標として用いられる。アッシャーとペルティエの論ずるように、こうした文の意味論は志向性を含むように思われる。総称文は、たとえ大部分のものが一般化に従っていなくとも（極端な場合すべてが一般化に従っていなくとも）真たりうる。たとえ奇妙な事故によってすべての生存する鳥が飛行能力を失ったとしても、やはり「鳥は飛ぶ」は真たりうる。総称性に対する見込みのある意味理論は、撤回可能規則ないし撤回可能条件法によって総称述語を表象すべきである。</p>
+<p>総称（例えば <em>Birds fly</em> における <em>birds</em> など）は、（限定詞なしの）裸の名詞句によって表現される。normally や typically などの副詞もまた総称述語の指標として用いられる。アッシャーとペルティエ（Asher and Pelletier 1997）の論ずるように、こうした文の意味論は志向性を含むように思われる。総称文は、たとえ大部分のものが一般化に従っていなくとも（極端な場合すべてが一般化に従っていなくとも）真たりうる。たとえ奇妙な事故によってすべての生存する鳥が飛行能力を失ったとしても、やはり「鳥は飛ぶ」は真たりうる。総称性に対する見込みのある意味理論は、撤回可能規則ないし撤回可能条件法によって総称述語を表象すべきである。</p>
 
 <p>進行形の動詞は、同様の志向性を含む。ジョーンズが通りを渡っているならば、普通ジョーンズは通りを渡るのに成功するだろう。しかし、この推論は明らかに撤回可能である。ジョーンズはトラックにぶつかって通りを渡り切ることができなくなるかもしれないのである。</p>
 
@@ -172,6 +172,31 @@
 <h2 id="5-4-nonmonotonic-logic-i-and-autoepistemic-logic">5.4 Nonmonotonic Logic I and Autoepistemic Logic</h2>
 
 <p>マクダーモットとドイルの非単調論理とムーアの自己認識論理（McDermott and Doyle, 1982; Moore, 1985; Konolige 1994）は、様相演算子Mを用いている（Mは一種の認識論的可能性を表す）。デフォルト規則は(p∧Mq)→qと表される。どちらの体系においても、理論の拡張の定義は、デフォルト論理の場合と同様、不動点によって定義される。Mpは、¬pが拡張に属していないことを表す。例えば自己認識論理では、集合⊿が理論Γの<strong>安定した拡大</strong>（stable expansion）であるのは、⊿ = Cn(Γ∪{¬Mp | p∈⊿}∪{Mp | p∉⊿})となっている場合である<sup class="footnote-ref" id="fnref:stable"><a href="#fn:stable">3</a></sup>。デフォルト論理と同様、安定した拡大をもたない理論が存在する。さらに、これらの論理もまた、<strong>特別法優先原理</strong>を捉えられない。</p>
+
+<h2 id="5-8-fully-expressive-languages-conditional-logics-and-higher-order-probabilities">5.8 Fully Expressive Languages: Conditional Logics and Higher-Order Probabilities</h2>
+
+<p>ほぼ例外なく、撤回可能推論への論理学的アプローチは、論理形式に厳しい制限を加えている。特に、デフォルト条件法演算子「⇒」の制限が厳しく、⇒を入れ子にできないとか、∧や→などの他の演算子の内部に⇒を入れることができないといった制限がある。しかしこの制限を擁護するのは難しい。<strong>切り取り型撤回者</strong>を表現するのにデフォルト条件法の否定を使って¬((p∧q)⇒r)とするのは自然である（qは、rの一見自明の理由としてpを撤回する、ということを表す）。さらに、<strong>選言的</strong>デフォルトな情報を得ることが考えられる。例えば「客が騙されやすいかもしくはセールスマンがずる賢いかだ」など。</p>
+
+<p>アッシャーとペルティエ（Asher and Pelletier 1997）は、自然言語における総称文を翻訳するとき、デフォルト条件法を入れ子にするのを可能にすることが重要だと論じた。例として次の英文を取り上げる。</p>
+
+<ul>
+<li>Close friends are (normally) people who (normally) trust one another.</li>
+<li>People who (normally) rise early (normally) go to bed early.</li>
+</ul>
+
+<p>一つめの文は、次のような入れ子が必要だ。</p>
+
+<ul>
+<li>∀x∀y(Friend(x,y)⇒(∀z(Time(z)⇒Trust(x,y,z))))</li>
+</ul>
+
+<p>二つめの文は、次のような入れ子が必要だ。</p>
+
+<ul>
+<li>∀x(Person(x)→((∀y(Day(y)⇒Rise-early(x,y)))⇒∀z(Day(z)⇒Bed-early(x,z))))（人間である者は普通、「普通朝早く起きる」ならば「普通夜早く寝る」）</li>
+</ul>
+
+<p>このような条件法の入れ子は、ロバート・スタルネイカーとデイヴィッド・ルイス（Lewis 1973）の開発した反事実的条件法の意味論を借りてきて修正を加えることによって、可能にすることができる。</p>
 
 <h2 id="5-9-objections-to-nonmonotonic-logic">5.9 Objections to Nonmonotonic Logic</h2>
 
