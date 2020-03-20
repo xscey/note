@@ -6,10 +6,20 @@
     <description>Recent content in Documents on 哲学覚書</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 20 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xscey.github.io/note/documents/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>意味理論の覚書</title>
+      <link>https://xscey.github.io/note/documents/2020-03-21/</link>
+      <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xscey.github.io/note/documents/2020-03-21/</guid>
+      <description> 「意味理論（theory of meaning）」という語は、ここ一世紀に渡って様々な仕方できわめて多くの哲学的議論に関わってきた。不幸なことに、この語はきわめて多くの異なることを意味するのに用いられてもきた。本稿では、二種類の「意味理論」に焦点を当てる。第一の種類の理論――意味論（semantic theory）――は、言語表現の意味論的内容を割り当てる理論である。第二の種類の理論――意味の基礎理論――はその事実のために表現が意味論的内容をもつことになるような、そういう事実を述べる理論である。短い導入の後、これら二種類の理論について議論する。
+2. Semantic Theories 2.2 Alternatives to Classical Semantic Theories 2.2.5 Expressivist semantics 文献  Speaks, Jeff, &amp;ldquo;Theories of Meaning&amp;rdquo;, The Stanford Encyclopedia of Philosophy (Winter 2019 Edition), Edward N. Zalta (ed.).  </description>
+    </item>
     
     <item>
       <title>義務論理の覚書</title>
