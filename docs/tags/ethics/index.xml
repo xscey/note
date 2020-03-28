@@ -6,10 +6,25 @@
     <description>Recent content in Ethics on 哲学覚書</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 09 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xscey.github.io/note/tags/ethics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Horty (2012) の覚書</title>
+      <link>https://xscey.github.io/note/documents/2020-03-28/</link>
+      <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xscey.github.io/note/documents/2020-03-28/</guid>
+      <description> Chapter 2 From defaults to reasons 2.1 An austere theory of reasons 理由関係はデフォルト規則として捉えられる。XはYの理由である⇔ X⇒Yというデフォルトがありしかもそれはtriggerされている（Xが真である）。
+前もって注意することが三つある。
+第一に、ここでは理由関係を二項関係として捉えている。本当は行為者Aや時間Tという要素を含めるべきかもしれないが、ここでは捨象する。
+第二に、「XはYの理由だ」が成り立つことの根拠が「X⇒Yというデフォルト規則がある」ということだ、とは言っていない。理由関係を論理学的に形式化したもの（記述したもの）がデフォルト規則だというだけだ。理由関係とデフォルト規則の関係は、実際の物理的世界と運動方程式の関係と同じ。
+第三に、X⇒Yというデフォルトは、「XはYすることを支持する（counts in favor of）」ことを意味する。X⇒Yというデフォルトが存在することに加え、Xが真であるとき（X⇒Yがtriggerされるとき）、初めて「XはYの理由である」が成り立つ、とホーティは言う。［デフォルトがtriggerされていないときには単に、ダンシーが「支持事由」と呼ぶような関係が成立しているだけで理由関係が成立しているわけではない、ということが念頭にある？］
+前もっての注意が済んだところで、提案それ自体に戻ろう。すなわち、理由はtriggerされたデフォルトとして特定されるという提案に。結果として生じる理由の説明の二つの特徴を強調したい。第一にその説明は、何が背景となる理論に属するデフォルト規則の特定の集合に強く結びつけられたものにとっての理由と見做されるのかという意味で、簡素（austere）である。第二にその説明は、理由関係は背景となるデフォルト理論だけでなくその理論に基づく特定のシナリオにも依存しているという意味で、相対的である。
+文献  Horty, John F. Reasons as defaults. Oxford University Press, 2012.  </description>
+    </item>
     
     <item>
       <title>道徳的推論の覚書</title>
