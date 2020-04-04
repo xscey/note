@@ -441,17 +441,17 @@ strong {
     margin-right: 1px;
     padding: 0;
 }
-.footnote-ref a::before {
+a.footnote-ref::before {
     content: "★";
     font-weight: bold;
     word-break: keep-all;
     color: #986801;
 }
-.footnote-ref a {
+a.footnote-ref {
     font-weight: bold;
     color: #986801;
 }
-a.footnote-return {
+a.footnote-backref {
     color: #986801;
 }
 #disqus_thread {
