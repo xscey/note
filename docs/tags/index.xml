@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 哲学覚書</title>
@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>Ethics</title>
+      <title>ethics</title>
       <link>https://xscey.github.io/note/tags/ethics/</link>
       <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
       
@@ -21,29 +21,11 @@
     </item>
     
     <item>
-      <title>Logic</title>
+      <title>logic</title>
       <link>https://xscey.github.io/note/tags/logic/</link>
       <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://xscey.github.io/note/tags/logic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Math</title>
-      <link>https://xscey.github.io/note/tags/math/</link>
-      <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://xscey.github.io/note/tags/math/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Philosophy</title>
-      <link>https://xscey.github.io/note/tags/philosophy/</link>
-      <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xscey.github.io/note/tags/philosophy/</guid>
       <description></description>
     </item>
     
@@ -53,6 +35,24 @@
       <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://xscey.github.io/note/tags/sep/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>philosophy</title>
+      <link>https://xscey.github.io/note/tags/philosophy/</link>
+      <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xscey.github.io/note/tags/philosophy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>math</title>
+      <link>https://xscey.github.io/note/tags/math/</link>
+      <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://xscey.github.io/note/tags/math/</guid>
       <description></description>
     </item>
     

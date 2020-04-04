@@ -48,172 +48,100 @@
 <div class="title">
     撤回可能推論の覚書<br>
 </div>
-
-
 <p>推論が<strong>撤回可能</strong>であるとは、対応する論証が合理的に強制力があるがしかし演繹的に妥当であるわけではないような場合を言う。よい撤回可能論証の前提が真であることは結論を支持する――たとえ、前提が真でありかつ結論が偽である、ということが可能であったとしても。別の言い方をすれば、前提と結論のあいだの支持関係は暫定的なものであり、情報が追加されることで撤回されうるようなものである。アリストテレスが『トピカ』と『分析論後書』において<strong>弁証術</strong>を分析して以来、哲学者らは撤回可能推論の性質を研究してきた。しかしこの主題はここ40年に渡って、とりわけ計算機科学における人工知能研究からの関心によって、独特の熱意で研究されてきた。推論の研究には二つのアプローチが為されている。一つのアプローチは認識論の一分野として研究するというもの、もう一つは論理学の一分野として研究するというものである。最近の研究では、<strong>撤回可能推論</strong>という語は典型的には、間に合わせで例外許容的な一般化を含むような推論（＝<strong>普通</strong>何が起こるかということを基礎として、何が起こるはずであるかを推論する）に限定されて用いられる。この狭い意味での<strong>撤回可能推論</strong>（これが本稿の主題となる）は、他の形式の非演繹的推論（最良の説明への推論、アブダクション、類推、科学的帰納法など）を排除する。この排除は、幾分かは人為的なものであるが、これら他の形式の非演繹的推論は依然としてきわめて未発達なままであるという事実の反映でもある。</p>
-
 <h1 id="2-applications-and-motivation">2. Applications and Motivation</h1>
-
 <p>哲学者と人工知能理論家は、撤回可能推論の様々な適用を見出してきた。あるケースでは、撤回可能性はコミュニケーションの主題や文脈のある側面に基づいていると思われる。別のケースでは、客観的世界についての事実に基づいているように思われる。前者は、伝達・表象に関する慣習としての、もしくは自己認識（自分の知識や自分の知識の欠落に関する推論）としての、撤回可能規則を含む。後者は、撤回可能な義務、撤回可能な自然法則、帰納法、アブダクション、オッカムの剃刀（世界はできるだけシンプルになっているという仮定）といった、客観的な根拠をもつ撤回可能性である。</p>
-
-<h2 id="2-1-defeasibility-as-a-convention-of-communication">2.1 Defeasibility as a Convention of Communication</h2>
-
+<h2 id="21-defeasibility-as-a-convention-of-communication">2.1 Defeasibility as a Convention of Communication</h2>
 <p>マッカーシーの初期の人工知能の論文は、物語とパズルの解釈に関するものだった。マッカーシーは、われわれはしばしば言われていないことに基づく仮定を置くことを見出した。それゆえ例えば、川をカヌーで安全に渡ることに関するパズルにおいて、われわれは橋やその他の便利な手段が存在しないと仮定する。同様に、情報を蓄え伝達するためのデータベースを用いる際、例えばある時間にはフライトが一切予定されていないという情報は、単にそのようなフライトを記載しないことによって表象される。しかしながら、これら慣習に基づく推論は撤回可能である。なぜなら、慣習それ自体が明示的に廃止されたり停止されたりしうるからだ。</p>
-
-<h2 id="2-2-autoepistemic-reasoning">2.2 Autoepistemic Reasoning</h2>
-
-<p>ロバート・C・ムーアは、われわれはある事実を知らないということに基づいて世界についての事実を推論することがある、ということを指摘した<sup class="footnote-ref" id="fnref:autoepi"><a href="#fn:autoepi">1</a></sup>。それゆえ例えば、私には妹がいないということを私は推論しうる。というのも、もし私に妹がいるのであれば、私はそのことを知っているはずだが、実際には私は妹がいると知ってなどいないからだ。このような推論はむろん、撤回可能である。というのも、もし私がその後、実は私には妹がいるのだと知ったならば、元の推論の基盤は無効となるからだ<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">2</a></sup>。</p>
-
-<h2 id="2-3-semantics-for-generics-and-the-progressive">2.3 Semantics for Generics and the Progressive</h2>
-
+<h2 id="22-autoepistemic-reasoning">2.2 Autoepistemic Reasoning</h2>
+<p>ロバート・C・ムーアは、われわれはある事実を知らないということに基づいて世界についての事実を推論することがある、ということを指摘した<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>。それゆえ例えば、私には妹がいないということを私は推論しうる。というのも、もし私に妹がいるのであれば、私はそのことを知っているはずだが、実際には私は妹がいると知ってなどいないからだ。このような推論はむろん、撤回可能である。というのも、もし私がその後、実は私には妹がいるのだと知ったならば、元の推論の基盤は無効となるからだ<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>。</p>
+<h2 id="23-semantics-for-generics-and-the-progressive">2.3 Semantics for Generics and the Progressive</h2>
 <p>総称（例えば <em>Birds fly</em> における <em>birds</em> など）は、（限定詞なしの）裸の名詞句によって表現される。normally や typically などの副詞もまた総称述語の指標として用いられる。アッシャーとペルティエ（Asher and Pelletier 1997）の論ずるように、こうした文の意味論は志向性を含むように思われる。総称文は、たとえ大部分のものが一般化に従っていなくとも（極端な場合すべてが一般化に従っていなくとも）真たりうる。たとえ奇妙な事故によってすべての生存する鳥が飛行能力を失ったとしても、やはり「鳥は飛ぶ」は真たりうる。総称性に対する見込みのある意味理論は、撤回可能規則ないし撤回可能条件法によって総称述語を表象すべきである。</p>
-
 <p>進行形の動詞は、同様の志向性を含む。ジョーンズが通りを渡っているならば、普通ジョーンズは通りを渡るのに成功するだろう。しかし、この推論は明らかに撤回可能である。ジョーンズはトラックにぶつかって通りを渡り切ることができなくなるかもしれないのである。</p>
-
-<h2 id="2-4-defeasible-reasons">2.4 Defeasible Reasons</h2>
-
+<h2 id="24-defeasible-reasons">2.4 Defeasible Reasons</h2>
 <p>ジョナサン・ダンシーは、実践的推論の反ヒューム主義的描像を開発・擁護してきた。実践的推論の反ヒューム主義的描像によれば、<strong>行為の理由</strong>を構成するものは事実それ自体なのであって、欲求でも嫌悪でもないしそもそも事実に対する別の何らかの態度ではない。これら事実は、個別者のもつ性質から成る。そしてそれら性質はそれぞれのケースにおいて行為の理由を提供する。例えばある人の要求はその要求を満たす理由を提供する。しかし、それぞれの一般的性質は撤回可能な仕方でのみ理由を提供する。理由は、衝突する考慮によって上書きされうるだけでなく、さらなる考察によって行為に対する性質の価数が完全に中和あるいは反転されうる。例えば、たとえ快を与えることがある仕方で行為する理由に一般にはなるとしても、ある行為が他者の苦痛によって快を得る人に快を与えるだろうという事実は、その行為しない理由となる。ダンシーは、理由の力を強めたり弱めたりするという事実に応じて、<strong>強化事由</strong>（intensifier）と<strong>弱化事由</strong>（attenuator）という概念を導入した。極端な場合、事実は完全に理由を無効にしうるが、これはジョセフ・ラズが<strong>排他的理由</strong>（exclusionary reason）として記述したものや、ジョン・ポロックの<strong>切り取り型撤回者</strong>（undercutting defeater）という概念と対応している。</p>
-
 <p>実践的推論が一般的規則・原理によって導かれている（この描像はダンシーが明確に否定しているものではあるが）限りにおいて、推論は撤回可能でなければならないとホーティは論ずる（Horty 2007b）。この見地からすると、ダンシーの<strong>道徳的個別主義</strong>のテーゼは、すべての一般的理由は潜在的に撤回可能性をもつということと対応する（Lance and Little 2004, 2007）。撤回可能論理は、ダンシーの発見した<strong>理由全体論</strong>にもかかわらず一般的規則が不可欠な役割を演ずることを可能にしてくれる。</p>
-
 <p>さらに、撤回可能推論は道徳的・法的ジレンマ（一般的規則が衝突するようなケース）を理解を容易にするのに用いることができる（Horty 1994, 2003）。撤回可能推論は、衝突する規則を論理的矛盾に帰することなく、また衝突を単に表面的なものとして扱うことなく（規則が不完全にしか表象されていないため衝突しているように見えるだけ、と考えることなく）、ジレンマを理解させてくれる。［without attributing logical inconsistency to the conflicting rules&hellip;とあり、attribute A to Bは「AをBのせいにする」だが、文脈からして逆なのではと思って「BをAのせいにする」として訳した。］</p>
-
-<h2 id="2-5-defeasible-obligations">2.5 Defeasible Obligations</h2>
-
+<h2 id="25-defeasible-obligations">2.5 Defeasible Obligations</h2>
 <p>哲学者は長いあいだ、撤回可能な義務に関心をもってきた。撤回可能な義務とは、すべてを考慮したうえでわれわれは何を為す義務があるのか、についての撤回可能な推論をもたらすものである。デイヴィッド・ロスは、一見自明の義務の現象について議論した（Ross 1930, 1939）。一見自明の義務の存在は、「人はその義務を満たすべきだ」と信じるための、よい基盤を（ただし撤回可能な基盤を）与える。チザムらが形式的な<strong>義務論理</strong>を発展させたとき、古典論理の使用はいわゆるチザムのパラドックス（義務違反時の義務に関するパラドックス）などを生じさせた（Chisholm 1963）。これらパラドックスは、命令から実際の義務を引き出す推論は撤回可能推論であるということを認識することで、解決されうる（Asher and Bonevac 1996; Nute 1997）。</p>
-
 <p>このような撤回可能な義務は、法学の領域においても現れうる（Prakken and Sartor 1995 and 1996）。</p>
-
-<h2 id="2-6-defeasible-laws-of-nature-and-scientific-programs">2.6 Defeasible Laws of Nature and Scientific Programs</h2>
-
+<h2 id="26-defeasible-laws-of-nature-and-scientific-programs">2.6 Defeasible Laws of Nature and Scientific Programs</h2>
 <p>デイヴィッド・M・アームストロングとナンシー・カートライトは、実際の自然法則は<strong>鉄</strong>であるというよりむしろ<strong>オーク材</strong>である。オーク材的法則は例外を許す（「他の条件が等しければ ceteris paribus」という暗黙の条件をもつ）。カートライトが指摘するように、自然法則に基づく推論はつねに撤回可能である。というのも、われわれは追加の現象学的要因を特別な場合において当該法則に付け加えねばならないということを発見するかもしれないからだ。［メモ：このことは科学的説明を演繹的推論の特別な場合として理解するDNモデルが失敗したことと関係しているか？］</p>
-
 <p>演繹的な論理はこの現象を扱う道具として十分でないと考えられる理由はいくつかある。法則と初期条件に演繹を適用するためには、法則は例外を許さない形で表現されねばならない。これは、法則を述べた条件文の前件においてそれぞれの可能的な関連する条件を明示的に述べることを要求する。しかしこれは、実行困難である。そう言える理由は、法則文を著しく複雑にしてしまうからというだけでなく、まだ出会ったことがなくまた想像することもできないような例外的ケースが多く存在することをわれわれは知っているからである。撤回可能法則は、われわれが本当に事実であると知っていることを表現することを可能にする（すべての可能な例外を列挙し尽くすことができると偽る必要を迫るのではなく）。</p>
-
 <p>最近では、撤回可能推論は科学研究プログラムを理解するのにとって決定的に重要であると Tohmé, Delrieux, and Bueno (2011) が論じている。［科学の目的とは何かという問いにおいて、構文論的アプローチと意味論的アプローチとがあるが、構文論的アプローチが駄目に見えるのは演繹的推論を念頭に考えているからかもしれない］</p>
-
-<h2 id="2-8-occam-s-razor-and-the-assumption-of-a-closed-world">2.8 Occam&rsquo;s Razor and the Assumption of a &ldquo;Closed World&rdquo;</h2>
-
+<h2 id="28-occams-razor-and-the-assumption-of-a-closed-world">2.8 Occam&rsquo;s Razor and the Assumption of a &ldquo;Closed World&rdquo;</h2>
 <p>予想はつねに撤回可能性の要素を含んでいる。ある人が何が起きるかを何らかの仮説のもとで予想するならば、その人は仮説に反するような未知の要因が存在しないと仮定せざるを得ない。いかなる予想もそうした予期しない介入に苦しめられうる。したがって予想は、モデル化される状況は閉世界を構成するという仮定から始まる。つまり状況の外にあるどんなものもやがてその人の予想を苦しませるよう侵入しえないという仮定から始まる。加えて、因果的に関係があると知られていないいかなる要因も実際には因果的に無関係だという仮定をわれわれは置いていると思われる。というのも、われわれはつねに新しい要因と新しい諸要因の組み合わせに出会っており、それらが因果的に無関係であることを前もって立証することは不可能だからである。この閉世界仮説は、マッカーシーの極小限定の論理（logic of circumscription）の基本的動機である。［※閉世界仮説……真だと証明されていないことは偽であると見做すこと］</p>
-
 <h1 id="3-varieties-of-approaches">3. Varieties of Approaches</h1>
-
 <p>撤回可能推論の研究には、認識論的アプローチと論理学的アプローチとがある。</p>
-
 <p>認識論的アプローチでは、撤回可能推論は推論（inference）の形式（すなわち知識に情報を追加する過程）として研究される。この研究は、「いつ推論は、保証された信念から、保証された新しい信念を生み出すのか」という問いに関わっている。このアプローチは、信念変更（belief change）の規範に焦点を当てる。</p>
-
 <p>論理学的アプローチは、帰結関係の研究である。演繹的な帰結関係は単調であるのに対して、撤回可能な帰結関係は非単調である。結論が諸前提から撤回可能な形で（あるいは非単調に）導出されるのは、諸前提が妥当であるような<strong>ほとんどすべての</strong>モデルで（あるいは<strong>最も普通の</strong>モデルで）その結論が真である場合である。</p>
-
 <p>二つのアプローチは関係している。マキンソンとヤーデンフォシュ（Gärdenfors）は、「信念変更の認識論的理論は、非単調な帰結関係の集合を定義するのに用いることができる」ということを指摘した。</p>
-
 <h1 id="5-logical-approaches">5. Logical Approaches</h1>
-
 <p>撤回可能推論への論理学的アプローチは、<strong>非単調</strong>帰結関係の研究である。非単調帰結関係は、命題に対して定義される関係であって、主体の信念に対して定義されるものではない。それゆえ、非単調論理の理論は認識論への含意をもつが、認識論それ自体に焦点があるわけではない。</p>
-
-<h2 id="5-1-relations-of-logical-consequence">5.1 Relations of Logical Consequence</h2>
-
+<h2 id="51-relations-of-logical-consequence">5.1 Relations of Logical Consequence</h2>
 <p>帰結関係とは、何から何が論理的に導かれるかをモデル化した数学的関係のことである。帰結関係は様々に定義される。ヒルベルト流の定義だとA⊨B（命題間の関係）、タルスキ流の定義だとΓ⊨B（命題の集合と命題との関係）、スコット流の定義だとΓ⊨⊿（命題の集合同士の関係）として定義される。ここではタルスキ流の定義を用いる。</p>
-
 <p>（タルスキ流の）帰結関係が<strong>単調</strong>であるとは、次の関係が成り立つことを言う。</p>
-
 <ul>
 <li>（<strong>単調性</strong>）Γ⊨pならば、Γ∪⊿⊨p</li>
 </ul>
-
 <p>この条件を満たさないような帰結関係は、<strong>非単調</strong>であると言われる。撤回可能な帰結関係は明らかに非単調でなければならない。</p>
-
-<h2 id="5-2-metalogical-desiderata">5.2 Metalogical Desiderata</h2>
-
+<h2 id="52-metalogical-desiderata">5.2 Metalogical Desiderata</h2>
 <p>撤回可能な帰結関係（非単調な帰結関係）が<strong>論理的な帰結</strong>関係と言われるのはなぜか。撤回可能な帰結関係と古典的な帰結関係とが同じカテゴリーに属するのは、いかなる性質を共有しているがゆえになのか。</p>
-
 <p>Γからpが出てくるとき、Γから帰結されることとΓ∪{p}から帰結されることとに違いはないはずである。この条件を<strong>累積的</strong>（cumulative）と言う。累積的であるためには次の二つの条件を満たせばよい（C(Γ)は、Γから撤回可能な仕方で帰結される論理式の集合を表す）。</p>
-
 <ul>
 <li>（<strong>カット</strong>）Γ⊆⊿⊆C(Γ)ならば、C(⊿)⊆C(Γ)</li>
 <li>（<strong>控えめな単調性</strong>）Γ⊆⊿⊆C(Γ)ならば、C(Γ)⊆C(⊿)</li>
 </ul>
-
 <p>さらに、撤回可能な帰結関係は<strong>超古典的</strong>（supraclassical）でなければならない。つまり、古典論理でqからpが導かれるならば、撤回可能帰結関係においてもqからpが導かれなければならない。さらに、Γからの帰結は、Γに属する集合の内容にのみ依存していなければならず、内容が表現される仕方に依存してはならない。結果として、撤回可能帰結関係は、Γと、Γの古典的論理閉包（Cn(Γ)と記そう）とを、まったく同じ仕方で扱わねばならないことになる。帰結関係がこれら二つの条件を満たすことを、<strong>全吸収性</strong>（full absorption）と言う（see Makinson 1994, 47）。</p>
-
 <ul>
 <li>（<strong>全吸収性</strong>）Cn(C(Γ)) = C(Γ) = C(Cn(Γ))</li>
 </ul>
-
 <p>論理的帰結関係は分配性（distribution）を満たさねばならない。すなわち、qからもrからもpが撤回可能な仕方で導かれるならば、q∨rからもpが導かれるのでなければならない（単調であるためにはこの原理の逆も必要）。［Cn(Γ)∩Cn(⊿) = Cn(Γ∪⊿)のはずなのでこの形になっている］</p>
-
 <ul>
 <li>（<strong>分配性</strong>）C(Γ)∩C(⊿) ⊆ C(Cn(Γ)∩Cn(⊿))</li>
 </ul>
-
 <p>$\def\dproves{\mathbin{{\rvert}\!{\sim}}}\def\notdproves{\mathbin{\mathrel{\rlap{\hskip .2em/}}\rvert\!{\sim}}}$帰結関係が累積性・全吸収性・分配性を満たすとき、他の多くの望ましい性質を満たす。例えば<strong>条件化性</strong>（conditionalization）。Γ∪{q}から撤回可能な仕方でpが導出されるならば、Γから撤回可能な仕方でq→pが導出される（「→」は実質含意）。さらに、<strong>ループ</strong>（loop）の性質を満たす。$p_1\dproves p_2\dots p_{n-1}\dproves p_n$であるならば、任意の$p_i,p_j$のあいだの撤回可能帰結関係はまったく同じものとなる。</p>
-
 <p><strong>選言的合理性</strong>（disjunctive rationality）、<strong>合理的単調性</strong>（rational monotony）、<strong>無矛盾保存性</strong>（consistency preservation）もよく議論される条件だが、これらの地位については未だ論争中である。この三つのどれも望ましいと思われる性質だが、撤回可能推論者に対して非常に高い基準を設けることになる。</p>
-
 <ul>
 <li>（<strong>選言的合理性</strong>）$\Gamma\cup\set{p}\notdproves r$ and $\Gamma\cup\set{q}\notdproves r$ならば、$\Gamma\cup\set{p\lor q}\notdproves r$</li>
 <li>（<strong>合理的単調性</strong>）$\Gamma\dproves A$ならば、$\Gamma\cup\set{B}\dproves A$または$\Gamma\dproves\lnot B$</li>
 <li>（<strong>無矛盾保存性</strong>）Γが古典論理で無矛盾ならば、C(Γ)も無矛盾である。</li>
 </ul>
-
-<h2 id="5-3-default-logic">5.3 Default Logic</h2>
-
+<h2 id="53-default-logic">5.3 Default Logic</h2>
 <p>レイモンド・ライターの<strong>デフォルト論理</strong>は、撤回可能体系の第一世代の一部である。デフォルト拡張を計算するのが比較的簡単であることから人気のある体系の一つとなった。</p>
-
 <p>デフォルトはp:q/rで表される。pが前提条件（prerequisite）、qが正当化条件（justification）、rが帰結（consequent）。デフォルト論理の最も人気のある利用法は、正規なデフォルト（normal default）のみを使う（p:q/qの形をしたデフォルトを正規であると言う）。［ホーティの優先順位付きデフォルト論理も、基本的には正規なデフォルトのみで構成されている］</p>
-
 <p>デフォルト理論。デフォルト理論の拡張（推論過程の不動点として定義）。</p>
-
 <p>拡張をもたないデフォルト理論や、複数の拡張をもつデフォルト理論なども存在する。また、二つの拡張の共通部分も拡張であるとは限らない。</p>
-
 <p>デフォルト論理は通常、<strong>軽信的</strong>（credulous）な体系として解釈される。</p>
-
 <p>デフォルト論理は、前節で導入した帰結関係の条件の多くを満たさない。カットと全吸収性は満たすが、控えめな単調性（cautious monotony）や累積性（cumulative）は満たさない。分配性（distribution）も満たさない。また、ポロックの言う<strong>切り取り型撤回者</strong>（undercutting defeater）を表現することもできない。最後に、デフォルト論理は<strong>特別法優先原理</strong>（the principle of Specificity、特別法は一般法を破る）を満たさない。近年、ホーティ（Horty 2007a, 2007b）が優先順位付きデフォルト論理の研究をしている。これは、「（特別法優先原理や他の原理によって）一方のデフォルトが他方を優先する」ということの認識を許すような体系になっている。さらにホーティは、高階のデフォルト規則によって優先順位自体についての撤回可能推論をも可能にしている。これによりホーティは、ポロックの言う切り取り型撤回者の説明を与えることに成功している。</p>
-
-<h2 id="5-4-nonmonotonic-logic-i-and-autoepistemic-logic">5.4 Nonmonotonic Logic I and Autoepistemic Logic</h2>
-
-<p>マクダーモットとドイルの非単調論理とムーアの自己認識論理（McDermott and Doyle, 1982; Moore, 1985; Konolige 1994）は、様相演算子Mを用いている（Mは一種の認識論的可能性を表す）。デフォルト規則は(p∧Mq)→qと表される。どちらの体系においても、理論の拡張の定義は、デフォルト論理の場合と同様、不動点によって定義される。Mpは、¬pが拡張に属していないことを表す。例えば自己認識論理では、集合⊿が理論Γの<strong>安定拡大</strong>（stable expansion）であるのは、⊿ = Cn(Γ∪{¬Mp | p∈⊿}∪{Mp | p∉⊿})となっている場合である<sup class="footnote-ref" id="fnref:stable"><a href="#fn:stable">3</a></sup>。デフォルト論理と同様、安定した拡大をもたない理論が存在する。さらに、これらの論理もまた、<strong>特別法優先原理</strong>を捉えられない。</p>
-
-<h2 id="5-8-fully-expressive-languages-conditional-logics-and-higher-order-probabilities">5.8 Fully Expressive Languages: Conditional Logics and Higher-Order Probabilities</h2>
-
+<h2 id="54-nonmonotonic-logic-i-and-autoepistemic-logic">5.4 Nonmonotonic Logic I and Autoepistemic Logic</h2>
+<p>マクダーモットとドイルの非単調論理とムーアの自己認識論理（McDermott and Doyle, 1982; Moore, 1985; Konolige 1994）は、様相演算子Mを用いている（Mは一種の認識論的可能性を表す）。デフォルト規則は(p∧Mq)→qと表される。どちらの体系においても、理論の拡張の定義は、デフォルト論理の場合と同様、不動点によって定義される。Mpは、¬pが拡張に属していないことを表す。例えば自己認識論理では、集合⊿が理論Γの<strong>安定拡大</strong>（stable expansion）であるのは、⊿ = Cn(Γ∪{¬Mp | p∈⊿}∪{Mp | p∉⊿})となっている場合である<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>。デフォルト論理と同様、安定した拡大をもたない理論が存在する。さらに、これらの論理もまた、<strong>特別法優先原理</strong>を捉えられない。</p>
+<h2 id="58-fully-expressive-languages-conditional-logics-and-higher-order-probabilities">5.8 Fully Expressive Languages: Conditional Logics and Higher-Order Probabilities</h2>
 <h3 id="デフォルト条件法の入れ子">デフォルト条件法の入れ子</h3>
-
 <p>ほぼ例外なく、撤回可能推論への論理学的アプローチは、論理形式に厳しい制限を加えている。特に、デフォルト条件法演算子「⇒」の制限が厳しく、⇒を入れ子にできないとか、∧や→などの他の演算子の内部に⇒を入れることができないといった制限がある。しかしこの制限を擁護するのは難しい。<strong>切り取り型撤回者</strong>を表現するのにデフォルト条件法の否定を使って¬((p∧q)⇒r)とするのは自然である（qは、rの一見自明の理由としてpを撤回する、ということを表す）。さらに、<strong>選言的</strong>デフォルトな情報を得ることが考えられる。例えば「客が騙されやすいかもしくはセールスマンがずる賢いかだ」など。</p>
-
 <p>アッシャーとペルティエ（Asher and Pelletier 1997）は、自然言語における総称文を翻訳するとき、デフォルト条件法を入れ子にするのを可能にすることが重要だと論じた。例として次の英文を取り上げる。</p>
-
 <ul>
 <li>Close friends are (normally) people who (normally) trust one another.</li>
 <li>People who (normally) rise early (normally) go to bed early.</li>
 </ul>
-
 <p>一つめの文は、次のような入れ子が必要だ。</p>
-
 <ul>
 <li>∀x∀y(Friend(x,y)⇒(∀z(Time(z)⇒Trust(x,y,z))))</li>
 </ul>
-
 <p>二つめの文は、次のような入れ子が必要だ。</p>
-
 <ul>
 <li>∀x(Person(x)→((∀y(Day(y)⇒Rise-early(x,y)))⇒∀z(Day(z)⇒Bed-early(x,z))))（人間である者は普通、「普通朝早く起きる」ならば「普通夜早く寝る」）</li>
 </ul>
-
 <p>このような条件法の入れ子は、ロバート・スタルネイカーとデイヴィッド・ルイス（Lewis 1973）の開発した反事実的条件法の意味論を借りてきて修正を加えることによって、可能にすることができる。</p>
-
 <h3 id="ルイスの条件法論理">ルイスの条件法論理</h3>
-
 <p>ルイスは反事実的条件法を表現するために選好論理VCなる論理を構築している（Lewis 1973, 132）。ドナルド・ニュートがこの論理に公理系を与えている（Nute 1984, 396&ndash;399）。その公理系は次のもの。</p>
-
 <p>推論規則：</p>
-
 <ol>
 <li>Modus ponens.</li>
 <li>条件法の後件における演繹。つまり $\chi_1\dots\chi_n\vdash\psi$ ならば、$(\phi\Rightarrow\chi_1)\dots(\phi\Rightarrow\chi_n)\vdash(\phi\Rightarrow\psi)$</li>
 <li>置き換え規則。</li>
 </ol>
-
 <p>公理：</p>
-
 <ol>
 <li>すべてのトートロジー。</li>
 <li><strong>ID</strong>: φ⇒φ</li>
@@ -223,78 +151,56 @@
 <li><strong>MP</strong>: (φ⇒ψ)→(φ→ψ)</li>
 <li><strong>CS</strong>: (φ∧ψ)→(φ⇒ψ)</li>
 </ol>
-
 <p>MPは弱い中心化（weak centering）、CSは強い中心化（strong centering）に対応する（中心化とは、現実世界がただ一つの最も普通の世界であるとする原理）。非単調論理のためには、これらの二つの公理は排除されねばならない。</p>
-
 <p>CVは合理的単調性と対応する公理。</p>
-
 <h3 id="ルイスの条件法論理の修正">ルイスの条件法論理の修正</h3>
-
 <p>非単調論理のためには、中心化原理を落とす必要がある。中心化原理を落とすと、結果として得られる論理は、選好的ないしは合理的な撤回可能帰結関係と対応するものになる（例えばCVは合理的単調性と対応している）。</p>
-
 <p>このような論理は最初にジェームズ・デルグランデ（Delgrande 1987）によって提案され、アッシャーらによって<strong>常識的帰結関係</strong>（Commonsense Entailment）の名のもとで最も十全に発展させられることになった（Asher and Morreau 1991; Asher 1995; Asher and Bonevac 1996; Asher and Mao 2001）。常識的帰結関係は、選好的（だが合理的ではない）帰結関係であり、自動的に特別法優先原理を満たす。またこの論理はデフォルト条件法の入れ子が制限なく可能であるから、デフォルトの否定形を用いることで切り取り型撤回者を表現することができる（Asher and Mao 2001）。</p>
-
 <p>常識的帰結関係のモデルは、選好論理や極限確率の論理のモデルとは非常に異なっている。標準的でデフォルトフリーの言語のモデルの集合を含む構造をもつ代わりに、常識的帰結関係の言語のモデルは可能世界の集合および標準的解釈を各世界に割り当てる関数とを含む。さらに、世界wと命題Aとに対して可能世界の集合を割り当てる関数$*$が存在する。$*(w,A)$は、Aが成り立っている世界のうちwから見て最も普通の世界の集合を表す。デフォルト条件法p⇒qが世界wにおいて真であるのは、pが成り立つ世界のうちwから見て最も普通の世界のいずれにおいてもqが成り立つ場合である。このように真理条件を定めているので、条件法の入れ子は可能であることが分かる。さらにわれわれは、単調な帰結関係と非単調な帰結関係の両方を定めることができる。そうすれば、デフォルト条件法がデフォルト理論から<strong>論理必然的に</strong>導出されている場合と、デフォルト条件法がデフォルト理論から<strong>撤回可能な仕方で</strong>導出されている場合とを区別することができる。p⇒qが真のとき、その対偶¬q⇒¬pは論理的に妥当ではないが、撤回可能な仕方で導出することは可能である。［最後のは面白い結果］</p>
-
 <p>極限確率の論理と比較した場合、常識的帰結関係の重大な欠陥は、単一で明確な規範の基準を欠いていることにある。デフォルト条件法の真理条件や非単調帰結関係の定義は、われわれの直観の多くに合うように微調整することができるが、結局のところ常識的帰結関係の理論は、デフォルト条件法や非単調帰結関係が理想的にはどう表現されるべきなのかという問いに簡明な答えを与えないのである。</p>
-
-<h2 id="5-9-objections-to-nonmonotonic-logic">5.9 Objections to Nonmonotonic Logic</h2>
-
-<h3 id="5-9-1-confusing-logic-and-epistemology">5.9.1 Confusing Logic and Epistemology?</h3>
-
+<h2 id="59-objections-to-nonmonotonic-logic">5.9 Objections to Nonmonotonic Logic</h2>
+<h3 id="591-confusing-logic-and-epistemology">5.9.1 Confusing Logic and Epistemology?</h3>
 <p>初期の論文（Israel 1980）において、デイヴィッド・イスラエルは<strong>非単調論理</strong>という概念自体に反論した。</p>
-
 <p>第一に、有限な理論の非単調な帰結の集合は、普通、半決定可能でない（帰納的可算集合でない）。このことは現在の体系の多くでも真である。しかし、同じことは二階論理や無限論理（これらは事実上、論理と認められている）など他の多くの体系でも成り立つ。</p>
-
 <p>第二に、非単調論理という概念は、論理の規則と推理（inference）の規則とを混同していることの証拠である。非単調論理を擁護する者は、撤回可能な推理（こちらは認識論の領域）と本当の帰結関係の理論（論理学の領域）とを混同しているのだ。推理はなるほど非単調だが、論理は本質的に単調なのである。こうイスラエルは主張する。</p>
-
 <p>イスラエルへの最良の応答は、次のように指摘することだろう――演繹的論理と同様に、非単調な・撤回可能な帰結の理論には実際の推理（inference）を指導する以外の多くの応用がある、と［実際にいかに推理すべきかということはさすがに認識論の役目だろう、という前提がある？］。撤回可能論理は、科学的説明の理論の一部として用いられうるし、仮説的推論（計画立案など）において用いられうる。撤回可能論理はまた、実際のデフォルト規則が一時停止するのが明らかである限り［？］、物語の潜在的な特徴（ファンタジーの特徴でさえ）を解明するのに用いられうる［物語の解釈はさすがに認識論の領域には収まらないという感じだろうか］。したがって、撤回可能論理は認識論的正当化の理論の領域には収まっていないのである。さらに、非単調帰結関係（特に選好論理のもの）は、古典的帰結関係がもつ多くの重要な特徴を共有している。この見地からすると、古典的な演繹的論理は単に、撤回可能論理の特殊な場合であったことになる（演繹的論理＝撤回不可能な論理）。</p>
-
-<h3 id="5-9-2-problems-with-the-deduction-theorem">5.9.2 Problems with the Deduction Theorem</h3>
-
+<h3 id="592-problems-with-the-deduction-theorem">5.9.2 Problems with the Deduction Theorem</h3>
 <p>近年の論文で、チャールズ・モーガン（Morgan 2000）が非単調論理は不可能だと論じている。モーガンは一連の不可能性の証明を与えている。モーガンのどの証明も、非単調論理には一般演繹定理（a generalized deduction theorem）が成り立たないことを明らかにするものである。一般演繹定理とは例えば次のもの。</p>
-
 <ul>
 <li>$\Gamma\cup\set{p}\dproves q  \iff \Gamma\dproves(p\Rightarrow q)$</li>
 </ul>
-
 <p>モーガンは確かにこれに関しては正しい。</p>
-
 <p>しかし、非単調論理には一般演繹定理が成り立つべきでないと考えられるよい理由が存在する。撤回可能帰結関係の性質がまさに、そのことを保証する。</p>
-
 <p>まず⇒の方向。$\Gamma\cup\set{p}\dproves q$であるとする。このとき、$\Gamma\dproves(p\Rightarrow\lnot q)$でありうる。$\Gamma\cup\set{p}\dproves q$なのは$(p\land r)\Rightarrow q$というデフォルト規則によるからかもしれないからだ。</p>
-
 <p>次に⇐の方向。$\Gamma\dproves(p\Rightarrow q)$と仮定する。このとき$\Gamma\cup\set{p}\dproves\lnot q$でありうる。$\Gamma$が、$r$という事実と、$(p\land r)\Rightarrow\lnot q$というデフォルト規則をもっている場合がそうだ。</p>
-
 <p>しかし、次の<strong>特殊演繹定理</strong>（special deduction theorem）が成り立つべきだと考えるのは合理的だ。</p>
-
 <ul>
 <li>$\set{p}\dproves q  \iff  \emptyset\dproves(p\Rightarrow q)$</li>
 </ul>
-
 <p>これは明らかに可能だ。特殊演繹定理は自明に成り立つ（古典的な条件法論理では、$\set{p}\dproves q$を$\emptyset\dproves(p\Rightarrow q)$として定義するため）。</p>
-
 <h1 id="文献">文献</h1>
-
 <ul>
-<li>Koons, Robert, &ldquo;<a href="https://plato.stanford.edu/archives/win2017/entries/reasoning-defeasible/">Defeasible Reasoning</a>&rdquo;, <em>The Stanford Encyclopedia of Philosophy</em> (Winter 2017 Edition), Edward N. Zalta (ed.).</li>
+<li>Koons, Robert, &ldquo;<a href="https://plato.stanford.edu/archives/win2017/entries/reasoning-defeasible/">Defeasible Reasoning</a>&quot;, <em>The Stanford Encyclopedia of Philosophy</em> (Winter 2017 Edition), Edward N. Zalta (ed.).</li>
 </ul>
-<div class="footnotes">
-
-<hr />
-
+<section class="footnotes" role="doc-endnotes">
+<hr>
 <ol>
-<li id="fn:autoepi">「Aであると知らない」という事実から「Bである」を導く、といった推論が念頭にある。「Aであると知らない」という事実は、その後「Aである」と知るに至った場合、撤回されうる。それゆえこのような推論は撤回可能推論となる。
- <a class="footnote-return" href="#fnref:autoepi">↩</a></li>
-<li id="fn:1">pを「妹がいる」とする。このとき、「妹がいると知っていない」という事実から「妹がいない」を推論することを形式的に表すとこうなる。「¬Lp→¬p。¬Lp。∴¬p」。もしくは「M¬p→¬p。M¬p。∴¬p」。「M¬p→¬p」は、「¬pと仮定しても自身の信念体系と矛盾しないならば、¬pと結論してよい」ということ。「妹がいるならそのことを知っているはずだ。しかし私はそのことを知らない。ゆえに妹はいない」なら「p→Lp。¬Lp。∴¬p」。
- <a class="footnote-return" href="#fnref:1">↩</a></li>
-<li id="fn:stable">原文だと、⊿ = Cn(Γ∪{Lp | p∈⊿}∪{¬Lp | p∉⊿})。
- <a class="footnote-return" href="#fnref:stable">↩</a></li>
+<li id="fn:1" role="doc-endnote">
+<p>「Aであると知らない」という事実から「Bである」を導く、といった推論が念頭にある。「Aであると知らない」という事実は、その後「Aである」と知るに至った場合、撤回されうる。それゆえこのような推論は撤回可能推論となる。 <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>pを「妹がいる」とする。このとき、「妹がいると知っていない」という事実から「妹がいない」を推論することを形式的に表すとこうなる。「¬Lp→¬p。¬Lp。∴¬p」。もしくは「M¬p→¬p。M¬p。∴¬p」。「M¬p→¬p」は、「¬pと仮定しても自身の信念体系と矛盾しないならば、¬pと結論してよい」ということ。「妹がいるならそのことを知っているはずだ。しかし私はそのことを知らない。ゆえに妹はいない」なら「p→Lp。¬Lp。∴¬p」。 <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>原文だと、⊿ = Cn(Γ∪{Lp | p∈⊿}∪{¬Lp | p∉⊿})。 <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
 </ol>
-</div>
+</section>
 
 <div class="showarticleinfo">
     <i class="far fa-calendar-alt"></i> 2020年3月7日<br>
+    
+        <i class="fas fa-history"></i> 2020年3月23日<br>
     
     <i class="fas fa-tags"></i>   <code><a href="/note/tags/logic">#logic</a></code>  <code><a href="/note/tags/sep">#SEP</a></code> <br>
 </div>

@@ -4,7 +4,7 @@
 <div class="title">HOME</div>
 <h2>記事</h2>
 <ul>
-    {{ range .Data.Pages }}
+    {{ range .Site.RegularPages.ByDate.Reverse }}
         <li><a href="{{ .Permalink }}">{{ .Title }}</a><span class="docs-date">{{ .Date.Format "2006年1月2日" }}</span></li>
     {{ end }}
 </ul>

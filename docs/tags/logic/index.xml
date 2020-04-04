@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Logic on 哲学覚書</title>
+    <title>logic on 哲学覚書</title>
     <link>https://xscey.github.io/note/tags/logic/</link>
-    <description>Recent content in Logic on 哲学覚書</description>
+    <description>Recent content in logic on 哲学覚書</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 03 Apr 2020 00:00:00 +0000</lastBuildDate>
@@ -17,12 +17,12 @@
       <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://xscey.github.io/note/documents/2020-04-03/</guid>
-      <description> 選好という概念は、道徳哲学や意思決定理論を含む多くの学問領域において中心的な役割を果たしている。選好とその論理的性質は、合理的選択理論（現代経済学に浸透している主題）やその他の形式的社会科学の分野においても中心的な役割を果たしている。選好という概念とその分析手法は、これら分野のあいだで様々である。すべての使用法のニーズを考慮し、統一されたアプローチでそれらを組み合わせようとする扱いは未だない。本稿は、選好概念の最も重要な哲学的使用を概観し、それらの整合性と衝突を探求する。
+      <description>選好という概念は、道徳哲学や意思決定理論を含む多くの学問領域において中心的な役割を果たしている。選好とその論理的性質は、合理的選択理論（現代経済学に浸透している主題）やその他の形式的社会科学の分野においても中心的な役割を果たしている。選好という概念とその分析手法は、これら分野のあいだで様々である。すべての使用法のニーズを考慮し、統一されたアプローチでそれらを組み合わせようとする扱いは未だない。本稿は、選好概念の最も重要な哲学的使用を概観し、それらの整合性と衝突を探求する。
 1. The Basic Concept of Preference 本稿では、選好概念を主観的比較的評価（subjective comparative evaluations）として議論する。その形式は「行為者AはYよりXを選好する（Agent A prefers X to Y）」である。［価値理論の文脈で言えば選好とはbetter forに相当する概念と言えるだろうか］
 選好は評価である。
 選好は主観的である。
 選好は比較的である。
-文献  Hansson, Sven Ove and Grüne-Yanoff, Till, &amp;ldquo;Preferences&amp;rdquo;, The Stanford Encyclopedia of Philosophy (Summer 2018 Edition), Edward N. Zalta (ed.).  </description>
+文献  Hansson, Sven Ove and Grüne-Yanoff, Till, &amp;ldquo;Preferences&amp;quot;, The Stanford Encyclopedia of Philosophy (Summer 2018 Edition), Edward N. Zalta (ed.).  </description>
     </item>
     
     <item>
@@ -31,7 +31,7 @@
       <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://xscey.github.io/note/documents/2020-03-28/</guid>
-      <description> Chapter 2 From defaults to reasons 2.1 An austere theory of reasons 理由関係はデフォルト規則として捉えられる。XはYの理由である⇔ X⇒Yというデフォルトがありしかもそれはtriggerされている（Xが真である）。
+      <description>Chapter 2 From defaults to reasons 2.1 An austere theory of reasons 理由関係はデフォルト規則として捉えられる。XはYの理由である⇔ X⇒Yというデフォルトがありしかもそれはtriggerされている（Xが真である）。
 前もって注意することが三つある。
 第一に、ここでは理由関係を二項関係として捉えている。本当は行為者Aや時間Tという要素を含めるべきかもしれないが、ここでは捨象する。
 第二に、「XはYの理由だ」が成り立つことの根拠が「X⇒Yというデフォルト規則がある」ということだ、とは言っていない。理由関係を論理学的に形式化したもの（記述したもの）がデフォルト規則だというだけだ。理由関係とデフォルト規則の関係は、実際の物理的世界と運動方程式の関係と同じ。
@@ -123,8 +123,9 @@ An Essay in Deontic Logic and General Theory of Action で、私の二項義務�
 $\mathcal{M},w\vDash\lo\phi \iff h(w)\subseteq |\phi|_\mathcal{M}$
 　次の特徴がある。
  すべての世界が利用可能である。 選好順序は、諸世界を二つのカテゴリー（すなわち、よい世界と悪い世界）に分けるだけである。  　$\mathcal{M} = \braket{W,R,v}$ として、到達可能関係 $R$ によって定義する方法もある。$R$ は $W$ 上の継続的な二項関係。
-$\mathcal{M},w\vDash\lo\phi \iff wRw&amp;rsquo;$ なるすべての $w&amp;rsquo;$ に対して $\mathcal{M},w&amp;rsquo;\vDash\phi$
-$h(w) := \set{w&amp;rsquo; \mid wRw&amp;rsquo;}$ とすれば上のモデルに変換可能であると思われる（ $h(w)$ が空集合とならないことと $R$ が継続的であることとが同値だと言えればよい）。ところで、どの様相論理もこの仕方で変換可能なのであろうか。</description>
+$\mathcal{M},w\vDash\lo\phi \iff wRw&#39;$ なるすべての $w&#39;$ に対して $\mathcal{M},w&amp;rsquo;\vDash\phi$
+$h(w) := \set{w&amp;rsquo; \mid wRw&amp;rsquo;}$ とすれば上のモデルに変換可能であると思われる（ $h(w)$ が空集合とならないことと $R$ が継続的であることとが同値だと言えればよい）。ところで、どの様相論理もこの仕方で変換可能なのであろうか。
+クラッツァーの義務論理 クラッツァーの義務様相の意味論は、現在「標準的」と見做されている1。クラッツァーは言語学者であるが、この意味論はデイヴィッド・ルイスの可能世界論に基づいているとか。</description>
     </item>
     
     <item>
