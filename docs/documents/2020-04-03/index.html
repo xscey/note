@@ -170,6 +170,40 @@
 </tbody>
 </table>
 <h2 id="25-combinative-preferences">2.5 Combinative preferences</h2>
+<p>2.1〜2.4節では、排他的選好（相互に排他的な集合を指示するような選好）について見てきた。実際には、人々は相互に排他的でない関係項のあいだの選好をももつ。これらは<strong>結合的選好</strong>と呼ばれる。</p>
+<ul>
+<li>p≽q → p≽(p∨q)≽q　　(disjunctive interpolation)</li>
+<li>p≽q → ¬q≽¬p　　(contraposition of weak preference)</li>
+<li>p∼q → ¬q∼¬p　　(contraposition of indifference)</li>
+<li>p≻q → ¬q≻ ¬p　　(contraposition of strict preference)</li>
+<li>p≽q ↔ (p∧¬q)≽(q∧¬p)　　(conjunctive expansion of weak preference)</li>
+<li>p≻q ↔ (p∧¬q)≻(q∧¬p)　　(conjunctive expansion of strict preference)</li>
+<li>p∼q ↔ (p∧¬q)∼(q∧¬p)　　(conjunctive expansion of indifference)</li>
+<li>(p∨q)≽r ↔ p≽r ∧ q≽r　　(left disjunctive distribution of ≽)</li>
+<li>p≽(q∨r) ↔ p≽q ∧ p≽r　　(right disjunctive distribution of ≽)</li>
+</ul>
+<h2 id="26-preference-based-monadic-value-predicates">2.6 Preference-based monadic value predicates</h2>
+<p>betterやof equal valueといった比較的な概念に加えて、価値に関する非形式的な言説には、good、best、very bad、fairly goodなどの単項（一項）価値述語が含まれている。これら概念を表現する述語は、選好関係を含む形式的構造のうちに入れ込むことができる。</p>
+<p>goodとbadという基本的な単項述語を選好関係から定義するべく、二つの主要な試みが為されてきた。その一つは、goodをbetter than its negationとして、badをworse than its negationとして定義するというものである（Brogan 1919）。</p>
+<ul>
+<li>$G_N p \leftrightarrow p\succ\lnot p$　　(negation-related good)</li>
+<li>$B_N p \leftrightarrow \lnot p\succ p$　　(negation-related bad)</li>
+</ul>
+<p>もう一つの定義は、goodやbadに先立って中立的な命題の集合を導入することを必要とする。良さは、ある中立的命題よりも良いようなすべてのものに基づいている。悪さは、ある中立的命題よりも悪いようなすべてのものに基づいている。このアプローチの最もよく知られたバージョンは Chisholm and Sosa (1966) によって提案されたものである。チザムらによれば、状況が無差別であるのは、その状況がその否定形よりも良いわけでも悪いわけでもないときかつそのときに限る。さらに、状況が良いのは、ある無差別な状況よりも良いときかつそのときに限る。状況が悪いのは、ある無差別な状況よりも悪いときかつそのときに限る。</p>
+<ul>
+<li>$G_I p \leftrightarrow (\exists q)(p\succ q\sim\lnot q)$　　(indifference-related good)</li>
+<li>$B_I p \leftrightarrow (\exists q)(\lnot q\sim q \succ p)$　　(indifference-related bad)</li>
+</ul>
+<p>否定に基づく「良い」と無差別に基づく「良い」とは、必ずしも一致しない。どちらの定義も、完備な選好関係を念頭に開発されているが、より一般的なケースを包含できるように拡張することが可能である（Hansson 2001）。</p>
+<p>goodとbadという単項述語によって選好を定義する提案が、van Benthem (1982, p. 195) によって提案された。その提案によれば、良さと悪さは選択肢の集合との関連で定義される。したがって例えば、$G_\set{x,y}x$は「{x,y}のなかではxは良い」を意味し、$B_\set{x,z,w}x$は「{x,z,w}のなかではxは悪い」を意味する。これは次の定義を生む。</p>
+<ul>
+<li>$x\succ y  \iff  G_\set{x,y}x\land\lnot G_\set{x,y}y$　　(goodness-based preference)</li>
+<li>$x\succ y  \iff  B_\set{x,y}y\land\lnot B_\set{x,y}x$　　(badness-based preference)</li>
+</ul>
+<p>しかし、これら二つの定義は等しくなく、どちらかがより説得力があるというわけでもない。例えば、{x,y}という文脈で、xは「良い、かつ、悪くない」とし、yは良くも悪くもないとしよう。すると、第一の定義でx ≻ yが成り立つが、第二の定義で¬(x ≻ y)が成り立つ。こうした問題を避けるために、Hansson and Liu (2014) は次の定義を提案した。</p>
+<ul>
+<li>$x\succ y  \iff  G_\set{x,y}x\land\lnot G_\set{x,y}y$ or $B_\set{x,y}y\land\lnot B_\set{x,y}x$　　(bivalently based preference)</li>
+</ul>
 <h1 id="文献">文献</h1>
 <ul>
 <li>Hansson, Sven Ove and Grüne-Yanoff, Till, &ldquo;<a href="https://plato.stanford.edu/archives/sum2018/entries/preferences/">Preferences</a>&quot;, <em>The Stanford Encyclopedia of Philosophy</em> (Summer 2018 Edition), Edward N. Zalta (ed.).</li>
@@ -186,7 +220,7 @@
 <div class="showarticleinfo">
     <i class="far fa-calendar-alt"></i> 2020年4月3日<br>
     
-        <i class="fas fa-history"></i> 2020年4月8日<br>
+        <i class="fas fa-history"></i> 2020年4月10日<br>
     
     <i class="fas fa-tags"></i>   <code><a href="/note/tags/ethics">#ethics</a></code>  <code><a href="/note/tags/logic">#logic</a></code>  <code><a href="/note/tags/sep">#SEP</a></code> <br>
 </div>
