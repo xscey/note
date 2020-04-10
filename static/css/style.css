@@ -215,32 +215,21 @@ a:hover {
     clear: both;
 }
 
-.table {
+table {
     width: 100%;
-    margin: 0 auto;
-    border-collapse: separate;
-    border-spacing: 0px 1px;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
-.table.one-line-table td{
-    padding: 5px 12px;
+th {
+    background-color: #9ec9f1;
+    padding: 5px;
 }
-.table td {
-    padding: 12px;
-    vertical-align: middle;
-    text-align: left;
-    border-bottom: #fff 1px solid;
-    font-weight: 400;
+tr {
+    border: #fff 2px solid;
+    padding: 5px;
 }
-.table td.c1 {
-    text-align: center;
-    width: 20%;
-    background: #dbe8f4;
-}
-.table td.c2 {
-    width: 80%;
-    background: #f7f7f7;
-    color: #333;
+td {
+    background-color: #f8f8f8;
+    padding: 3px 10px;
 }
 
 .content ul {

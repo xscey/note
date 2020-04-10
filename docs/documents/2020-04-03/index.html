@@ -96,6 +96,80 @@
 </ul>
 <p>完備性は一般に多くの利用において仮定されており、とりわけ経済学ではそう仮定されている。ベイズ主義意思決定理論が典型例だ。ベイズ主義意思決定者は、利用可能な選択肢のうえの完備な選好順序に一致するように意思決定する。しかし、多くの日常的な場面では、われわれは完備な選好をもっていないしもつ必要がない。ある人がA、B、C、D、Eのうちから選ばなければならない場合を考えよう。もしその人がAを他のどれと比較しても選好しているならば、その人はB、C、D、Eのあいだの順序付けをする必要はないのである。</p>
 <p>解決可能性の観点から、選好の不完備性を三種類に分けることができる。</p>
+<p>第一に、不完備性は<strong>一意に解決可能</strong>でありうる。この種の不完備性の最も自然な理由は、知識や反省の不足である。不完備な選好としてわれわれが知覚するものの背景には完備な選好関係が存在しており、われわれはその選好に観察、内省、論理的推論といった発見の手段を通じて到達する。</p>
+<p>第二に、不完備性は<strong>複数解決可能</strong>でありうる。このケースでは、以前に包含されなかったケースを包含するよう関係を拡張した結果がどうなるかは、本当に未確定である。</p>
+<p>第三に、不完備性は<strong>解決不能</strong>でありうる。これの最も自然な理由は、選択肢が、同じ条件に置くことが不可能であるような利点や欠点の観点で異なることである。例えば、人は、特定の二人の知人の死か特定の友人の死のどちらを選好するかを言えないことがありうる。同様に、ギザのピラミッドの破壊とジャイアントパンダの絶滅のどちらを選好するかも言えないことがありうる。環境経済学においては、環境破壊は金銭的損失と比較可能なのかどうか、あるいはどの程度比較可能なのか、ということが論争中の問題となっている。</p>
+<p>同じ測定単位で測ることが不可能であるとき、二つの選択肢は「通約不可能」であると言われる。解決不能な不完備性のケースはしばしば通約不可能性のケースでもある（Chang 1997）。道徳哲学においては、解決不能な不完備性は通常、道徳的ジレンマの観点から論じられる。</p>
+<h2 id="23-transitivity">2.3 Transitivity</h2>
+<p>間違いなく、選好の性質のうち最も議論されるのは次のも（推移性）だ。</p>
+<ul>
+<li>A≽B ∧ B≽C → A≽C　　(transitivity of weak preference)</li>
+</ul>
+<p>他の二つの関係の対応する性質は次のように類比的に定義される。</p>
+<ul>
+<li>A∼B ∧ B∼C → A∼C　　(transitivity of indifference)</li>
+<li>A≻B ∧ B≻C → A≻C　　(transitivity of strict preference)</li>
+</ul>
+<p>弱選好関係≽の厳密部分≻が推移的であるとき、≽は疑似推移的（quasi-transitive）であると言われる。</p>
+<p>推移性に関連して、他の多くの性質が定義されてきた。それらのうち最も重要なのは次の三つ。</p>
+<ul>
+<li>A∼B ∧ B≻C → A≻C　　(IP-transitivity)</li>
+<li>A≻B ∧ B∼C → A≻C　　(PI-transitivity)</li>
+<li>There is no series A1,…,An of alternatives such that A1 ≻…≻An≻A1　　(acyclicity)</li>
+</ul>
+<p>これらはどれも、≽の推移性を弱めたものである。言い換えれば、もし≽が推移的であれば、≻も∼も推移的であり、かつ、IP推移性、PI推移性、非循環性を満たすということである。</p>
+<p>さらに、もし≽が推移的であれば、≻を含む循環は不可能である（つまりA≽*B≻AとなるようなA、Bは存在しない）。こうした「≻を含む循環」のある選好は、<strong>循環選好</strong>（cyclic preferences）と呼ばれる。</p>
+<p>推移性は議論の余地のある性質であり、推移性が一般には成り立たないことを示す多くの例が提出されてきた。古典的な反例は、いわゆる砂山のパラドックスである。多くの対象があってどの二つを取っても見分けがつかないが、どれくらいの量があるかは区別できる、という場合を考える（Armstrong 1939, Armstrong 1948, Luce 1956）。1000杯のコーヒーがあるとし、C0, C1, &hellip;, C999と番号がついているとする。C0は砂糖が入っておらず、C1は一粒の砂糖が入っており、C2は二粒の砂糖が入っており……というふうになっている。C999とC998の味の違いを認識することはできないので、それらは同じくらい良いと見做すことになり、C999~C998となる。同様に、C998~C997, &hellip;, C1~C0も成り立つ。しかし明らかにC0 ≻ C999である［ということが可能である］。これは無差別の推移性に反しており、それゆえ弱選好の推移性にも反している。</p>
+<p>ウォレン・クインによって提案された有名な例では、装置が人（自傷者）の身体に埋め込まれている。装置は0（off）から1000までの、1001の設定をもつ。数値が1上がると痛みも増加するが、その増加は無視できるほど小さいものである。毎週、自傷者は「二つの選択肢のみをもつ。数値を設定をそのままにするかダイアルを一つ分回すかだ。しかし彼は毎週一つの段階のみを進みうるので、彼は決して撤退しない。一つ進むごとに彼は10000ドルを手にする」。このようにして、彼は「最終的に彼は、喜んで幸運を手放し0に戻るほどの痛みを与える設定にまで達する」だろう（Quinn 1990, 79）。</p>
+<p>［以下、「人は実際には必ずしも推移性に従っていないが、選好の推移性は規範的には擁護しうるとする哲学者は多い」みたいな話が続く］</p>
+<h2 id="24-order-typology">2.4 Order typology</h2>
+<p>もう一つ、選好関係の性質が明確に述べられる必要がある。それはanticymmetricという性質だ。</p>
+<ul>
+<li>A≽B ∧ B≽A → A=B　　(antisymmetry of preference)</li>
+</ul>
+<p>選好関係がどんな性質を満たしているかによって、次の表のような名前がつけられている（based on Sen 1970a）。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Properties</th>
+<th>Name(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.</td>
+<td>reflexive, transitive</td>
+<td>Preorder, Quasi-order</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>reflexive, transitive, anti-symmetric</td>
+<td>Partial order</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>irreflexive, transitive</td>
+<td>Strict partial order</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>reflexive, transitive, complete</td>
+<td>Total preorder, Complete quasi-ordering, Weak ordering</td>
+</tr>
+<tr>
+<td>5.</td>
+<td>reflexive, transitive, complete, anti-symmetric</td>
+<td>Chain, Linear ordering, Complete ordering</td>
+</tr>
+<tr>
+<td>6.</td>
+<td>asymmetric, transitive, weakly connected</td>
+<td>Strict total order, Strong ordering</td>
+</tr>
+</tbody>
+</table>
+<h2 id="25-combinative-preferences">2.5 Combinative preferences</h2>
 <h1 id="文献">文献</h1>
 <ul>
 <li>Hansson, Sven Ove and Grüne-Yanoff, Till, &ldquo;<a href="https://plato.stanford.edu/archives/sum2018/entries/preferences/">Preferences</a>&quot;, <em>The Stanford Encyclopedia of Philosophy</em> (Summer 2018 Edition), Edward N. Zalta (ed.).</li>
