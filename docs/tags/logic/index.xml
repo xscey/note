@@ -24,7 +24,7 @@ Agency and Deontic Logic (2001) という画期的な著作において、ジョ
 われわれの義務論理に主観的効用と利害関係集団を導入する利点の一つは、結果として得られる複数行為者義務論理によって一回限りのゲームを著しく詳細に分析することが可能となる点である。この主張を立証するために、囚人のジレンマの分析を行なう。両方の行為者は彼ら自身の関心においては告白すべきだが、両方の行為者は集団的関心においては告白すべきでない、ということが意味論によって示される。したがって、利害関心集団に依存して、行為者は義務の衝突をもちうる。義務の衝突の必要条件・十分条件を形式的に特徴づけて、われわれはこの複数行為者義務論理の説明を終える。それによって、倫理学理論にとっての中心的な問題に形式的な答えが与えられることになる。
 第二節で複数行為者義務論理の導入を行なう。われわれは言語と意味論を与え、囚人のジレンマとともに意味論の説明をする。第三節では、義務の衝突の状況だけが起こりうる状況を特徴づける。第四節で、結論を述べる。
 2. Multi-agent Deontic Logic ある状況に対して異なる行為者（の集団）が異なる効用をあてがいうるような複数行為者の文脈において、道徳的推論の形式化は行なわれてこなかったように思われる。そこでわれわれは主観的効用と利害関心を導入する。簡略化のために、分岐時間モデルを省略して一つの時間しか存在しないようなモデルを考えることにする。
-2.1 Language 言語$\mathfrak{L}$は、命題変項の可算集合$\mathfrak{P}$と個人の行為者の有限集合$\mathsf{A}$とから成る。$p\in\mathfrak{P}$とする。$\mathcal{F,G}\subseteq\mathsf{A}$とする。$\mathfrak{L}$は次の規則で与えられる。
+2.1 Language 言語$\mathfrak{L}$は、命題変項の可算集合$\mathfrak{P}$と個人の行為者の有限集合$\mathsf{A}$とから構成される。$p\in\mathfrak{P}$とする。$\mathcal{F,G}\subseteq\mathsf{A}$とする。$\mathfrak{L}$は次の規則で与えられる。
 $$ \phi ::= p\mid \lnot\phi\mid \phi\land\phi\mid \Box\phi\mid [\mathcal{G}]\phi\mid \odot^\mathcal{F}_\mathcal{G}\phi $$
  $\Box\phi$　φであることは必然的だ。 $[\mathcal{G}]\phi$　集団Gはφであるよう取り計らう。（チェラス‐フォン・クッチェラ型stit様相） $\odot^\mathcal{F}_\mathcal{G}\phi$　集団Gは、集団Fの関心においてφであるよう取り計らうべきだ。  「『べき』は『できる』を含意する」というカントの法則は、$\odot^\mathcal{F}_\mathcal{G}\phi \to \Diamond[\mathcal{G}]\phi$（集団Gが集団Fの関心においてφであるよう取り計らうべきならば、集団Gはφであるよう取り計らうことが可能だ）と形式化できる。これはわれわれの意味論において妥当式である。
 文献  Kooi, Barteld, and Allard Tamminga. &amp;ldquo;Conflicting obligations in multi-agent deontic logic.&amp;rdquo; International Workshop on Deontic Logic and Artificial Normative Systems. Springer, Berlin, Heidelberg, 2006.</description>
