@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <title>Kooi&amp;Tamminga (2006) の覚書 - 哲学覚書</title>
+        <link rel="stylesheet" href="https://xscey.github.io/note/css/reset.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="https://xscey.github.io/note/css/style.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="https://xscey.github.io/note/css/syntax.css" media="screen" title="no title" charset="utf-8">
+        <link rel="icon" type="image/jpg" href="https://xscey.github.io/note/img/icon.jpg">
+        <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] }
+            });
+            MathJax.Hub.Config({
+                TeX: {
+                    Macros: {
+                        lo: '\\mathbf{O}',
+                        phi: '\\varphi',
+                        braket: ['{\\langle #1\\rangle}', 1],
+                        set: ['{\\{#1\\}}', 1]
+                    }
+                }
+            });
+        </script>
+        <script src="https://kit.fontawesome.com/593b5b099a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-wrapper">
+                <h1 class="logo">
+                    <a href="https://xscey.github.io/note">哲学覚書</a>
+                </h1>
+
+<nav class="global-nav">
+    <ul>
+        <li class="nav-item"><a href="https://xscey.github.io/note"><i class="fas fa-home"></i> HOME</a></li>
+        <li class="nav-item active"><a href="https://xscey.github.io/note/documents"><i class="fas fa-book"></i> Docs</a></li>
+    </ul>
+</nav>
+</div>
+</header>
+<div class="wrapper clearfix">
+<main class="main">
+    <div class="content">
+
+<div class="title">
+    Kooi&amp;Tamminga (2006) の覚書<br>
+</div>
+<p><strong>梗概</strong>　ジョン・ホーティの複数行為者義務論理を主観的効用に関する道徳的推論に拡張することで、われわれは、「行為者の集団Gは集団Fの関心においてφであるよう取り計らうべきである」のような文に関する道徳的推論の研究をするための言語と意味論とを与える。われわれは、囚人のジレンマの新しい形式的分析とともにわれわれの義務論理を説明し、それによって、ゲームはわれわれの義務論理により実り豊かに研究されうることを示す。最後に、われわれは義務の衝突に関する特徴的な定理を証明する。</p>
+<h1 id="1-introduction">1. Introduction</h1>
+<p>かつてJ・L・オースティンは「何が良い／悪い行為か、何が正しい／間違っている行為か、を考える前に、『行為をする』『何かをする』という表現によって何が意味されているのか・意味されていないのかを考えるのが適切だ」と提案した。同様の文脈で、G・H・フォン・ウリクトは、義務論理にとって行為論理は必要条件だと見做した。十分に洗練された行為論理が欠如していたため――フォン・ウリクトの提案は先駆的だが原始的であった――、オースティンの提案は義務論理学者の応答をほとんど見出せなかった。しかしながら、過去20年に渡って、（様相）行為論理は目覚ましい発展を遂げてきた。その発展のうちには、行為者性の基本的概念に対する哲学的探求や、stit理論として知られるさまざまな様相行為論理の（メタ）論理学的探求が含まれている。</p>
+<p><em>Agency and Deontic Logic</em> (2001) という画期的な著作において、ジョン・ホーティはフォン・ウリクトの行為論理を現代的なstit理論に置き換えており、義務論理に重要な貢献をなしている。客観的効用および意思決定理論からの支配概念をstit理論の基礎として、ホーティは⦿[Γ cstit: A]という形の義務文に対する新しい意味論を開発している。⦿[Γ cstit: A]は、直観的には「（行為者の）集団ΓはAであるよう取り計らうべきである」と解釈される。</p>
+<p>本稿でわれわれはホーティの義務論理を主観的効用へと一般化する。ホーティの客観的効用と異なり、われわれの義務論理では、まったく同一の評価指標が異なる行為者の異なる効用をもちうる。さらに、ホーティには申し訳ないが、われわれは「義務文はつねにすべての行為者の効用の観点から評価されなければならない」とは仮定しない。したがって、義務文を評価する際には誰の効用が評価に関係しているのかをわれわれは知る必要がある（評価に関係する効用をもつ集団のことを「利害関係集団（interest group）」と呼ぶことにする）。したがって、われわれの義務論理の基本的表現は$\odot^\mathcal{F}_\mathcal{G}\phi$だということになる。これは直観的には、「集団Gは、集団Fの関心においてφするよう取り計らうべきである」を意味する。</p>
+<p>われわれの義務論理に主観的効用と利害関係集団を導入する利点の一つは、結果として得られる複数行為者義務論理によって一回限りのゲームを著しく詳細に分析することが可能となる点である。この主張を立証するために、囚人のジレンマの分析を行なう。両方の行為者は彼ら自身の関心において告白すべきだが、両方の行為者は集団的関心においては告白すべきでない、ということが意味論によって示される。したがって、利害関心集団に依存して、行為者は義務の衝突をもちうる。義務の衝突の必要条件・十分条件を形式的に特徴づけて、われわれはこの複数行為者義務論理の説明を終える。それによって、倫理学理論にとっての中心的な問題に形式的な答えが与えられることになる。</p>
+<p>第二節で複数行為者義務論理の導入を行なう。われわれは言語と意味論を与え、囚人のジレンマとともに意味論の説明をする。第三節では、義務の衝突の状況だけが起こりうる状況を特徴づける。第四節で、結論を述べる。</p>
+<h1 id="文献">文献</h1>
+<ul>
+<li>Kooi, Barteld, and Allard Tamminga. &ldquo;Conflicting obligations in multi-agent deontic logic.&rdquo; <em>International Workshop on Deontic Logic and Artificial Normative Systems</em>. Springer, Berlin, Heidelberg, 2006.</li>
+</ul>
+
+<div class="showarticleinfo">
+    <i class="far fa-calendar-alt"></i> 2020年4月13日<br>
+    
+    <i class="fas fa-tags"></i>   <code><a href="/note/tags/ethics">#ethics</a></code>  <code><a href="/note/tags/logic">#logic</a></code> <br>
+</div>
+                    </div>
+                </main>
+            </div>
+        <footer class="footer">
+            <div class="copyright">
+                ©2016–2020 <a href="https://xscey.github.io/">xscey.github.io</a>
+            </div>
+        </footer>
+    </body>
+</html>
+
