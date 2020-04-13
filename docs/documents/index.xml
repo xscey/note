@@ -26,7 +26,8 @@ Agency and Deontic Logic (2001) という画期的な著作において、ジョ
 2. Multi-agent Deontic Logic ある状況に対して異なる行為者（の集団）が異なる効用をあてがいうるような複数行為者の文脈において、道徳的推論の形式化は行なわれてこなかったように思われる。そこでわれわれは主観的効用と利害関心を導入する。簡略化のために、分岐時間モデルを省略して一つの時間しか存在しないようなモデルを考えることにする。
 2.1 Language 言語$\mathfrak{L}$は、命題変項の可算集合$\mathfrak{P}$と個人の行為者の有限集合$\mathsf{A}$とから成る。$p\in\mathfrak{P}$とする。$\mathcal{F,G}\subseteq\mathsf{A}$とする。$\mathfrak{L}$は次の規則で与えられる。
 $$ \phi ::= p\mid \lnot\phi\mid \phi\land\phi\mid \Box\phi\mid [\mathcal{G}]\phi\mid \odot^\mathcal{F}_\mathcal{G}\phi $$
- $\Box\phi$　φであることは必然的だ。 $[\mathcal{G}]\phi$　集団Gはφであるよう取り計らう。（チェラス‐フォン・クッチェラstit様相） $\odot^\mathcal{F}_\mathcal{G}\phi$　集団Gは、集団Fの関心においてφであるよう取り計らうべきだ。  文献  Kooi, Barteld, and Allard Tamminga. &amp;ldquo;Conflicting obligations in multi-agent deontic logic.&amp;rdquo; International Workshop on Deontic Logic and Artificial Normative Systems. Springer, Berlin, Heidelberg, 2006.</description>
+ $\Box\phi$　φであることは必然的だ。 $[\mathcal{G}]\phi$　集団Gはφであるよう取り計らう。（チェラス‐フォン・クッチェラstit様相） $\odot^\mathcal{F}_\mathcal{G}\phi$　集団Gは、集団Fの関心においてφであるよう取り計らうべきだ。  「『べき』は『できる』を含意する」というカントの法則は、$\odot^\mathcal{F}_\mathcal{G}\phi \to \Diamond[\mathcal{G}]\phi$（集団Gが集団Fの関心においてφであるよう取り計らうべきならば、集団Gはφであるよう取り計らうことが可能だ）と形式化できる。これはわれわれの意味論において妥当式である。
+文献  Kooi, Barteld, and Allard Tamminga. &amp;ldquo;Conflicting obligations in multi-agent deontic logic.&amp;rdquo; International Workshop on Deontic Logic and Artificial Normative Systems. Springer, Berlin, Heidelberg, 2006.</description>
     </item>
     
     <item>
