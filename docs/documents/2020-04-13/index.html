@@ -94,6 +94,13 @@ $$</p>
 \mathsf{U}_\mathcal{G}(w) = \frac{1}{|\mathcal{G}|}\sum_{a\in\mathcal{G}}\mathsf{U}_a(w)
 $$</p>
 <p>ここで$|\mathcal{G}|$は$\mathcal{G}$の濃度である。また、$\mathsf{U}_\emptyset(w) = 0$とする。</p>
+<h2 id="24-mathcalf-dominance">2.4 $\mathcal{F}$-Dominance</h2>
+<p>本節では、F支配（$\mathcal{F}$-dominance）という概念を定義・探求していく。この概念が$\odot^\mathcal{F}_\mathcal{G}\phi$という形の論理式に対する意味論にとって中心的なものとなる。</p>
+<p>$K$と$K'$がともに$\mathsf{Choice}(\mathcal{G})$に属するとすると、$K\succeq^\mathcal{F}_\mathcal{G}K'$が真であるのは、$K$が少なくとも$K'$と同じくらい集団$\mathcal{F}$の利益を促進する（$\mathsf{A}-\mathcal{G}$がどんな行為をしようとも）ときかつそのときに限る。</p>
+<p><strong>定義5（F支配）</strong> $\mathcal{F},\mathcal{G}\subseteq\mathsf{A}$とする。$K,K&rsquo;\in\mathsf{Choice}(\mathcal{G})$とする。このとき、$K\succeq^\mathcal{F}_\mathcal{G}K'$は次のように定義される。</p>
+<p>$$
+K\succeq^\mathcal{F}_\mathcal{G}K&rsquo;  \iff  \text{for all }S\in\mathsf{Choice}(\mathsf{A}-\mathcal{G})\text{ and for all }w,w&rsquo;\in\mathsf{W},\, w\in K\cup S\text{ and } w&rsquo;\in K&rsquo;\cup S\text{ ならば }\mathsf{U}_\mathcal{F}(w)\geq\mathsf{U}_\mathsf{F}(w&rsquo;)
+$$</p>
 <h1 id="文献">文献</h1>
 <ul>
 <li>Kooi, Barteld, and Allard Tamminga. &ldquo;Conflicting obligations in multi-agent deontic logic.&rdquo; <em>International Workshop on Deontic Logic and Artificial Normative Systems</em>. Springer, Berlin, Heidelberg, 2006.</li>
