@@ -58,7 +58,7 @@
 <h1 id="2-multi-agent-deontic-logic">2. Multi-agent Deontic Logic</h1>
 <p>ある状況に対して異なる行為者（の集団）が異なる効用をあてがいうるような複数行為者の文脈において、道徳的推論の形式化は行なわれてこなかったように思われる。そこでわれわれは主観的効用と利害関心を導入する。簡略化のために、分岐時間モデルを省略して一つの時間しか存在しないようなモデルを考えることにする。</p>
 <h2 id="21-language">2.1 Language</h2>
-<p>言語$\mathfrak{L}$は、命題変項の可算集合$\mathfrak{P}$と個人の行為者の有限集合$\mathsf{A}$とから構成される。$p\in\mathfrak{P}$とする。$\mathcal{F,G}\subseteq\mathsf{A}$とする。$\mathfrak{L}$は次の規則で与えられる。</p>
+<p><strong>定義1</strong>　言語$\mathfrak{L}$は、命題変項の可算集合$\mathfrak{P}$と個人の行為者の有限集合$\mathsf{A}$とから構成される。$p\in\mathfrak{P}$とする。$\mathcal{F,G}\subseteq\mathsf{A}$とする。$\mathfrak{L}$は次の規則で与えられる。</p>
 <p>$$
 \phi ::= p\mid \lnot\phi\mid \phi\land\phi\mid \Box\phi\mid [\mathcal{G}]\phi\mid \odot^\mathcal{F}_\mathcal{G}\phi
 $$</p>
@@ -68,6 +68,13 @@ $$</p>
 <li>$\odot^\mathcal{F}_\mathcal{G}\phi$　集団Gは、集団Fの関心においてφであるよう取り計らうべきだ。</li>
 </ul>
 <p>「『べき』は『できる』を含意する」というカントの法則は、$\odot^\mathcal{F}_\mathcal{G}\phi \to \Diamond[\mathcal{G}]\phi$（集団Gが集団Fの関心においてφであるよう取り計らうべきならば、集団Gはφであるよう取り計らうことが可能だ）と形式化できる。これはわれわれの意味論において妥当式である。</p>
+<h2 id="22-agency-and-ability">2.2 Agency and Ability</h2>
+<p>単一の行為者aの行為を、aの可能な選択肢集合からのオプションの選択として表現する。aの可能な選択肢集合（$\mathsf{Choice}(a)$と書く）は、可能世界の集合$\mathsf{W}$の分割である。$\mathsf{Choice}(a)$の要素を$a$の「選択（choice）」と言うことにする。さらに、どの行為者aに対しても、aのすべての選択は現実の選択肢である。すなわち、aのどの選択も、他の行為者の選択によって妨害されることはない。形式的にはこの要求は、「各々の行為者の選択したオプションのどの可能な組み合わせの共通部分も、空集合ではない」を満たすことで実現できる。</p>
+<p><strong>定義2（個人の行為者の選択）</strong> $\mathsf{W}$は可能世界の集合、$\mathsf{A}$は行為者の有限集合だとする。このとき、$\mathsf{Choice}: \mathsf{A}\mapsto\wp(\wp(\mathsf{W}))$が$\mathsf{A}$の選択肢関数（choice function）であるのは、次を満たすときである。</p>
+<ol>
+<li>どの$a\in\mathsf{A}$に対しても、$\mathsf{Choice}(a)$は$\mathsf{W}$の分割である。</li>
+<li>どの行為者$a\in\mathsf{A}$に対しても$s(a)\in\mathsf{Choice}(a)$であるような任意の選択関数（selection function）$s: \mathsf{A}\mapsto \wp(\mathsf{W})$に対して、$\bigcap_{a\in\mathsf{A}}s(a) \not= \emptyset$</li>
+</ol>
 <h1 id="文献">文献</h1>
 <ul>
 <li>Kooi, Barteld, and Allard Tamminga. &ldquo;Conflicting obligations in multi-agent deontic logic.&rdquo; <em>International Workshop on Deontic Logic and Artificial Normative Systems</em>. Springer, Berlin, Heidelberg, 2006.</li>
@@ -75,6 +82,8 @@ $$</p>
 
 <div class="showarticleinfo">
     <i class="far fa-calendar-alt"></i> 2020年4月13日<br>
+    
+        <i class="fas fa-history"></i> 2020年4月14日<br>
     
     <i class="fas fa-tags"></i>   <code><a href="/note/tags/ethics">#ethics</a></code>  <code><a href="/note/tags/logic">#logic</a></code> <br>
 </div>
