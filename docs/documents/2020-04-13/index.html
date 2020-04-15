@@ -101,6 +101,21 @@ $$</p>
 <p>$$
 K\succeq^\mathcal{F}_\mathcal{G}K&rsquo;  \iff  \text{for all }S\in\mathsf{Choice}(\mathsf{A}-\mathcal{G})\text{ and for all }w,w&rsquo;\in\mathsf{W},\, w\in K\cup S\text{ and } w&rsquo;\in K&rsquo;\cup S\text{ ならば }\mathsf{U}_\mathcal{F}(w)\geq\mathsf{U}_\mathsf{F}(w&rsquo;)
 $$</p>
+<p>F支配は次の性質を満たす。［補題1で、F支配が満たす性質が述べられる。おおよそ選好が満たすべき性質が列挙されている？］［補題2では、義務の衝突に関する定理の証明に必要なF支配の性質が述べられている］</p>
+<h2 id="25-semantics">2.5 Semantics</h2>
+<p><strong>定義6（意味論）</strong> $\mathfrak{M} = \braket{\mathsf{W,A,Choice,V,U}}$は帰結主義的モデルであるとする。$w\in\mathsf{W}$、$p\in\mathfrak{P}$、$\phi,\psi\in\mathfrak{L}$とする。このとき次が成り立つ。</p>
+<ol>
+<li>$\mathfrak{M}/w\vDash p  \iff  w\in\mathsf{V}(p)$</li>
+<li>$\mathfrak{M}/w\vDash\lnot\phi  \iff  \mathfrak{M}/w\not\vDash\phi$</li>
+<li>$\mathfrak{M}/w\vDash\phi\land\psi  \iff  \mathfrak{M}/w\vDash\phi \text{ and } \mathfrak{M}/w\vDash\psi$</li>
+<li>$\mathfrak{M}/w\vDash\Box\phi  \iff  \forall w&rsquo;\in\mathsf{W}: \mathfrak{M}/w&rsquo;\vDash\phi$</li>
+<li>$\mathfrak{M}/w\vDash[\mathcal{G}]\phi  \iff  \forall w&rsquo;\in\mathsf{W}: w\sim_\mathcal{G}w&rsquo; \Rightarrow \mathfrak{M}/w&rsquo;\vDash\phi$</li>
+<li>$\mathfrak{M}/w\vDash\odot^\mathcal{F}_\mathcal{G}\phi  \iff  \forall K\in\mathsf{Choice}(\mathcal{G}): K\not\subseteq[\![\phi]\!] \Rightarrow \exists K&rsquo;\in\mathsf{Choice}(\mathcal{G})\land K&rsquo;\subseteq[\![\phi]\!]\text{, (1)}K&rsquo;\succ^\mathcal{F}_\mathcal{G}K&rsquo;\text{ (2)}\forall K&rsquo;'\in\mathsf{Choice}(\mathcal{G}): K&rsquo;'\succ^\mathcal{F}_\mathcal{G}K&rsquo; \Rightarrow K&rsquo;'\subseteq[\![\phi]\!]$</li>
+</ol>
+<h2 id="26-validities">2.6 Validities</h2>
+<p><strong>補題3（妥当性）</strong> 次の諸定理が成り立つ。［省略。標準義務論理でも成り立つ定理が列挙されており、義務の意味は標準義務論理とそれほど離れていないことが示されている］</p>
+<p>公理化については本稿では取り扱わない。またここで挙げた定理のなかには、異なる義務演算子間の関係に関する妥当式はない。これについては3節で扱う。</p>
+<h2 id="27-the-prisoners-dilemma">2.7 The Prisoner&rsquo;s Dilemma</h2>
 <h1 id="文献">文献</h1>
 <ul>
 <li>Kooi, Barteld, and Allard Tamminga. &ldquo;Conflicting obligations in multi-agent deontic logic.&rdquo; <em>International Workshop on Deontic Logic and Artificial Normative Systems</em>. Springer, Berlin, Heidelberg, 2006.</li>
