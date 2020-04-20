@@ -25,7 +25,11 @@
 $\mathcal{F,G,H}\subseteq\mathcal{N}$とする。$a_\mathcal{G}\in\mathfrak{A}$とする。$\mathfrak{L}$は次の規則で与えられる。
 $$ \phi ::= a_\mathcal{G}\mid \lnot\phi\mid \phi\land\phi\mid \Diamond\phi\mid \mathsf{P}^\mathcal{F}_\mathcal{G}\alpha_\mathcal{G}\mid \mathsf{P}^\mathcal{F}_\mathcal{G}(\alpha_\mathcal{G}/\alpha_\mathcal{H}) $$
 ただし$\mathcal{H}\subseteq\mathcal{N}-\mathcal{G}$とする。
-2.2 Consequentialist Models 文献  Tamminga, Allard. &amp;ldquo;Deontic logic for strategic games.&amp;rdquo; Erkenntnis 78.1 (2013): 183&amp;ndash;200.  </description>
+2.2 Consequentialist Models 定義1　帰結主義的フレーム$\mathfrak{F}$は、四つ組$\braket{\mathcal{W},\mathcal{N},\textit{Choice},(\succeq_\mathcal{F})}$である。$\mathcal{W}$は可能世界の集合（空集合ではないものとする）、$\mathcal{N}$は行為者の有限集合、$\textit{Choice}$は選択肢関数、$\succeq_\mathcal{F}$は反射性・推移性・完備性を満たす$\mathcal{W}$上の関係（それぞれの集団$\mathcal{F}\subseteq\mathcal{W}$に応じて存在する）。
+選択肢関数の定義は Kooi&amp;amp;Tamminga (2006) のものと大体同じ。
+定義2　帰結主義的モデル$\mathfrak{M}$は、順序対$\braket{\mathfrak{F},v}$として定義される。$\mathfrak{F}$は帰結主義的フレーム、$v$はそれぞれの集団Gに対して選択肢関数に属する選択肢を原子命題に付与する付値関数。
+2.3 Absolute and Conditional $\mathcal{F}$-Dominance 無条件的および条件的許可の形式的解釈を探し求めて、われわれは「行為が許されるのは、その行為が、さらによい戦略が存在しない（同じくらいよい戦略はいくらあってもよい）ような戦略の適用として解釈される場合である」（Apostel 1960, p. 75）というアポステルの金言から始めよう。
+文献  Tamminga, Allard. &amp;ldquo;Deontic logic for strategic games.&amp;rdquo; Erkenntnis 78.1 (2013): 183&amp;ndash;200.  </description>
     </item>
     
     <item>
@@ -46,8 +50,8 @@ $$ \phi ::= p\mid \lnot\phi\mid \phi\land\phi\mid \Box\phi\mid [\mathcal{G}]\phi
  $\Box\phi$　φであることは必然的だ。 $[\mathcal{G}]\phi$　集団Gはφであるよう取り計らう。（チェラス‐フォン・クッチェラ型stit様相） $\odot^\mathcal{F}_\mathcal{G}\phi$　集団Gは、集団Fの関心においてφであるよう取り計らうべきだ。  「『べき』は『できる』を含意する」というカントの法則は、$\odot^\mathcal{F}_\mathcal{G}\phi \to \Diamond[\mathcal{G}]\phi$（集団Gが集団Fの関心においてφであるよう取り計らうべきならば、集団Gはφであるよう取り計らうことが可能だ）と形式化できる。これはわれわれの意味論において妥当式である。
 2.2 Agency and Ability 単一の行為者aの行為を、aの可能な選択肢集合からのオプションの選択として表現する。aの可能な選択肢集合（$\mathsf{Choice}(a)$と書く）は、可能世界の集合$\mathsf{W}$の分割である。$\mathsf{Choice}(a)$の要素を$a$の「選択（choice）」と言うことにする。さらに、どの行為者aに対しても、aのすべての選択は現実の選択肢である。すなわち、aのどの選択も、他の行為者の選択によって妨害されることはない。形式的にはこの要求は、「各々の行為者の選択したオプションのどの可能な組み合わせの共通部分も、空集合ではない」を満たすことで実現できる。
 定義2（個人の行為者の選択） $\mathsf{W}$は可能世界の集合、$\mathsf{A}$は行為者の有限集合だとする。このとき、$\mathsf{Choice}: \mathsf{A}\mapsto\wp(\wp(\mathsf{W}))$が$\mathsf{A}$の選択肢関数（choice function）であるのは、次を満たすときである。
- どの$a\in\mathsf{A}$に対しても、$\mathsf{Choice}(a)$は$\mathsf{W}$の分割である。 どの行為者$a\in\mathsf{A}$に対しても$s(a)\in\mathsf{Choice}(a)$であるような任意の選択関数（selection function）$s: \mathsf{A}\mapsto \wp(\mathsf{W})$に対して、$\bigcap_{a\in\mathsf{A}}s(a) \not= \emptyset$  ［2.の要請を直観的に述べると、「行為者たちはそれぞれ、他者がどんな行為を選ぶかとは関係なく、自分がもつどの行為も選ぶことができる」となる］
-［行為するとは可能世界を制限することにほかならない、という発想が意味論の根底にある］
+ どの$a\in\mathsf{A}$に対しても、$\mathsf{Choice}(a)$は$\mathsf{W}$の分割である。 どの行為者$a\in\mathsf{A}$に対しても$s(a)\in\mathsf{Choice}(a)$であるような任意の選択関数（selection function）$s: \mathsf{A}\mapsto \wp(\mathsf{W})$に対して、$\bigcap_{a\in\mathsf{A}}s(a) \not= \emptyset$  ［s(a)は一個の選択肢ないし行為。2.の要請を直観的に述べると、「各々の行為者がどんな行為を選ぼうとも、その行為の結果が空集合となることはない」、すなわち「行為者たちはそれぞれ、他者がどんな行為を選ぶかとは関係なく、自分がもつどの行為も選ぶことができる」となる］
+［行為するとは可能世界を制限することにほかならない、という発想が意味論の根底にある。行為の選択肢は諸可能世界の分割として与えられる］
 定義3（集合的選択肢関数） $\mathcal{G}\subseteq\mathsf{A}$とする。$S$は、任意の$a\in\mathcal{G}$に対して$s(a)\in\mathsf{Choice}(a)$であるような、そんな選択関数$s: \mathcal{G}\mapsto\wp(\mathsf{W})$の集合であるとする。このとき、次のように定義する。</description>
     </item>
     
