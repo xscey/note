@@ -74,10 +74,14 @@ $$</p>
 <p>$\mathsf{P}^\mathcal{F}_\mathcal{G}\alpha_\mathcal{G}$の直観的意味は「集団$\mathcal{G}$は行為$\alpha_\mathcal{G}$によって集団$\mathcal{F}$の利益を最大限に促進する（集団$\mathcal{G}$は集団$\mathcal{F}$の関心のもとで行為$\alpha_\mathcal{G}$を為してもよい）」というもの。その真理条件を直観的に述べれば、「$\alpha_\mathcal{G}$は、他のどの行為よりも（集団Gによって）弱選好されている」となる。</p>
 <p>なお、「してもよい」ではなく「べき」の真理条件も定義されている。「べき」の真理条件はほとんど「してもよい」と同じ（という一見やや直観に反する定義になっているの）だが、「弱選好」ではなく「強選好」となっている点が異なる。</p>
 <h1 id="3-nash-equilibria-of-strategic-games">3. Nash Equilibria of Strategic Games</h1>
-<p><strong>定義5</strong>　戦略形ゲーム$G$は、三つ組$\braket{N,(A_i),(\succsim_i)}$である。$N$はプレイヤーの有限集合、$A_i$は各々の行為者iにとって利用可能な行為の集合、$\succsim_i$は行為者iがもつ（結果の集合$A = \times_{i\in N} A_i$の上の）選好関係。［結果の集合は、「各々の行為者が利用可能な行為の集合」のデカルト積、つまりすべての戦略の組］</p>
+<p><strong>定義5</strong>　戦略形ゲーム$G$は、三つ組$\braket{N,(A_i),(\succsim_i)}$である。$N$はプレイヤーの有限集合、$A_i$は各々の行為者iにとって利用可能な行為の集合、$\succsim_i$は行為者iがもつ（結果の集合$A = \times_{i\in N} A_i$の上の）選好関係。［結果の集合は、「各々の行為者が利用可能な行為の集合」のデカルト積、つまりすべての戦略の組］［入門書などでは、簡略化のため選好ではなくいきなり利得・効用が与えられていることが多い］</p>
 <p>$A_i$は有限ないし可算無限だとする。$\succsim_i$は反射的、推移的、完備であるとする。$a_i, a^*_i$は$A_i$に属する行為の変項だとする。同様に、$a, a^*$は$A$に属する結果の変項だとする。</p>
 <p><strong>定義6</strong>　結果$a^* \in A$が戦略形ゲーム$G = \braket{N,(A_i),(\succsim_i)}$のナッシュ均衡であるのは、次が成り立つときかつそのときに限る。任意のプレイヤー$i\in N$に対して、任意の$a_i\in A_i$に対して$(a^*_{-i}, a^*_i) \succsim (a^*_{-i}, a_i)$。</p>
 <h2 id="31-from-strategic-games-to-consequentialist-models">3.1 From Strategic Games to Consequentialist Models</h2>
+<p>任意の戦略形ゲームを帰結主義的モデルに変換するための関数を定義。</p>
+<h1 id="4-nash-equilibria-and-conditional-permissions">4. Nash Equilibria and Conditional Permissions</h1>
+<p><strong>定理2</strong>　$G$は戦略形ゲーム、$v_f$は$\mathfrak{T}(G)$の適切付値関数であるとする。このとき次が成り立つ。</p>
+<p>$a^*$は$G$のナッシュ均衡である $\iff  \braket{\mathfrak{T}(G),v_f}\vDash\bigwedge_{i\in\mathcal{N}}\mathsf{P}^i_i(f(a^*_i) / f(a^*_{-i}))$</p>
 <h1 id="文献">文献</h1>
 <ul>
 <li>Tamminga, Allard. &ldquo;<a href="https://www.rug.nl/research/portal/files/119641934/Deontic_logic_for_strategic_games.pdf">Deontic logic for strategic games</a>.&rdquo; <em>Erkenntnis</em> 78.1 (2013): 183&ndash;200.</li>
