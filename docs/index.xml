@@ -6,10 +6,27 @@
     <description>Recent content on 哲学覚書</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 13 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xscey.github.io/note/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tamminga (2013) の覚書</title>
+      <link>https://xscey.github.io/note/documents/2020-04-20/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xscey.github.io/note/documents/2020-04-20/</guid>
+      <description>1. Introduction 義務論理はその研究が始まって以来、活発で実り豊かな哲学的論理学の一分野であり続けてきた。しかしその研究は長いあいだ、単一の行為者の文脈あるいは行為者性のない文脈での規範の研究にとどまっていた。複数行為者論理の近年の発展は、義務論理を単一の行為者から複数行為者の環境へと舞台を移させることを可能にしてきた。結果として、複数行為者義務論理が生じた。これは、異なる選好をもつ複数の行為者の戦略的相互作用の形式的モデルの文脈における義務・許可・禁止を研究するものである。
+ところで「異なる選好をもつ複数の行為者の戦略的相互作用」の研究は、ゲーム理論においても行なわれている。しかし、複数行為者義務論理とゲーム理論はアプローチの方法が非常に異なっている。かたや義務論理学者は道徳的義務の形式的構造に関わり、かたやゲーム理論家は道具的合理性の規範の数学［的構造］に焦点を当てる。それゆえに、この新たな複数行為者義務論理とゲーム理論とのあいだの関係性をいかに構築するかという問題は、自然でありかつ差し迫ったものと言えよう。
+本稿の目的は、この問題に部分的な解答を与えることである。すなわち、われわれは戦略形ゲームのナッシュ均衡を、複数行為者義務論理の条件的許可の観点から特徴づける。
+最終的に示されるのは次のことである。結果a*が戦略形ゲームGのナッシュ均衡であるときかつそのときに限り、ある条件的許可の有限の連言が帰結主義的モデル$\braket{\mathfrak{T}(G),v}$において真である。
+2. Multi-agent Deontic Logic 2.1 Language 言語$\mathfrak{L}$は、原子命題の可算集合$\mathfrak{A} = \set{\alpha^n_\mathcal{G} \mid \mathcal{G}\subseteq\mathcal{N} \text{ and } n\in\mathbb{N}}$から構成される（$\mathcal{N}$は行為者の有限集合、$\mathbb{N}$は自然数）。したがって、各々の集団$\mathcal{G}$に対して原子命題の可算集合$\mathfrak{A}_\mathcal{G} = \set{\alpha^1_\mathcal{G},\alpha^2_\mathcal{G},\dots}$が存在する。
+$\mathcal{F,G,H}\subseteq\mathcal{N}$とする。$a_\mathcal{G}\in\mathfrak{A}$とする。$\mathfrak{L}$は次の規則で与えられる。
+$$ \phi ::= a_\mathcal{G}\mid \lnot\phi\mid \phi\land\phi\mid \Diamond\phi\mid \mathsf{P}^\mathcal{F}_\mathcal{G}\alpha_\mathcal{G}\mid \mathsf{P}^\mathcal{F}_\mathcal{G}(\alpha_\mathcal{G}/\alpha_\mathcal{H}) $$
+ただし$\mathcal{H}\subseteq\mathcal{N}-\mathcal{G}$とする。
+2.2 Consequentialist Models 文献  Tamminga, Allard. &amp;ldquo;Deontic logic for strategic games.&amp;rdquo; Erkenntnis 78.1 (2013): 183&amp;ndash;200.  </description>
+    </item>
     
     <item>
       <title>Kooi&amp;Tamminga (2006) の覚書</title>

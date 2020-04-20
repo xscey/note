@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <title>Tamminga (2013) の覚書 - 哲学覚書</title>
+        <link rel="stylesheet" href="https://xscey.github.io/note/css/reset.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="https://xscey.github.io/note/css/style.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="https://xscey.github.io/note/css/syntax.css" media="screen" title="no title" charset="utf-8">
+        <link rel="icon" type="image/jpg" href="https://xscey.github.io/note/img/icon.jpg">
+        <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] }
+            });
+            MathJax.Hub.Config({
+                TeX: {
+                    Macros: {
+                        lo: '\\mathbf{O}',
+                        phi: '\\varphi',
+                        braket: ['{\\langle #1\\rangle}', 1],
+                        set: ['{\\{#1\\}}', 1]
+                    }
+                }
+            });
+        </script>
+        <script src="https://kit.fontawesome.com/593b5b099a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-wrapper">
+                <h1 class="logo">
+                    <a href="https://xscey.github.io/note">哲学覚書</a>
+                </h1>
+
+<nav class="global-nav">
+    <ul>
+        <li class="nav-item"><a href="https://xscey.github.io/note"><i class="fas fa-home"></i> HOME</a></li>
+        <li class="nav-item active"><a href="https://xscey.github.io/note/documents"><i class="fas fa-book"></i> Docs</a></li>
+    </ul>
+</nav>
+</div>
+</header>
+<div class="wrapper clearfix">
+<main class="main">
+    <div class="content">
+
+<div class="title">
+    Tamminga (2013) の覚書<br>
+</div>
+<h1 id="1-introduction">1. Introduction</h1>
+<p>義務論理はその研究が始まって以来、活発で実り豊かな哲学的論理学の一分野であり続けてきた。しかしその研究は長いあいだ、単一の行為者の文脈あるいは行為者性のない文脈での規範の研究にとどまっていた。複数行為者論理の近年の発展は、義務論理を単一の行為者から複数行為者の環境へと舞台を移させることを可能にしてきた。結果として、<strong>複数行為者義務論理</strong>が生じた。これは、異なる選好をもつ複数の行為者の戦略的相互作用の形式的モデルの文脈における義務・許可・禁止を研究するものである。</p>
+<p>ところで「異なる選好をもつ複数の行為者の戦略的相互作用」の研究は、<strong>ゲーム理論</strong>においても行なわれている。しかし、複数行為者義務論理とゲーム理論はアプローチの方法が非常に異なっている。かたや義務論理学者は道徳的義務の形式的構造に関わり、かたやゲーム理論家は道具的合理性の規範の数学［的構造］に焦点を当てる。それゆえに、この新たな複数行為者義務論理とゲーム理論とのあいだの関係性をいかに構築するかという問題は、自然でありかつ差し迫ったものと言えよう。</p>
+<p>本稿の目的は、この問題に部分的な解答を与えることである。すなわち、われわれは戦略形ゲームのナッシュ均衡を、複数行為者義務論理の条件的許可の観点から特徴づける。</p>
+<p>最終的に示されるのは次のことである。結果a*が戦略形ゲームGのナッシュ均衡であるときかつそのときに限り、ある条件的許可の有限の連言が帰結主義的モデル$\braket{\mathfrak{T}(G),v}$において真である。</p>
+<h1 id="2-multi-agent-deontic-logic">2. Multi-agent Deontic Logic</h1>
+<h2 id="21-language">2.1 Language</h2>
+<p>言語$\mathfrak{L}$は、原子命題の可算集合$\mathfrak{A} = \set{\alpha^n_\mathcal{G} \mid \mathcal{G}\subseteq\mathcal{N} \text{ and } n\in\mathbb{N}}$から構成される（$\mathcal{N}$は行為者の有限集合、$\mathbb{N}$は自然数）。したがって、各々の集団$\mathcal{G}$に対して原子命題の可算集合$\mathfrak{A}_\mathcal{G} = \set{\alpha^1_\mathcal{G},\alpha^2_\mathcal{G},\dots}$が存在する。</p>
+<p>$\mathcal{F,G,H}\subseteq\mathcal{N}$とする。$a_\mathcal{G}\in\mathfrak{A}$とする。$\mathfrak{L}$は次の規則で与えられる。</p>
+<p>$$
+\phi ::= a_\mathcal{G}\mid \lnot\phi\mid \phi\land\phi\mid \Diamond\phi\mid \mathsf{P}^\mathcal{F}_\mathcal{G}\alpha_\mathcal{G}\mid \mathsf{P}^\mathcal{F}_\mathcal{G}(\alpha_\mathcal{G}/\alpha_\mathcal{H})
+$$</p>
+<p>ただし$\mathcal{H}\subseteq\mathcal{N}-\mathcal{G}$とする。</p>
+<h2 id="22-consequentialist-models">2.2 Consequentialist Models</h2>
+<h1 id="文献">文献</h1>
+<ul>
+<li>Tamminga, Allard. &ldquo;Deontic logic for strategic games.&rdquo; <em>Erkenntnis</em> 78.1 (2013): 183&ndash;200.</li>
+</ul>
+
+<div class="showarticleinfo">
+    <i class="far fa-calendar-alt"></i> 2020年4月20日<br>
+    
+    <i class="fas fa-tags"></i>   <code><a href="/note/tags/ethics">#ethics</a></code>  <code><a href="/note/tags/logic">#logic</a></code> <br>
+</div>
+                    </div>
+                </main>
+            </div>
+        <footer class="footer">
+            <div class="copyright">
+                ©2016–2020 <a href="https://xscey.github.io/">xscey.github.io</a>
+            </div>
+        </footer>
+    </body>
+</html>
+
