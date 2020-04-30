@@ -6,10 +6,23 @@
     <description>Recent content on 哲学覚書</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xscey.github.io/note/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Nair (forthcoming) の覚書</title>
+      <link>https://xscey.github.io/note/documents/2020-04-30/</link>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xscey.github.io/note/documents/2020-04-30/</guid>
+      <description>Introduction 倫理学と義務論理学において、互いを無視してきた伝統があることは否めない。倫理学と義務論理学とのあいだで最も持続している交流は、体系的というよりは、むしろ多くの雑多なトピックが撒き散らされたものであった。本稿はある程度このアプローチに従う。
+§1では倫理学と義務論理学とのあいだの予備的な問題を扱う。その後は、倫理学と義務論理学とのあいだの相互交流を考えるうえで役立つ三つのトピックを取り上げる。第一に、現実主義・可能主義について議論する（§2）。第二に、個別主義について議論する（§3）。第三に、集合的行為の問題について議論する（§4）。
+これらの問題について議論するなかで、われわれは主として倫理学における哲学的議論から始める。それから、それらの議論に興味深い視点を提供してくれる形式体系を導入する。様相理論、非様相理論、個人と集団との関係を扱いうる理論、といった形式体系を導入する。本稿は最後に、考察するに値する雑多なトピックについて議論する。
+6. Conclusion 義務論理学者と道徳哲学者は互いに深くは交流してこなかったけれども、多くの実りある交流は存在してきた。われわれは主として三つのトピックに注目した。しかしこれらのトピックは、義務論理学と倫理学の興味深い領域を覆い尽くすものではない。その領域は、さらなる生産的な相互交流の機が熟している。そうした相互交流によって、われわれは、何が正しく何が間違っているかについての推論をよりよく理解できるようになり、また、何が正しく何が間違っているかの理論をよりよく発展させることができるようになるに違いない。
+文献  &amp;ldquo;Deontic Logic and Ethics&amp;rdquo; forthcoming in Dov Gabbay , John Horty, Xavier Parent, Ron van der Meyden, and Leon van der Torre Eds. Handbook of Deontic Logic and Normative Systems Volume 2.  </description>
+    </item>
     
     <item>
       <title>Broersen et al. (2008) の覚書</title>
