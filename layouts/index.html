@@ -4,8 +4,8 @@
 <div class="title">HOME</div>
 <h2>記事</h2>
 <ul>
-    {{ range .Site.RegularPages.ByDate.Reverse }}
-        <li><a href="{{ .Permalink }}">{{ .Title }}</a><span class="docs-date">{{ .Date.Format "2006年1月2日" }}</span></li>
+    {{ range .Site.RegularPages.ByLastmod.Reverse }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
     {{ end }}
 </ul>
 <h2>哲学覚書に関する覚書</h2>
