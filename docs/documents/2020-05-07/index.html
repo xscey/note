@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <title>Gibbard (1991) の覚書 - 哲学覚書</title>
+        <link rel="stylesheet" href="https://xscey.github.io/note/css/reset.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="https://xscey.github.io/note/css/style.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="https://xscey.github.io/note/css/syntax.css" media="screen" title="no title" charset="utf-8">
+        <link rel="icon" type="image/jpg" href="https://xscey.github.io/note/img/icon.jpg">
+        <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] }
+            });
+            MathJax.Hub.Config({
+                TeX: {
+                    Macros: {
+                        lo: '\\mathbf{O}',
+                        phi: '\\varphi',
+                        braket: ['{\\langle #1\\rangle}', 1],
+                        set: ['{\\{#1\\}}', 1]
+                    }
+                }
+            });
+        </script>
+        <script src="https://kit.fontawesome.com/593b5b099a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-wrapper">
+                <h1 class="logo">
+                    <a href="https://xscey.github.io/note">哲学覚書</a>
+                </h1>
+
+<nav class="global-nav">
+    <ul>
+        <li class="nav-item"><a href="https://xscey.github.io/note"><i class="fas fa-home"></i> HOME</a></li>
+        <li class="nav-item active"><a href="https://xscey.github.io/note/documents"><i class="fas fa-book"></i> Docs</a></li>
+    </ul>
+</nav>
+</div>
+</header>
+<div class="wrapper clearfix">
+<main class="main">
+    <div class="content">
+
+<div class="title">
+    Gibbard (1991) の覚書<br>
+</div>
+<p>倫理的な判断と合理性についての判断に関する一般理論を展開。</p>
+<h1 id="preface">Preface</h1>
+<p>この本にとっての私の思想は、哲学的な問題解決のはっきりした一欠片から始めた。その問題は十分に理解しづらい。その問題とは、「合理的」という語は何を意味するか、というものだ。われわれはある一時点で何を為すのが合理的かを問うことができるし、より広く、いかに生活を送るのが合理的かを問うことができる。われわれは何を問うているのだろうか。それは人生における最も広い問い――いかに生きるべきか――であるように思われる。しかし、「合理的
+」という語は、「べき」や「よい」や「正しい」といった道徳語の問題のすべてに取り囲まれており、それら問題に道徳哲学者の大群は今世紀の三分の二ものあいだ費やしてきた。すると、合理性に対してそれら技術のうち機能するものがあるだろうか。エイヤー、スティーヴンソン、ヘアといった倫理的非認知主義によって開拓されてきた装置を私は利用しうるだろうか。ヘアの条件的命令の理論から私は始めた。そして、私が自分の理論を発展させた後、アイザック・レヴィが、私が言っていたことの核心に迫る方法を提案した。私は規範とその受容の観点から自分の理論を説明した。そしてこの本はその最終的結果なのだった。</p>
+<p>私は確信するようになったことだが、合理性は人生と思考のすべての側面に関わっている。「合理性」という語それ自体は日常的思考のなかに滅多に現れることはない。しかしこの語を用いることで、道徳についての考え・持つに値するものについての考え・ある主張が信用するに値するかどうかについての考え・何が恥ずべきものであり何が自慢の理由であるのかについての考え・そして哲学者が規範的と呼ぶすべての種類の考えを、われわれは説明することができる。合理性は、分析すべき最も重要な概念だった。</p>
+<p>とはいえ、自分の理論を発展させたとき、私は、それが最も重要であるにもかかわらず、語の意味をはるかに超えて垣間見ていることに気づいた。われわれは特別な動物であり、われわれは自身を特別なものとして見做すのは簡単だと思っている。しかし、われわれは自身を特別な動物であると想像するのは難しい。合理性や正当化や道徳性について考えることのできるわれわれ人類は、自分のことを進化してきた生き物の一員であるといかに理解しうるのだろうか。進化論の最新の研究がその答えを与えうると私は確信するようになった。広く道徳的なより糸は、人生に行き渡っている。そして、われわれのように高度に社会的で言語的な生き物の進化について考えることによって、われわれはなぜそうなのかを理解し始めることができる。この点では私の思弁は、よくても、真理への最も大雑把な近似でしかない。だがそれでも、私は人間の規範的生活に対する自然主義的描像の概略を説明しようとするが、その描像のなかでは、真理がその近辺のどこかにあるのではないかと私に考えさせるのに十分なほど、現象がまとまり、調和している。もしそうだとすれば、古い哲学的問題はいまや新たな形態で生ずる。この自然主義的描像のなかで、合理性と道徳性はいかなる場所をもつのか。これら問題に関する思考はいかなる場所をもつのか。この本において新たなテーマが浮かび上がった。すなわち、進化した生物種の自己理解するメンバーとして、われわれはいかに考えることができるのか、というテーマである。</p>
+<h1 id="文献">文献</h1>
+<ul>
+<li>Gibbard, Allan. <em>Wise choices, apt feelings</em>. Harvard University, Cambridge (1991).</li>
+</ul>
+
+<div class="showarticleinfo">
+    <i class="far fa-calendar-alt"></i> 2020年5月7日<br>
+    
+    <i class="fas fa-tags"></i>   <code><a href="/note/tags/ethics">#ethics</a></code> <br>
+</div>
+                    </div>
+                </main>
+            </div>
+        <footer class="footer">
+            <div class="copyright">
+                ©2016–2020 <a href="https://xscey.github.io/">xscey.github.io</a>
+            </div>
+        </footer>
+    </body>
+</html>
+
