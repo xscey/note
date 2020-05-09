@@ -430,14 +430,17 @@ strong {
     list-style-type: none;
     list-style-position: inside;
     counter-increment: cnt;
-    margin-bottom: 1em;
     padding-left: 2em;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+}
+.footnotes ol li p {
+    font-size: 1.3rem;
+    margin-bottom: 0.8em;
 }
 .footnotes ol li::before {
     position: absolute;
     left: 0;
-    top: 0.4rem;
+    top: 0.14rem;
     content: "★" counter(cnt);
     font-size: 1rem;
     color: #986801;
@@ -546,9 +549,6 @@ blockquote {
     }
     .footer {
         font-size: 1.1rem;
-    }
-    .footnotes ol li {
-        font-size: 1.4rem;
     }
     .footnotes ol li::before {
         top: 0.15rem;
