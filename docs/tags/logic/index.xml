@@ -6,10 +6,21 @@
     <description>Recent content in logic on 哲学覚書</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 07 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xscey.github.io/note/tags/logic/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hintikka (1969) の覚書</title>
+      <link>https://xscey.github.io/note/documents/2020-06-01/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xscey.github.io/note/documents/2020-06-01/</guid>
+      <description>I 哲学的分析に携わる者は誰でも、義務論理を研究するとよい。本稿の主題はとにかくこれである。義務論理の意味論的アプローチは［…］と同じくらい明瞭な例［手本］を与える、ということを私は示唆するつもりである。それら例は次を含む。
+ 真理や無矛盾の基準を得る目的のための、われわれの直観の活用（これらはまた、副産物として論理的証明の規則を生むだろう）。 意味論的洞察の観点からの、われわれの直観の再教育。 分析が生み出した枠組みのなかの伝統的な概念・教義の解釈。 繊細で遠回りな仕方での、われわれの直観から真理を引き出す方法の開発。 日常語で使っているいくつかの概念のなかに含まれる内在的な曖昧さの発見。 それら曖昧さを見過ごすことによって生ずる誤謬の暴露。  II ある可能世界Mでどんな規範が成立しているかを知ることは、Mで成立する規範に従っている可能世界はどれかを知ることにほかならない。そういう可能世界のことを、Mの規範的代替（deontic alternatives）と呼ぶことにしよう。この用語は、可能世界の部分的記述に対しても用いることにする。
+文献 Hintikka, Jaakko, &amp;ldquo;Deontic Logic and its Philosophical Morals,&amp;rdquo; Models for Modalities: Selected Essays, Springer Netherlands, 1969, pp. 184&amp;ndash;214.</description>
+    </item>
     
     <item>
       <title>Navarro&amp;Rodríguez (2014) の覚書</title>
