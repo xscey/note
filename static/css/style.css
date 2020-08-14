@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Courier+Prime:400,400i,700,700i&display=swap');
 @import url('https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.1/dist/css/yakuhanjp_s-noto.min.css');
 
@@ -9,7 +9,7 @@ html {
 body {
     color: #333;
     font-size: 1.3em;
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -19,6 +19,7 @@ body {
     padding: 10px 0px;
     display: block;
     color: #767676;
+    font-family: 'Lato',sans-serif;
 }
 .title::before {
     display: block;
@@ -145,7 +146,7 @@ a:hover {
     line-height: 1.75;
 }
 .content h1 {
-    font-family: 'YakuHanJPs_Noto',sans-serif;
+    font-family: 'YakuHanJPs_Noto','Lato',sans-serif;
     font-weight: 400;
     font-size: 2.2rem;
     border-color: #1BA0E1;
@@ -177,7 +178,7 @@ a:hover {
     z-index: 1;
 }
 .content h2 {
-    font-family: 'YakuHanJPs_Noto',sans-serif;
+    font-family: 'YakuHanJPs_Noto','Lato',sans-serif;
     font-weight: 400;
     padding: 0 10px;
     margin: 40px 0 10px;
@@ -188,7 +189,7 @@ a:hover {
     margin: 0 0 10px;
 }
 .content h3 {
-    font-family: 'YakuHanJPs_Noto',sans-serif;
+    font-family: 'YakuHanJPs_Noto','Lato',sans-serif;
     display: inline-block;
     font-size: 1.3rem;
     font-weight: 700;
@@ -204,6 +205,7 @@ a:hover {
     margin-bottom: 1em;
     text-align: justify;
     text-justify: inter-ideograph;
+    font-family: 'Lato',sans-serif;
 }
 .content .title+p {
     margin-top: 3em;
@@ -240,6 +242,7 @@ td {
     position: relative;
     margin-bottom: 1em;
     padding: 0;
+    font-family: 'Lato',sans-serif;
 }
 .content ul li {
     list-style: none;
@@ -252,7 +255,6 @@ td {
     position: absolute;
     left: 0;
     top: -0.05em;
-    font-family: 'Lato', sans-serif;
     content: '•';
     padding: 0 0 0 0.25em;
 }
@@ -272,6 +274,7 @@ td {
     font-size: 1.5rem;
     margin-bottom: 1em;
     padding: 0;
+    font-family: 'Lato',sans-serif;
 }
 .content ol li{
     margin-left: 1.5em;
