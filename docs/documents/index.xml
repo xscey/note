@@ -6,10 +6,19 @@
     <description>Recent content in Documents on 哲学覚書</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 02 May 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 May 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xscey.github.io/note/documents/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cappelen &amp; Dever (2019) の覚書</title>
+      <link>https://xscey.github.io/note/documents/2021-05-19/</link>
+      <pubDate>Wed, 19 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://xscey.github.io/note/documents/2021-05-19/</guid>
+      <description>文献  Cappelen, H., &amp;amp; Dever, J. (2019). Bad language. Oxford University Press.  </description>
+    </item>
     
     <item>
       <title>意味と内容の規範性の覚書</title>
@@ -196,7 +205,7 @@ Systems of Norms 規範表出主義的分析では、単に「規範」ではな
     </item>
     
     <item>
-      <title>Navarro&amp;Rodríguez (2014) の覚書</title>
+      <title>Navarro &amp; Rodríguez (2014) の覚書</title>
       <link>https://xscey.github.io/note/documents/2020-05-16/</link>
       <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
       
@@ -308,7 +317,7 @@ $K\geq^\mathcal{F}_\mathcal{G} K&#39;$の定義は Kooi&amp;amp;Tamminga (2006) 
     </item>
     
     <item>
-      <title>Kooi&amp;Tamminga (2006) の覚書</title>
+      <title>Kooi &amp; Tamminga (2006) の覚書</title>
       <link>https://xscey.github.io/note/documents/2020-04-13/</link>
       <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
       
