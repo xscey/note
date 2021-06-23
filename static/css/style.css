@@ -15,10 +15,11 @@ body {
     min-height: 100vh;
 }
 .title {
+    font-weight: 700;
     font-size: 1.5rem;
     padding: 10px 0px;
     display: block;
-    color: #767676;
+    color: #a0a0a0;
     font-family: 'Lato',sans-serif;
 }
 .title::before {
@@ -510,13 +511,17 @@ blockquote {
 .tag-count {
     font-size: 1.3rem;
     color: #767676;
-    margin-left: -2px;
+    margin: 0 3px 0 -4px;
 }
 .tag-count::before {
     content: "（";
 }
 .tag-count::after {
     content: "）";
+}
+.tags {
+    display: inline-block;
+    font-size: 1.5rem;
 }
 
 @media (max-width: 828px) {

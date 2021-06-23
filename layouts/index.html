@@ -9,11 +9,9 @@
     {{ end }}
 </ul>
 <h2>タグ</h2>
-<ul>
-  {{ range .Site.Taxonomies.tags.ByCount }}
-    <li><a href="{{ "/tags/" | relLangURL }}{{ .Term | urlize }}">{{ .Term }}</a><span class="tag-count">{{ .Count }}</span></li>
-  {{ end }}
-</ul>
+{{ range .Site.Taxonomies.tags.ByCount }}
+  <div class="tags"><a href="{{ "/tags/" | relLangURL }}{{ .Term | urlize }}">#{{ .Term }}</a><span class="tag-count">{{ .Count }}</span></div>
+{{ end }}
 <h2>哲学覚書に関する覚書</h2>
 <ul>
     <li>哲学や哲学以外のことについて覚え書く。</li>
