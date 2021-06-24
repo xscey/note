@@ -201,12 +201,15 @@ a:hover {
 .content h1+h3, .content h2+h3 {
     margin: 5px 0 15px;
 }
-.content p {
+.content p, .content dl {
     font-size: 1.5rem;
     margin-bottom: 1em;
     text-align: justify;
     text-justify: inter-ideograph;
     font-family: 'Lato',sans-serif;
+}
+.content dl {
+    margin-left: 1em;
 }
 .content .title+p {
     margin-top: 3em;
@@ -372,7 +375,7 @@ img {
     max-width: 99%;
     border: 1px solid #eee;
 }
-strong {
+strong, .content dl dt {
     font-weight: 700;
     color: #986801;
 }
@@ -550,7 +553,7 @@ blockquote {
     .content {
         line-height: 1.55;
     }
-    .content p, .content ul li, .content ol li {
+    .content p, .content dl, .content ul li, .content ol li {
         text-align: start;
         font-size: 1.5rem;
     }
