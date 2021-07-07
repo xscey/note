@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <title>Roy (2017) の覚書 - 哲学覚書</title>
+        <link rel="stylesheet" href="https://xscey.github.io/note/css/reset.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="https://xscey.github.io/note/css/style.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="https://xscey.github.io/note/css/syntax.css" media="screen" title="no title" charset="utf-8">
+        <link rel="icon" type="image/jpg" href="https://xscey.github.io/note/img/icon.jpg">
+        <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] }
+            });
+            MathJax.Hub.Config({
+                TeX: {
+                    Macros: {
+                        lo: '\\mathcal{O}',
+                        lp: '\\mathcal{P}',
+                        phi: '\\varphi',
+                        braket: ['{\\langle #1\\rangle}', 1],
+                        set: ['{\\{#1\\}}', 1]
+                    }
+                }
+            });
+        </script>
+        <script src="https://kit.fontawesome.com/593b5b099a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-wrapper">
+                <h1 class="logo">
+                    <a href="https://xscey.github.io/note">哲学覚書</a>
+                </h1>
+
+<nav class="global-nav">
+    <ul>
+        <li class="nav-item"><a href="https://xscey.github.io/note"><i class="fas fa-home"></i> HOME</a></li>
+        
+    </ul>
+</nav>
+</div>
+</header>
+<div class="wrapper clearfix">
+<main class="main">
+    <div class="content">
+
+<div class="title">
+    Roy (2017) の覚書<br>
+</div>
+<h1 id="deontic-logic-and-game-theory">Deontic Logic and Game Theory</h1>
+<p>ゲーム理論における義務・許可の論理構造を調べたい哲学的動機。</p>
+<ol>
+<li>義務論理の明確なモデル（concrete model）を作るため。自然言語のベキの意味を捉える研究とは異なる（ベキの意味論はここ10年程アメリカを中心に注目されている研究プロジェクトではあるが、義務論理のプロジェクトとは一応独立の話）。</li>
+<li>合理性の規範性は論理構造の問題だから（？）。Kolodony, &ldquo;Why be Rational&rdquo;、Broome, &ldquo;Wide or Narrow Scope?&ldquo;のような人たちが考察しているような合理性の規範性についての哲学的問題に義務論理からアプローチできる（合理性についての条件付き義務はwide scopeかnarrow scopeかということがBroomeの論点であった）。</li>
+<li>van Hees, M. (1996). A Game-Theoretic Logic of Norms and Actions. のような、権利についての形式理論との橋渡しができる。</li>
+</ol>
+<p>ここでは義務は合理性の観点からの義務であり、道徳的義務や賢慮的義務ではない。［＊賢慮的義務って合理性の義務じゃなかったのか……。］</p>
+<p>ゲーム理論における結果の組を、そのまま可能世界と読み替える。すると自然にゲーム理論を義務論理の意味論にもっていける。ただしうまく形式化しないと、容易にCTDパラドックスが生じる（つまりゲーム理論的状況をうまく義務論理で記述できない）。そこで実質含意＋義務演算子、ではうまくいかないので、条件付き義務をうまく定義してやらなければならない（とか言いつつ、講演内では特にその方策は語られず）。［＊ゲーム的状況って一般に論理体系に対するモデルになれるじゃんという発想は、van Benthem &amp; Pacuit &amp; Royの&quot;Toward a Theory of Play: A Logical Perspective on Games and Interaction&quot;という論文で展開されている模様。］</p>
+<p>ファン・ベンタムの最小義務論理は、許可を「合理性の十分条件」を表すボックス演算子と見做し、自由選択許可のパラドックスを回避する。しかしOT→PT→PΦとなり、何でも許されることになってしまう。</p>
+<p>タミンガやアポステルは、ゲーム理論においてナッシュ均衡が唯一存在した場合にそれが義務であり、複数存在した場合にはそれらが許可されると考えた。これに対して、ロイやファン・ベンタムは、許可を合理性の十分条件、義務を必要条件として考えたほうがよいと考える。</p>
+<h1 id="所感">所感</h1>
+<ul>
+<li>SDLの義務作用素・許可作用素って、「Oφ = φであることが義務充足にとって必要だ」「Pφ = φであることが義務充足にとって十分だ」と読み替えられそう。</li>
+<li>メタ倫理と方法論が違いすぎてなんだか意義がよく分からない。ゲーム理論的状況を義務論理で記述できると嬉しい気もするが、それはあくまで論理学的な嬉しさであって哲学的な旨味ではないような気がする。</li>
+<li>こういう類の論理学って、「あるモデルのもとでちょうど真になってくれるような人工言語作り」という感じがする。量子論理とかも。だがそれは哲学的に意味があるのか。一種の概念工学としては意味があるのだろうか。少なくともそうして作られた人工言語が日常言語に対応している保証は何もないので、日常言語学派からするとこの研究の意義はピンとこないことになる。クワインでさえ、直観主義論理のいう否定はわれわれの日常語としての否定とは違うから論理としては受け入れがたい、みたいなことを言っていた気がする。そうだとすると、やっぱり上のような人工言語作りとしての論理学の研究に、哲学的意義があるのか分からなくなってくる。</li>
+</ul>
+<h1 id="文献">文献</h1>
+<ul>
+<li>Roy, Olivier (2017). &ldquo;<a href="https://www.youtube.com/watch?v=DgNEwM5c_fA">Deontic Logic and Game Theory</a>&rdquo; (YouTube).</li>
+</ul>
+<h1 id="関連文献">関連文献</h1>
+<ul>
+<li><a href="https://plato.stanford.edu/entries/logic-power-games/">https://plato.stanford.edu/entries/logic-power-games/</a></li>
+</ul>
+
+<div class="showarticleinfo">
+    <i class="far fa-calendar-alt"></i> 2021年7月7日<br>
+    
+    <i class="fas fa-tags"></i>   <code><a href="/note/tags/logic">#logic</a></code>  <code><a href="/note/tags/game_theory">#game_theory</a></code> <br>
+</div>
+                    </div>
+                </main>
+            </div>
+        <footer class="footer">
+            <div class="copyright">
+                ©2016–2021 <a href="https://xscey.github.io/">xscey.github.io</a>
+            </div>
+        </footer>
+    </body>
+</html>
+
