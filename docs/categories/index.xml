@@ -5,10 +5,6 @@
     <link>https://xscey.github.io/note/categories/</link>
     <description>Recent content in Categories on 哲学覚書</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    
-	<atom:link href="https://xscey.github.io/note/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>ja</language><atom:link href="https://xscey.github.io/note/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

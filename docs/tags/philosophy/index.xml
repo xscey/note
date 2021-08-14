@@ -6,11 +6,7 @@
     <description>Recent content in philosophy on 哲学覚書</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 27 May 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://xscey.github.io/note/tags/philosophy/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 27 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://xscey.github.io/note/tags/philosophy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Haslanger (2011) の覚書</title>
       <link>https://xscey.github.io/note/documents/2021-05-27/</link>
@@ -74,7 +70,7 @@ Generics 183b 最初に考えたい仮説：「Ks are F（e.g., tigers have stri
 しかし、規範主義は言語に限ったものではなく、精神的内容の場合にも擁護されている。精神状態は、それに対する一定の規範がある場合にのみ内容を持つとされている。多くの人は、意味と内容の本質的に規範的な側面は、心と自然の間の深い根源的なコントラストを反映していると考えている。
 本稿では、意味と内容に関して、規範主義者の中心となるいくつかのテーゼを論じる。まず、意味の規範主義のさまざまなバージョンを特定し、それらに対して提示されてきた議論を紹介する。続いて、内容規範主義について議論し、現代の議論の概要を説明する。どちらの議論も非常に進行中で、現時点では、規範主義が意味と内容のどちらにも当てはまるかどうかについては、ほとんどコンセンサスが得られていない。本稿が最初に出版されて以来、議論の多くは二つの中心的な問題に集中している。第一に、意味のある表現には必ず正しさの条件があるという事実から、意味規範主義が導かれるかどうかが議論されてきた。これは我々が「単純な議論」と名付けた議論であり、2.1.1節ではこの議論に対する最近の貢献について述べている。第二に、ルールガイダンスの性質については、特に内容規範主義に関連して多くの議論がなされており、それをどのように理解すべきかについての新しい提案がなされている。これについては2.2節と3.2節で述べている。しかし、意味（と内容）に不可欠な規範性は、これまでの議論で認識されてきたよりも、より「原始的」な性格を持つものであるということも主張されてきた。これについては、2.1.1項、2.2.1項、特に2.2.4項で述べている。
 1. Interpretations of the Normativity Thesis 意味・内容の理論における規範主義（normativism）とは、言語的な意味や意図的な内容が本質的に規範的であるという考え方である。しかし、その構成要素である規範性と意味・内容への本質性はいずれも様々な解釈が可能であり、その結果、「意味・内容は規範的である」というスローガンを主張する、多かれ少なかれ密接に関連した見解の一群が存在している。
-文献  Glüer, Kathrin and Åsa Wikforss, &amp;ldquo;The Normativity of Meaning and Content&amp;quot;, The Stanford Encyclopedia of Philosophy (Fall 2020 Edition), Edward N. Zalta (ed.).  </description>
+文献  Glüer, Kathrin and Åsa Wikforss, &amp;ldquo;The Normativity of Meaning and Content&amp;rdquo;, The Stanford Encyclopedia of Philosophy (Fall 2020 Edition), Edward N. Zalta (ed.).  </description>
     </item>
     
     <item>
@@ -85,7 +81,7 @@ Generics 183b 最初に考えたい仮説：「Ks are F（e.g., tigers have stri
       <guid>https://xscey.github.io/note/documents/2021-04-25/</guid>
       <description>2. Positive research programmes in philosophy of language 2.5 Generics 総称文とは、「猫は毛深い」や「猫には毛がある」といったもので、普遍的一般化でもない（毛のない猫もいる）し、存在的一般化でもない（総称文の主張の方が明らかに強い）。このような問題は、言語学者や哲学者の興味を引く多くのパズルを生み出す。総称文についての詳しい説明は、「総称文」の項目を見よ。ここでは、社会的グループに関する総称的表現について、最近示唆されている社会的・政治的な重要性に焦点を当てており、これに関する文献も増えている。この文献は、Sarah-Jane Leslieの仕事を出発点としている（Leslie 2015; Wodak, Leslie, and Rhodes 2015）。ここで興味を引くのは、「男の子は泣かない」や「女性はキャリアよりも家族を優先する」といった例だ。これらの文章は、例えば、泣くことは多くの男子がする行為ではないというような、単なる説明的な主張を表すために使用することができる。しかし、これらの文章は、少年や女性が何をすべきかという規範的な主張にも使われる。Wodak, Leslie, and Rhodes (2015) は、「規範的な総称文と記述的な総称文の違いは、総称文自体の中で名詞句がピックアップする概念の違いで理解することができる」と提案している (Wodak et. al. 2015: 629)。「Woman」は規範的な概念、つまりキャリアよりも家族を重視するなどの理想を選ぶかもしれないし、逆に記述的な概念を選んで、キャリアよりも家族を重視するかどうかにかかわらず女性を指すかもしれない。レスリーはこれを根拠に、「ヒラリー・クリントンはオバマのホワイトハウスで唯一の男だ」といった発言を説明し、ここでの「男」は男らしさの理想を意味していることを示唆している。また、総称的発話が社会的認知に有害な影響を与えることを論じる、より一般的なプロジェクトの一環でもある。Leslie（forthcoming）は、彼女が「Striking property generics」と呼ぶ、「黒人は危険だ」や「イスラム教徒はテロリストだ」など、総称的に指定されたグループに危険な特性を帰する発言についても論じている。彼女は、総称的主張を打ち消すことは、（他の条件が満たされていれば）真として受け入れられるために多くの事例を必要としないため、偏見を永続させ悪化させる重要なメカニズムとして機能すると主張している（Leslie on striking property genericsの批判については、Saul forthcoming and Sterken 2015a,b.を参照のこと）。
 Haslanger (2011) はLeslieの研究を基に、総称的主張はしばしば性質についての会話的な含意をもち、それが不正な社会構造を維持するイデオロギーを永続させる重要なメカニズムとしての役割を果たすことを論じている。彼女は、総称的な主張の真理条件がどのようなものであっても（レスリーの見解を理解すると、印象的な性質を持つ総称的な主張は非常に容易に真となる）、メタ言語的否定（Horn 1985）のメカニズムによって否定すべきであると提案している。この方法によって、われわれは、われわれを支配しているイデオロギーを破壊し始めることができるのである（これに対する批判は、Saul forthcomingを参照せよ）。
-文献  Saul, Jennifer and Esa Diaz-Leon, &amp;ldquo;Feminist Philosophy of Language&amp;quot;, The Stanford Encyclopedia of Philosophy (Fall 2018 Edition), Edward N. Zalta (ed.).  </description>
+文献  Saul, Jennifer and Esa Diaz-Leon, &amp;ldquo;Feminist Philosophy of Language&amp;rdquo;, The Stanford Encyclopedia of Philosophy (Fall 2018 Edition), Edward N. Zalta (ed.).  </description>
     </item>
     
     <item>
@@ -258,10 +254,11 @@ Tracking themes through time この章では、哲学における論理の役割
 さてしかし、もし上の三つの反論が再反論によって潰されたのだとしたら、貫世界同一性は個体の必要十分条件を要求するということを保持する積極的な理由は何だろうか。
 個体本質と裸の同一性 貫世界同一性は個体本質を要求するという見解に対する主要な論法は、可能世界間の「裸の同一性」を避けるためには個体本質が必要であるというものである。裸の同一性は、事象様相文を貫世界同一性に基づいて特徴づけるのには高すぎる代償であると見做されることがある。もしそれが正しいのであれば、そして個体本質に代わるもっともらしい代案がないならば、貫世界同一性に関する深刻な問題が確かにあることになる。
 すなわち個体本質なるものがない限り、われわれはいくつかの個体の同一性だけが違うような可能世界が存在することを認めねばならぬ危険に晒されることになる。
-  各可能世界に住む夏目漱石の部分をすべて合わせたものが夏目漱石その人であるということか。 &amp;#x21a9;&amp;#xfe0e;
- 四次元主義とほぼ同じ。 &amp;#x21a9;&amp;#xfe0e;
- 結局ソーセージ説？ &amp;#x21a9;&amp;#xfe0e;
- 結局サンドイッチ説？ &amp;#x21a9;&amp;#xfe0e;</description>
+  各可能世界に住む夏目漱石の部分をすべて合わせたものが夏目漱石その人であるということか。&amp;#160;&amp;#x21a9;&amp;#xfe0e;
+ 四次元主義とほぼ同じ。&amp;#160;&amp;#x21a9;&amp;#xfe0e;
+ 結局ソーセージ説？&amp;#160;&amp;#x21a9;&amp;#xfe0e;
+ 結局サンドイッチ説？&amp;#160;&amp;#x21a9;&amp;#xfe0e;
+   </description>
     </item>
     
     <item>

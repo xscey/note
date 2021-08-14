@@ -85,7 +85,7 @@ $$</p>
 <p>［要するに、それぞれの行為者の選択肢を単純に組み合わせたものが集団の選択肢。二人からなる集団があり、二人が各々3個の選択肢をもっていたとすると、その集団の選択肢は3×3で9個（単純に考えれば。ただし異なる選択肢の組み合わせが同じ結果を生むこともあるはずなので、個数はそう単純に倍々にはならないだろうが）］</p>
 <p><strong>定義4</strong>　$\mathcal{G}\subseteq\mathsf{A}$とする。選択同値関係$\sim_\mathcal{G}\in W\times W$は次のように定義される。</p>
 <p>$$
-w\sim_\mathcal{G}w&rsquo;  \iff  \exists K (K\in\mathsf{Choice}(\mathcal{G})\text{ and } w,w&rsquo;\in K)
+w\sim_\mathcal{G}w'  \iff  \exists K (K\in\mathsf{Choice}(\mathcal{G})\text{ and } w,w'\in K)
 $$</p>
 <p>$w\sim_\mathcal{G}w'$であるとき、$w$と$w'$は$\mathcal{G}$にとって選択同値（choice-equivalent）であると言う。</p>
 <p>選択同値関係は$[\mathcal{G}]$様相の意味論を提供してくれる。</p>
@@ -99,9 +99,9 @@ $$</p>
 <h2 id="24-mathcalf-dominance">2.4 $\mathcal{F}$-Dominance</h2>
 <p>本節では、F支配（$\mathcal{F}$-dominance）という概念を定義・探求していく。この概念が$\odot^\mathcal{F}_\mathcal{G}\phi$という形の論理式に対する意味論にとって中心的なものとなる。</p>
 <p>$K$と$K'$がともに$\mathsf{Choice}(\mathcal{G})$に属するとすると、$K\succeq^\mathcal{F}_\mathcal{G}K'$が真であるのは、$K$が少なくとも$K'$と同じくらい集団$\mathcal{F}$の利益を促進する（$\mathsf{A}-\mathcal{G}$がどんな行為をしようとも）ときかつそのときに限る。</p>
-<p><strong>定義5（F支配）</strong> $\mathcal{F},\mathcal{G}\subseteq\mathsf{A}$とする。$K,K&rsquo;\in\mathsf{Choice}(\mathcal{G})$とする。このとき、$K\succeq^\mathcal{F}_\mathcal{G}K'$は次のように定義される。</p>
+<p><strong>定義5（F支配）</strong> $\mathcal{F},\mathcal{G}\subseteq\mathsf{A}$とする。$K,K'\in\mathsf{Choice}(\mathcal{G})$とする。このとき、$K\succeq^\mathcal{F}_\mathcal{G}K'$は次のように定義される。</p>
 <p>$$
-K\succeq^\mathcal{F}_\mathcal{G}K&rsquo;  \iff  \text{for all }S\in\mathsf{Choice}(\mathsf{A}-\mathcal{G})\text{ and for all }w,w&rsquo;\in\mathsf{W},\, w\in K\cap S\text{ and } w&rsquo;\in K&rsquo;\cap S\text{ ならば }\mathsf{U}_\mathcal{F}(w)\geq\mathsf{U}_\mathsf{F}(w&rsquo;)
+K\succeq^\mathcal{F}_\mathcal{G}K'  \iff  \text{for all }S\in\mathsf{Choice}(\mathsf{A}-\mathcal{G})\text{ and for all }w,w'\in\mathsf{W},\, w\in K\cap S\text{ and } w'\in K'\cap S\text{ ならば }\mathsf{U}_\mathcal{F}(w)\geq\mathsf{U}_\mathsf{F}(w')
 $$</p>
 <p>F支配は次の性質を満たす。［補題1で、F支配が満たす性質が述べられる。おおよそ選好が満たすべき性質が列挙されている？］［補題2では、義務の衝突に関する定理の証明に必要なF支配の性質が述べられている］</p>
 <h2 id="25-semantics">2.5 Semantics</h2>
@@ -110,9 +110,9 @@ $$</p>
 <li>$\mathfrak{M}/w\vDash p  \iff  w\in\mathsf{V}(p)$</li>
 <li>$\mathfrak{M}/w\vDash\lnot\phi  \iff  \mathfrak{M}/w\not\vDash\phi$</li>
 <li>$\mathfrak{M}/w\vDash\phi\land\psi  \iff  \mathfrak{M}/w\vDash\phi \text{ and } \mathfrak{M}/w\vDash\psi$</li>
-<li>$\mathfrak{M}/w\vDash\Box\phi  \iff  \forall w&rsquo;\in\mathsf{W}: \mathfrak{M}/w&rsquo;\vDash\phi$</li>
-<li>$\mathfrak{M}/w\vDash[\mathcal{G}]\phi  \iff  \forall w&rsquo;\in\mathsf{W}: w\sim_\mathcal{G}w&rsquo; \Rightarrow \mathfrak{M}/w&rsquo;\vDash\phi$</li>
-<li>$\mathfrak{M}/w\vDash\odot^\mathcal{F}_\mathcal{G}\phi  \iff  \forall K\in\mathsf{Choice}(\mathcal{G}): K\not\subseteq[\![\phi]\!] \Rightarrow \exists K&rsquo;\in\mathsf{Choice}(\mathcal{G})\land K&rsquo;\subseteq[\![\phi]\!]\text{, (1)}K&rsquo;\succ^\mathcal{F}_\mathcal{G}K&rsquo;\text{ (2)}\forall K&rsquo;'\in\mathsf{Choice}(\mathcal{G}): K&rsquo;'\succ^\mathcal{F}_\mathcal{G}K&rsquo; \Rightarrow K&rsquo;'\subseteq[\![\phi]\!]$</li>
+<li>$\mathfrak{M}/w\vDash\Box\phi  \iff  \forall w'\in\mathsf{W}: \mathfrak{M}/w'\vDash\phi$</li>
+<li>$\mathfrak{M}/w\vDash[\mathcal{G}]\phi  \iff  \forall w'\in\mathsf{W}: w\sim_\mathcal{G}w' \Rightarrow \mathfrak{M}/w'\vDash\phi$</li>
+<li>$\mathfrak{M}/w\vDash\odot^\mathcal{F}_\mathcal{G}\phi  \iff  \forall K\in\mathsf{Choice}(\mathcal{G}): K\not\subseteq[\![\phi]\!] \Rightarrow \exists K'\in\mathsf{Choice}(\mathcal{G})\land K'\subseteq[\![\phi]\!]\text{, (1)}K'\succ^\mathcal{F}_\mathcal{G}K'\text{ (2)}\forall K''\in\mathsf{Choice}(\mathcal{G}): K''\succ^\mathcal{F}_\mathcal{G}K' \Rightarrow K''\subseteq[\![\phi]\!]$</li>
 </ol>
 <h2 id="26-validities">2.6 Validities</h2>
 <p><strong>補題3（妥当性）</strong> 次の諸定理が成り立つ。［省略。標準義務論理でも成り立つ定理が列挙されており、義務の意味は標準義務論理とそれほど離れていないことが示されている］</p>
@@ -137,7 +137,7 @@ $$</p>
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>「stit」には定訳がなくアルファベットでそのまま表記することも多いが、「stit理論」を「保証理論」、「see to it that φ」を「φであることを保証する」と訳す例もある。 <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>「stit」には定訳がなくアルファベットでそのまま表記することも多いが、「stit理論」を「保証理論」、「see to it that φ」を「φであることを保証する」と訳す例もある。&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
